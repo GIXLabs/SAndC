@@ -1,4 +1,5 @@
-# Using a Power Supply
+[Using a Power Supply](power_supply.md)
+
 ## Setting Your Power Supply
 ![Plug In](/assets/PSPlug.gif)
 ![Wiring Alligators](/assets/PSWiring.gif)
