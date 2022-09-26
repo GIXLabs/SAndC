@@ -1,9 +1,10 @@
 [Using a Power Supply](power_supply.md)
-[Using a Fluke Multimeter (DMM)](dmm.md)
-[Using a Signal Generator](signal_gen.md)
-[Using an Oscilloscope](oscope.md)
 
-# Using a Signal Generator
+[Using a Fluke Multimeter (DMM)](dmm.md)
+
+[Using a Signal Generator](signal_gen.md)
+
+[Using an Oscilloscope](oscope.md)
 
 # Assignment
 ## Power Supply and Multimeter
