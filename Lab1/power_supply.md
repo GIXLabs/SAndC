@@ -3,9 +3,13 @@ Benchtop power supplies allow you to try your circuits out with a flexible and r
 
 ## Setting up Your Power Supply
 First, plug in your power supply. There is a socket on the back for the power cable. It is polarized, so you do not have to worry about plugging it in the wrong way.
+
 ![Plug In](/assets/PSPlug.gif)
+
 Now we need to attach some wires to get power to your circuit. This image shows banana plugs leading into the power supply and alligator clamps on the other end.
+
 ![Wiring Alligators](/assets/PSWiring.gif)
+
 **Safety Note:** Be careful with the ends of these wires. Connecting them together while powered (also called shorting), creates a circuit with 0 resistance. That's bad because it results in a theoretically infinite current, regardless of your voltage. In this circumstance, the current limiting will activate and the power supply will stop delivering current. If it happens with your projects, you will likely fry your project, set a fire, or destroy a battery.
 
 ## Voltage
