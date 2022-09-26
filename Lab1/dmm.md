@@ -1,4 +1,6 @@
 # Using the Fluke Digital Multimeter (Yellow)
+Digital multimeters (also called DMM), are the tools you will likely use most in debugging circuits. They can be used to tell what the voltages are at various points in your circuits, how much current your circuits are drawing, how much resistance there is in a portion of your circuit, and much more.
+
 ## Measuring Voltage
 First prop the multimeter up so it is a little easier to read. Plug in probes (see below) to the two sockets on the bottom right of the multimeter. The red one should go in the far right, which is marked with a few symbols (temperature, voltage, current, and transistor). The black one should go in the port marked COM (short for common).
 
