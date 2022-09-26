@@ -1,11 +1,7 @@
 [Using a Power Supply](power_supply.md)
-
-# Using the Fluke Multimeter (Yellow)
-## Reading Voltage
-## Reading Current
-
-# Using an Oscilloscope
-## Calibrating Oscilloscope Probes
+[Using a Fluke Multimeter (DMM)](dmm.md)
+[Using a Signal Generator](signal_gen.md)
+[Using an Oscilloscope](oscope.md)
 
 # Using a Signal Generator
 

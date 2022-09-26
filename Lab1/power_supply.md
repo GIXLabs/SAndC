@@ -18,3 +18,5 @@ We can set the voltage of the supply by adjusting each digit of the voltage (see
 
 ## Current
 The current is set in the same way as the voltage, but you will need to press the I-Set button to switch to edit the current. I is the commonly-used symbol for current.
+
+We recommend setting the current limit to 1 Amp to start with, but you may need to change this based on your project's needs.
