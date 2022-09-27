@@ -44,7 +44,7 @@ In this example, we have a signal generator set with a 100kHz ramp waveform, 2.5
 
 Please note that the black ground clip on the probe is connected to one side of the resistor and the main probe is connected to the other side. The black clip should always be connected to a ground in your circuit (such as the negative side of the battery).
 
-![Investigating Circuit](/assets/OscCircuit.gif)
+![Investigating Circuit](/assets/OscInCircuit.gif)
 
 
 ## Measuring Voltage
