@@ -1,4 +1,8 @@
 # Using an Oscilloscope
+Oscilloscopes (often called just 'scopes) can also help you debug your circuit. They can be used to make sure one of your peripheral devices is talking to the main microcontroller like you expect, check that your PWM signals are correct, check for fluctuations in your power supply, and much more.
+
+The way it does all of these things is by plotting voltage over time, which turns out to be surprisingly helpful.
+
 ## Turning on the Oscilloscope
 There is a power socket on the back for a power cable, much like that on the benchtop power supply. Once you have plugged that in, press the power button in the bottom left corner of the oscilloscope. The oscilloscope takes a minute or two to boot up.
 
@@ -26,8 +30,14 @@ Using a flat-head screwdriver, adjust the screw until the wave has a square top.
 
 ## Adjusting the Display
 ### Horizontal Position and Scaling
+The horizontal axis is the time axis and is shared by all of your signals (probes). The time between lines is indicated on the screen. You can change this by adjusting the scaling knob. You can also change what part of the signal you are looking at by rotating the position knob.
+
+![Horizontal](/assets/OscHori.gif)
 
 ### Vertical Position and Scaling
+The vertical axis shows voltage and can be adjusted independently for each signal (probe). Like the horizontal axis, you can adjust the scaling and the position of the signal on the display.
+
+![Vertical](/assets/OscVert.gif)
 
 ## Going Further
 Sparkfun has an excellent tutorial on getting started with oscilloscopes [here.](https://learn.sparkfun.com/tutorials/how-to-use-an-oscilloscope/all)
