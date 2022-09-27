@@ -39,5 +39,17 @@ The vertical axis shows voltage and can be adjusted independently for each signa
 
 ![Vertical](/assets/OscVert.gif)
 
+## Investigating a Circuit
+In this example, we have a signal generator set with a 100kHz ramp waveform, 2.5V maximum, and 0.0V minimum. Using BNC to clip connector to send the signal through a 47 Ohm resistor.
+
+Please note that the black ground clip on the probe is connected to one side of the resistor and the main probe is connected to the other side. The black clip should always be connected to a ground in your circuit (such as the negative side of the battery).
+
+![Investigating Circuit](/assets/OscCircuit.gif)
+
+
+## Measuring Voltage
+Frequently, you will want to know how to measure voltages on your oscilloscope. Although you might be able to count tick marks to measure voltage, there is an easier way.
+
+
 ## Going Further
 Sparkfun has an excellent tutorial on getting started with oscilloscopes [here.](https://learn.sparkfun.com/tutorials/how-to-use-an-oscilloscope/all)
