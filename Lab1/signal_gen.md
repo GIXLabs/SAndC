@@ -26,6 +26,6 @@ From the main menu, use the buttons on the right side of the display to select "
 ![Freqency Adjustment](/assets/FGFreq.gif)
 
 ## Adjusting Amplitude
-There are a few ways to adjust the amplitude (voltage) of the signal, but the most intuitive is to adjust the minimum and maximum voltage.
+There are a few ways to adjust the amplitude (voltage) of the signal, but the most intuitive is to adjust the minimum and maximum voltage. The difference between the maximum and minimum voltage is often referred to as the peak-to-peak voltage.
 
 ![Amplitude Adjustment](/assets/FGAmp.gif)
