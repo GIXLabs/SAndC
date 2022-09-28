@@ -1,3 +1,8 @@
+# Introduction
+In this lab, you will learn and practice using common test equipment used when making circuits. Many of the terms may not be fully defined and their relationship may not be clear yet, such as voltage, current, and resistance, but those will be covered in more detail in a future lab.
+
+Most of the test equipment is either on your desk or in the locked drawer on the north side of the desk (the one facing the Prototyping Labs). Talk to a TA or member of the Prototyping Labs staff to get a key. You will be asked for an ID in exchange for the key to make sure we get the key back when you are done.
+
 # Skills to Learn
 - [Using a Power Supply](power_supply.md)
 - [Using a Multimeter (DMM)](dmm.md)
@@ -18,3 +23,10 @@
     1. Count the number of positive peaks on the screen and explain why you get the number you get.
     1. Read and record the peak-to-peak amplitude and minimum voltage.
     1. Set the horizontal scale to 1 micro-sec per division and repeat the previous two steps.
+1. Repeat the previous step with the following settings:
+| Test Case | Waveform | Frequency | Peak to Peak Voltage | Vmin |
+| --- | --- | --- | --- | --- |
+| W1 | Square | 1.0 MHz | 0.5 V | -.25 V |
+| W2 | Sine | 1000 Hz | 1.5 V | 0.0V |
+| W3 | Ramp (50/50) | 200 kHz | 3.0 V | -1.5V |
+| W4 | Pulse: 5% on 95% off (duty) | 1 MHz | 3.0 V | 0.0 V |
