@@ -31,3 +31,21 @@ Most of the test equipment is either on your desk or in the locked drawer on the
 | W2 | Sine | 1000 Hz | 1.5 V | 0.0V |
 | W3 | Ramp (50/50) | 200 kHz | 3.0 V | -1.5V |
 | W4 | Pulse: 5% on 95% off (duty) | 1 MHz | 3.0 V | 0.0 V |
+
+# Frequently Asked Questions
+**Q: I have set up the signal generator and connected it to the oscilloscope, but the signal seems flat.**
+
+A: Please check if the output of the signal generator is ‘On’. There is a yellow button ‘On/Off’ on the signal generator. It will light up if the output is ‘On’.
+
+
+**Q: I have signal wave(s) shown on the oscilloscope, but how to I measure the voltage?**
+
+A: You need to add measurement on the screen of oscilloscope. See the [oscilloscope article.](oscope.md)
+
+**Q: The waveform on the oscilloscope looks correct, but the amplitude (voltage) is 2 times larger / half than the expectation.**
+
+A: This is usually caused by the ‘load’ setting on your signal generator does not match your actual circuit setting. You may need to switch the ‘load’ mode on the signal generator. See the [signal generator article for how to change the load.](signal_gen.md)
+
+**Q: I changed the ‘load’ setting on the signal generator, but the output does not change.**
+
+A: This is a counter-intuitive performance of the signal generator. Once you change the ‘load’ mode, the signal generator will double or half the voltage value. Please double-check the voltage setting every time you change the ‘load’ mode.
