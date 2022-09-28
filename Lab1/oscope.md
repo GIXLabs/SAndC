@@ -50,6 +50,9 @@ Please note that the black ground clip on the probe is connected to one side of 
 ## Measuring Voltage
 Frequently, you will want to know how to measure voltages on your oscilloscope. Although you might be able to count tick marks to measure voltage, there is an easier way.
 
+To measure voltage, you will need to add measurements through the "Measurement" button. After pressing the button, you should start by removing all of the current measurements. After that, scroll through the measurement options and add Max and Min. See the gif below for more details.
+
+![Measuring Voltage](/assets/OscMeasure.gif)
 
 ## Going Further
 Sparkfun has an excellent tutorial on getting started with oscilloscopes [here.](https://learn.sparkfun.com/tutorials/how-to-use-an-oscilloscope/all)
