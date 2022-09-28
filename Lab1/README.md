@@ -24,6 +24,7 @@ Most of the test equipment is either on your desk or in the locked drawer on the
     1. Read and record the peak-to-peak amplitude and minimum voltage.
     1. Set the horizontal scale to 1 micro-sec per division and repeat the previous two steps.
 1. Repeat the previous step with the following settings:
+
 | Test Case | Waveform | Frequency | Peak to Peak Voltage | Vmin |
 | --- | --- | --- | --- | --- |
 | W1 | Square | 1.0 MHz | 0.5 V | -.25 V |
