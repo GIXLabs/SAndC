@@ -11,7 +11,7 @@ Most of the test equipment is either on your desk or in the locked drawer on the
 
 # Assignment
 ## Power Supply and Multimeter
-1. Draw a diagram of the setup to [read DC voltage with a multimeter](/dmm.md/#measuring-voltage).
+1. Draw a diagram of the setup to [read DC voltage with a multimeter](dmm.md/#measuring-voltage).
 1. [Set your power supply](/power_supply.md) to 4.75 V and 1 A, then verify with your multimeter. Take a picture of your setup.
 1. Draw a diagram of the setup to [read DC current](/dmm.md/#measuring-current) with a multimeter.
 1. Measure the DC current through a 1k ohm resistor, with your power supply set to 4.75 V and 1 A. Use the A plug on the multimeter, which is the one on the far left side. Take a picture of your results.
