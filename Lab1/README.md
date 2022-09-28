@@ -19,9 +19,9 @@ Most of the test equipment is either on your desk or in the locked drawer on the
 
 ## Oscilloscope and Signal Generator
 1. [Attach two 10X probes](oscope.md/#connecting-probes) to your oscilloscope and [calibrate them](oscope.md/#calibrating-oscilloscope-probes). [Adjust the vertical position](oscope.md/#adjusting-the-display) of each signal so that they overlap. Take a picture of the waveform with your uncalibrated probes on the oscilloscope, then another once you have calibrated them.
-1. On the signal generator, [set the load to "High Z,"](signal_gen.md/#changing-mode-(high-z)) and [generate a ramp waveform (50/50)](signal_gen.md/#changing-the-waveform), with [peak-to-peak amplitude of 2.5 V, minimum voltage at 0.0V](signal_gen.md/#adjusting-amplitude-(vmax-and-vmin)), and [frequency set to 100kHz](signal_gen.md/#adjusting-frequency). Remember to turn the signal on. On the oscilloscope set the horizontal scale to 4 micro-sec per capture. Take a screenshot of the wave on your oscilloscope.
+1. On the signal generator, [set the load to "High Z,"](signal_gen.md/#changing-mode) and [generate a ramp waveform (50/50)](signal_gen.md/#changing-the-waveform), with [peak-to-peak amplitude of 2.5 V, minimum voltage at 0.0V](signal_gen.md/#adjusting-amplitude), and [frequency set to 100kHz](signal_gen.md/#adjusting-frequency). Remember to turn the signal on. On the oscilloscope set the horizontal scale to 4 micro-sec per capture. Take a screenshot of the wave on your oscilloscope.
     1. Count the number of positive peaks on the screen and explain why you get the number you get.
-    1. [Read and record the peak-to-peak amplitude and minimum voltage.](oscope.md/measuring-voltage)
+    1. [Read and record the peak-to-peak amplitude and minimum voltage.](oscope.md/#measuring-voltage)
     1. Set the horizontal scale to 1 micro-sec per division and repeat the previous two steps.
 1. Repeat the previous steps for each setting in the table below. Note: you just did W0 in the previous steps.
 

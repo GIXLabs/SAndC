@@ -10,7 +10,7 @@ With a BNC to clip connector, connect one end to the Channel Output on the Signa
 ![BNC to Clip](/assets/FGBNCClip.gif)
 
 
-## Changing Mode (high Z)
+## Changing Mode
 To use the signal generator with an oscilloscope, you should set the Load Impedance to "High Z" mode. Make sure that the input on your oscilloscope is also set to 1X when connected with the signal generator. You can also set the load to whatever your load is using the number pad.
 
 ![High Z Mode](/assets/FGHighZ.gif)
@@ -25,7 +25,7 @@ From the main menu, use the buttons on the right side of the display to select "
 
 ![Freqency Adjustment](/assets/FGFreq.gif)
 
-## Adjusting Amplitude (Vmax and Vmin)
+## Adjusting Amplitude
 There are a few ways to adjust the amplitude (voltage) of the signal, but the most intuitive is to adjust the minimum and maximum voltage.
 
 ![Amplitude Adjustment](/assets/FGAmp.gif)
