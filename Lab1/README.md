@@ -11,22 +11,23 @@ Most of the test equipment is either on your desk or in the locked drawer on the
 
 # Assignment
 ## Power Supply and Multimeter
-1. Draw a diagram of the setup to read DC voltage with a multimeter.
-1. Set your power supply to 4.75 V and 1 A, then verify with your multimeter. Take a picture of your setup.
-1. Draw a diagram of the setup to read DC current with a multimeter.
+1. Draw a diagram of the setup to [read DC voltage with a multimeter](/dmm.md/#measuring-voltage).
+1. [Set your power supply](/power_supply.md) to 4.75 V and 1 A, then verify with your multimeter. Take a picture of your setup.
+1. Draw a diagram of the setup to [read DC current](/dmm.md/#measuring-current) with a multimeter.
 1. Measure the DC current through a 1k ohm resistor, with your power supply set to 4.75 V and 1 A. Use the A plug on the multimeter, which is the one on the far left side. Take a picture of your results.
   1. If the result is less than 400 mA, reconnect your probe to the mA/uA port and record again. Compare this result with the previous one.
 
-## Oscilloscope and Function Generator
-1. Attach two 10X probes to your oscilloscope and calibrate them. Take a picture of your uncalibrated probes on the oscilloscope, then another once you have calibrated them.
-1. With the load set to "High Z," generate a ramp wave shape, with peak-to-peak amplitude of 2.5 V, minimum voltage at 0.0V, and frequency set to 100kHz. On the oscilloscope set the horizontal scale to 4 micro-sec per capture. Take a screenshot of the wave on your oscilloscope.
+## Oscilloscope and Signal Generator
+1. [Attach two 10X probes](/oscope.md/#connecting-probes) to your oscilloscope and [calibrate them](/oscope.md/#calibrating-oscilloscope-probes). [Adjust the vertical position](/oscope.md/#adjusting-the-display) of each signal so that they overlap. Take a picture of the waveform with your uncalibrated probes on the oscilloscope, then another once you have calibrated them.
+1. On the signal generator, [set the load to "High Z,"](/signal_gen.md/#changing-mode-(high-z)) and [generate a ramp waveform (50/50)](/signal_gen.md/#changing-the-waveform), with [peak-to-peak amplitude of 2.5 V, minimum voltage at 0.0V](/signal_gen.md/#adjusting-amplitude-(vmax-and-vmin)), and [frequency set to 100kHz](/signal_gen.md/#adjusting-frequency). Remember to turn the signal on. On the oscilloscope set the horizontal scale to 4 micro-sec per capture. Take a screenshot of the wave on your oscilloscope.
     1. Count the number of positive peaks on the screen and explain why you get the number you get.
-    1. Read and record the peak-to-peak amplitude and minimum voltage.
+    1. [Read and record the peak-to-peak amplitude and minimum voltage.](/oscope.md/measuring-voltage)
     1. Set the horizontal scale to 1 micro-sec per division and repeat the previous two steps.
-1. Repeat the previous step with the following settings:
+1. Repeat the previous steps for each setting in the table below. Note: you just did W0 in the previous steps.
 
 | Test Case | Waveform | Frequency | Peak to Peak Voltage | Vmin |
 | --- | --- | --- | --- | --- |
+| W0 | Ramp (50/50)| 100 kHz | 2.5 V | 0.0 V |
 | W1 | Square | 1.0 MHz | 0.5 V | -.25 V |
 | W2 | Sine | 1000 Hz | 1.5 V | 0.0V |
 | W3 | Ramp (50/50) | 200 kHz | 3.0 V | -1.5V |
