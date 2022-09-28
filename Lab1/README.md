@@ -3,6 +3,8 @@ In this lab, you will learn and practice using common test equipment used when m
 
 Most of the test equipment is either on your desk or in the locked drawer on the north side of the desk (the one facing the Prototyping Labs). Talk to a TA or member of the Prototyping Labs staff to get a key. You will be asked for an ID in exchange for the key to make sure we get the key back when you are done.
 
+We recommend you start at the Assignment section. As you walk through, you will encounter tasks you do not know how to do yet. Where appropriate, we have linked the correct section from the Skills to Learn articles, but you may have to dig through the Skills to Learn articles to find what you are looking for.
+
 # Skills to Learn
 - [Using a Power Supply](power_supply.md)
 - [Using a Multimeter (DMM)](dmm.md)
@@ -12,19 +14,22 @@ Most of the test equipment is either on your desk or in the locked drawer on the
 # Assignment
 ## Power Supply and Multimeter
 1. Draw a diagram of the setup to [read DC voltage with a multimeter](dmm.md/#measuring-voltage).
-1. [Set your power supply](power_supply.md) to 4.75 V and 1 A, then verify with your multimeter. Take a picture of your setup.
+1. [Set your power supply](power_supply.md) to 4.75 V and 1 A, then verify with your multimeter.
+    1. Take a picture of your setup.
 1. Draw a diagram of the setup to [read DC current](dmm.md/#measuring-current) with a multimeter.
-1. Measure the DC current through a 1k ohm resistor, with your power supply set to 4.75 V and 1 A. Use the A plug on the multimeter, which is the one on the far left side. Take a picture of your results.
-  1. If the result is less than 400 mA, reconnect your probe to the mA/uA port and record again. Compare this result with the previous one.
+1. Measure the DC current through a 1k ohm resistor, with your power supply set to 4.75 V and 1 A. Use the A plug on the multimeter, which is the one on the far left side.
+    1. Take a picture of your results.
+    1. If the result is less than 400 mA, reconnect your probe to the mA/uA port and record again. Compare this result with the previous one.
 
 ## Oscilloscope and Signal Generator
 1. [Attach two 10X probes](oscope.md/#connecting-probes) to your oscilloscope and [calibrate them](oscope.md/#calibrating-oscilloscope-probes). [Adjust the vertical position](oscope.md/#adjusting-the-display) of each signal so that they overlap.
     1. Take a picture of the waveform with your uncalibrated probes on the oscilloscope, then another once you have calibrated them. Note: you may want to leave labels in your pictures so you can reference them later in your write-up.
-1. [Set your signal generator and oscilloscope up with a 47 Ohm resistor.](oscope.md/#investigating-a-circuit) On the signal generator, [set the load to "High Z,"](signal_gen.md/#changing-mode) and [generate a ramp waveform (50/50)](signal_gen.md/#changing-the-waveform), with [peak-to-peak amplitude of 2.5 V, minimum voltage at 0.0V](signal_gen.md/#adjusting-amplitude), and [frequency set to 100kHz](signal_gen.md/#adjusting-frequency). Remember to turn the signal on. On the oscilloscope set the horizontal scale to 4 micro-sec per capture. Take a screenshot of the wave on your oscilloscope.
+1. [Set your signal generator and oscilloscope up across a 47 Ohm resistor.](oscope.md/#investigating-a-circuit) On the signal generator, [set the load to "High Z,"](signal_gen.md/#changing-mode) and [generate a ramp waveform (50/50)](signal_gen.md/#changing-the-waveform), with [peak-to-peak amplitude of 2.5 V, minimum voltage at 0.0V](signal_gen.md/#adjusting-amplitude), and [frequency set to 100kHz](signal_gen.md/#adjusting-frequency). Remember to turn the signal on. On the oscilloscope set the horizontal scale to 4 micro-sec per capture.
+    1. Take a screenshot of the wave on your oscilloscope.
     1. Count the number of positive peaks on the screen and explain why you get the number you get.
     1. [Read and record the peak-to-peak amplitude and minimum voltage.](oscope.md/#measuring-voltage)
     1. Set the horizontal scale to 1 micro-sec per division and repeat the previous two steps.
-1. Repeat the previous exercise for each setting in the table below. Note: you just did W0 in the previous steps.
+1. Repeat the previous exercise for each setting in the table below. Note: you just did W0 in the previous step.
 
 | Test Case | Waveform | Frequency | Peak to Peak Voltage | Vmin |
 | --- | --- | --- | --- | --- |
@@ -35,7 +40,7 @@ Most of the test equipment is either on your desk or in the locked drawer on the
 | W4 | Pulse: 5% on 95% off (duty) | 1 MHz | 3.0 V | 0.0 V |
 
 # Write-Up
-The write-up for this lab should use the following outline:
+The write-up (done outside of lab time) for this lab should use the following format:
 
 1. **Title page** (see template in the folder ‘Requirement of Lab Reports’)
 1. **Introduction:** ⅓ of a page describing the purpose and goals of this lab in your own words. Do not reproduce any material from this assignment document in any section of your write-up.
