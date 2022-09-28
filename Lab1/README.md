@@ -40,11 +40,11 @@ A: Please check if the output of the signal generator is ‘On’. There is a ye
 
 **Q: I have signal wave(s) shown on the oscilloscope, but how to I measure the voltage?**
 
-A: You need to add measurement on the screen of oscilloscope. See the [oscilloscope article.](oscope.md)
+A: You need to add measurement on the screen of oscilloscope. See the [oscilloscope article.](oscope.md/#measuring-voltage)
 
 **Q: The waveform on the oscilloscope looks correct, but the amplitude (voltage) is 2 times larger / half than the expectation.**
 
-A: This is usually caused by the ‘load’ setting on your signal generator does not match your actual circuit setting. You may need to switch the ‘load’ mode on the signal generator. See the [signal generator article for how to change the load.](signal_gen.md)
+A: This is usually caused by the ‘load’ setting on your signal generator does not match your actual circuit setting. You may need to switch the ‘load’ mode on the signal generator. See the [signal generator article](signal_gen.md)  for how to change the load.
 
 **Q: I changed the ‘load’ setting on the signal generator, but the output does not change.**
 
