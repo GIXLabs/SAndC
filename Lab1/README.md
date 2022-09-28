@@ -19,7 +19,7 @@ Most of the test equipment is either on your desk or in the locked drawer on the
 
 ## Oscilloscope and Signal Generator
 1. [Attach two 10X probes](oscope.md/#connecting-probes) to your oscilloscope and [calibrate them](oscope.md/#calibrating-oscilloscope-probes). [Adjust the vertical position](oscope.md/#adjusting-the-display) of each signal so that they overlap.
-  1. Take a picture of the waveform with your uncalibrated probes on the oscilloscope, then another once you have calibrated them.
+    1. Take a picture of the waveform with your uncalibrated probes on the oscilloscope, then another once you have calibrated them. Note: you may want to leave labels in your pictures so you can reference them later in your write-up.
 1. [Set your signal generator and oscilloscope up with a 47 Ohm resistor.](oscope.md/#investigating-a-circuit) On the signal generator, [set the load to "High Z,"](signal_gen.md/#changing-mode) and [generate a ramp waveform (50/50)](signal_gen.md/#changing-the-waveform), with [peak-to-peak amplitude of 2.5 V, minimum voltage at 0.0V](signal_gen.md/#adjusting-amplitude), and [frequency set to 100kHz](signal_gen.md/#adjusting-frequency). Remember to turn the signal on. On the oscilloscope set the horizontal scale to 4 micro-sec per capture. Take a screenshot of the wave on your oscilloscope.
     1. Count the number of positive peaks on the screen and explain why you get the number you get.
     1. [Read and record the peak-to-peak amplitude and minimum voltage.](oscope.md/#measuring-voltage)
@@ -33,6 +33,14 @@ Most of the test equipment is either on your desk or in the locked drawer on the
 | W2 | Sine | 1000 Hz | 1.5 V | 0.0V |
 | W3 | Ramp (50/50) | 200 kHz | 3.0 V | -1.5V |
 | W4 | Pulse: 5% on 95% off (duty) | 1 MHz | 3.0 V | 0.0 V |
+
+# Write-Up
+The write-up for this lab should use the following outline:
+
+1. **Title page** (see template in the folder ‘Requirement of Lab Reports’)
+1. **Introduction:** ⅓ of a page describing the purpose and goals of this lab in your own words. Do not reproduce any material from this assignment document in any section of your write-up.
+1. **Results:** Each line in the Assignment section indicates some data which must appear in your report. Separate each result or related set of results with a section header indicating what it is. For any numerical data or graph describe the meaning of the data.
+1. **Discussion and Conclusions:** In ½ to 1 page, summarize the key learning points from the Results above.
 
 # Frequently Asked Questions
 **Q: I have set up the signal generator and connected it to the oscilloscope, but the signal seems flat.**
