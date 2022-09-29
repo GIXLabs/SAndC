@@ -3,19 +3,21 @@ In this lab, you will learn and practice using common test equipment used when m
 
 Most of the test equipment is either on your desk or in the locked drawer on the north side of the desk (the one facing the Prototyping Labs). Talk to a TA or member of the Prototyping Labs staff to get a key. You will be asked for an ID in exchange for the key to make sure we get the key back when you are done.
 
-We recommend you start at the Assignment section. As you walk through, you will encounter tasks you do not know how to do yet. Where appropriate, we have linked the correct section from the Skills to Learn articles, but you may have to dig through the Skills to Learn articles to find what you are looking for.
+We recommend you start at the Assignment section. As you walk through, you will encounter tasks you do not know how to do yet. Where appropriate, we have linked the correct section from the Skills to Learn articles, but you may have to dig through the articles to find what you are looking for.
+
+For those who have not done any electronics work before, this can be a stressful lab, but if you take it one line at a time you will be ok. Ask for help from the TAs if you get stuck.
 
 # Skills to Learn
-- [Using a Power Supply](power_supply.md)
-- [Using a Multimeter (DMM)](dmm.md)
-- [Using a Signal Generator](signal_gen.md)
-- [Using an Oscilloscope](oscope.md)
+- [How to Use a Power Supply](power_supply.md)
+- [How to Use a Multimeter (DMM)](dmm.md)
+- [How to Use a Signal Generator](signal_gen.md)
+- [How to Use an Oscilloscope](oscope.md)
 
 # Assignment
 ## Power Supply and Multimeter
-1. Draw a diagram of the setup to [read DC voltage with a multimeter](dmm.md/#measuring-voltage).
+1. Draw a diagram of the setup to [read DC voltage with a multimeter](dmm.md/#measuring-voltage). The diagram should show which components are used, with lines showing how they are connected.
 1. [Set your power supply](power_supply.md) to 4.75 V and 1 A, then verify with your multimeter.
-    1. Take a picture of your setup. Note: you may want to leave labels, such as sticky notes, in your pictures so you can reference them later in your write-up.
+    1. Take a picture of your setup with the measured voltage. Note: you may want to leave labels, such as sticky notes, in your pictures so you can reference them later in your write-up.
 1. Draw a diagram of the setup to [read DC current](dmm.md/#measuring-current) with a multimeter.
 1. Measure the DC current through a 1k ohm resistor, with your power supply set to 4.75 V and 1 A. Use the A plug on the multimeter, which is the one on the far left side.
     1. Take a picture of your results.
@@ -34,7 +36,7 @@ We recommend you start at the Assignment section. As you walk through, you will 
     1. Count the number of positive peaks on the screen and explain why you get the number you get.
     1. [Read and record the peak-to-peak amplitude and minimum voltage.](oscope.md/#measuring-voltage)
     1. Set the horizontal scale to 1 micro-sec per division and repeat the previous two steps.
-1. Repeat the previous exercise for each setting in the table below. Note: you just did W0 in the previous step.
+    1. Repeat the previous steps for each setting in the table below. Note: you just did W0 in the previous step.
 
 | Test Case | Waveform | Frequency | Peak to Peak Voltage | Vmin |
 | --- | --- | --- | --- | --- |
