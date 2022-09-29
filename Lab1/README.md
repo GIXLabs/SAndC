@@ -31,11 +31,11 @@ For those who have not done any electronics work before, this can be a stressful
     1. Count the number of positive peaks on the screen and explain why you get the number you get.
     1. [Measure the peak-to-peak amplitude and minimum voltage.](oscope.md/#measuring-voltage)
     1. Set the horizontal scale to 1 microsecond and repeat the preceding 3 steps.
-1. For the last setup [connect your signal generator and oscilloscope up across a 47 Ohm resistor.](oscope.md/#investigating-a-circuit) Remember to change the probe input back to 10X. On the signal generator, [set the load to 47 Ohms](signal_gen.md/#changing-mode) and [generate a ramp waveform (50/50)](signal_gen.md/#changing-the-waveform), with [peak-to-peak amplitude of 2.5 V, minimum voltage at 0.0V](signal_gen.md/#adjusting-amplitude), and [frequency set to 100kHz](signal_gen.md/#adjusting-frequency). Remember to turn the signal on. On the oscilloscope set the horizontal scale to 4 micro-sec per capture.
+1. For the last setup [connect your signal generator and oscilloscope up across a 47 Ohm resistor.](oscope.md/#investigating-a-circuit) Remember to change the probe input back to 10X. On the signal generator, [set the load to 47 Ohms](signal_gen.md/#changing-mode) and [generate a ramp waveform (50/50)](signal_gen.md/#changing-the-waveform), with [peak-to-peak amplitude of 2.5 V, minimum voltage at 0.0V](signal_gen.md/#adjusting-amplitude), and [frequency set to 100kHz](signal_gen.md/#adjusting-frequency). Remember to turn the signal on. On the oscilloscope set the horizontal scale to 4 microseconds (us) per division.
     1. Take a screenshot of the wave on your oscilloscope.
     1. Count the number of positive peaks on the screen and explain why you get the number you get.
     1. [Read and record the peak-to-peak amplitude and minimum voltage.](oscope.md/#measuring-voltage)
-    1. Set the horizontal scale to 1 micro-sec per division and repeat the previous two steps.
+    1. Set the horizontal scale to 1 microsecond per division and repeat the previous two steps.
     1. Repeat the previous steps for each setting in the table below. Note: you just did W0 in the previous step.
 
 | Test Case | Waveform | Frequency | Peak to Peak Voltage | Vmin |
