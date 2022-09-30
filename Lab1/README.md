@@ -14,7 +14,7 @@ For those who have not done any electronics work before, this can be a stressful
 - [How to Use an Oscilloscope](oscope.md)
 
 # Assignment
-Note: the lab write-up on Canvas is the ultimate source of truth for what should go into your report. Below are all of the items marked with a ">" in the original write-up, but please [submit and issue](https://github.com/GIXLabs/SAndC/issues) if you find and discrepancies.
+Note: the lab write-up on Canvas is the ultimate source of truth for what should go into your report. Below are all of the items marked with a ">" in the original write-up, but please [submit and issue](https://github.com/GIXLabs/SAndC/issues) if you find an discrepancies.
 
 ## Power Supply and Multimeter
 1. Draw a diagram of the setup to [read DC voltage with a multimeter](dmm.md/#measuring-voltage). The diagram should show which components are used, with lines showing how they are connected.
