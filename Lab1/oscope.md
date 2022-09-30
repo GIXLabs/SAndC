@@ -11,7 +11,7 @@ Once the oscilloscope is on, you should connect your probe(s) to the BNC connect
 
 ![Attaching BNC](/assets/OscBNC.gif)
 
-Many probes come with an option to reduce the voltage of the incoming signal to reduce the chance of damaging the oscilloscope. To activate that feature, slide the switch on the probe to "10X."
+Many probes come with an option to reduce the voltage of the incoming signal to reduce the chance of damaging the oscilloscope. To activate that feature, slide the switch on the probe to "10X." If your probe does not have a 10X switch, it is likely a 10X probe by default.
 
 ![Sliding 10X](/assets/Osc10XProbe.gif)
 
