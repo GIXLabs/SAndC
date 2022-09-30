@@ -16,18 +16,20 @@ For those who have not done any electronics work before, this can be a stressful
 # Assignment
 Note: the lab write-up on Canvas is the ultimate source of truth for what should go into your report. Below are all of the items marked with a ">" in the original write-up, but please [submit and issue](https://github.com/GIXLabs/SAndC/issues) if you find an discrepancies.
 
+The corresponding assignment in the original document will be referenced in parentheses in line with this write-up.
+
 ## Power Supply and Multimeter
-1. Draw a diagram of the setup to [read DC voltage with a multimeter](dmm.md/#measuring-voltage). The diagram should show which components are used, with lines showing how they are connected.
+1. Draw a diagram of the setup to [read DC voltage with a multimeter](dmm.md/#measuring-voltage)(**DC Voltage: 5**). The diagram should show which components are used, with lines showing how they are connected.
 1. [Set your power supply](power_supply.md) to 4.75 V and 1 A, then verify with your multimeter.
-    1. Take a picture of your setup with the measured voltage. Note: you may want to leave labels, such as sticky notes, in your pictures so you can reference them later in your write-up.
-1. Draw a diagram of the setup to [read DC current](dmm.md/#measuring-current) with a multimeter.
+    1. Take a picture of your setup with the measured voltage (**DC Voltage: 6**). Note: you may want to leave labels, such as sticky notes, in your pictures so you can reference them later in your write-up.
+1. Draw a diagram of the setup to [read DC current](dmm.md/#measuring-current) with a multimeter (**DC Current: 9**).
 1. Measure the DC current through a 1k ohm resistor, with your power supply set to 4.75 V and 1 A. Use the A plug on the multimeter, which is the one on the far left side.
-    1. Take a picture of your results.
-    1. If the result is less than 400 mA, reconnect your probe to the mA/uA port and record again. Compare this result with the previous one.
+    1. Take a picture of your results (**DC Current: 10**).
+    1. If the result is less than 400 mA, reconnect your probe to the mA/uA port and record again. Compare this result with the previous one (**DC Current: 11**).
 
 ## Oscilloscope and Signal Generator
 1. [Attach two 10X probes](oscope.md/#connecting-probes) to your oscilloscope and [calibrate them](oscope.md/#calibrating-oscilloscope-probes). [Adjust the vertical position](oscope.md/#adjusting-the-display) of each signal so that they overlap. Both waves should fill the screen and show exactly one cycle.
-    1. Take a picture of the waveform with your uncalibrated probes on the oscilloscope, then another once you have calibrated them.
+    1. Take a picture of the waveform with your uncalibrated probes on the oscilloscope, then another once you have calibrated them (**Oscilloscope - Probe Setup: 9 and 11**).
 1. For the next setup, [connect the signal generator and oscilloscope with a BNC to BNC connector.](signal_gen.md/#setting-up-with-bnc-to-bnc-cables) You will need to change the input on the oscilloscope back to 1X. Set the signal generator to [produce a ramp waveform](signal_gen.md/#changing-the-waveform) at [100 kHz](signal_gen.md/#adjusting-frequency), [2.5 V peak-to-peak amplitude](signal_gen.md/#adjusting-amplitude) (difference between Vmax and Vmin), and a minimum voltage of 0.0 V. Visualize the signal using your oscilloscope with the [horizontal scale](oscope.md/#adjusting-the-display) set to 4 microseconds (us).
     1. Take a picture of the waveform.
     1. Count the number of positive peaks on the screen and explain why you get the number you get.
