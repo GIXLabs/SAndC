@@ -1,6 +1,8 @@
 # Ohm's Law
 
-Ohm's law states that the current across a circuit is directly related to its voltage drop and total equivalent resistance. From this, we get the equation:
+Ohm's law states that the current across any portion of a circuit is directly related to its voltage drop and total equivalent resistance. From this, we get the equation:
 
 V = I / R
+
+[![Link to Ohm's law video](/assets/general_knowledge/ohms_law.png)](https://www.youtube.com/watch?v=HsLLq6Rm5tU)
 

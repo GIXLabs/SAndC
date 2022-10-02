@@ -31,7 +31,7 @@ In a series circuit, the current throughout each resistor is the same and the vo
 The current across each resistor is constant and follows Ohm's law. I = V/R<sub>equivalent</sub> = 5/600 = .00833A or 8.33mA. 
 
 The voltage drop across each resistor is proportional to its value compared to the total equivalent resistance.
-V<sub>resistor</sub> = V<sub>total</sub> * (R<sub>resistor</sub>/R<sub>equivalent<sub>)
+V<sub>resistor</sub> = V<sub>total</sub> * (R<sub>resistor</sub>/R<sub>equivalent</sub>)
 Voltage drop across R<sub>1</sub> = 5 * (100 / 600) = 0.83V.
 Voltage drop across R<sub>2</sub> = 5 * (200 / 600) = 1.67V.
 Voltage drop across R<sub>3</sub> = 5 * (300 / 600) = 2.5V.
@@ -50,12 +50,30 @@ R<sub>equivalent = 1 / 0.0183 = 54.54Ω.
 The total current I<sub>Total</sub> entering into the parallel resistor circuit follows Ohm's law. I<sub>Total</sub> = V/R<sub>equivalent</equivalent> = 5/54.54 = .0917A or 91.7mA. 
 
 The current flowing through each resistor is not constant but again we can use Ohm's law to find I<sub>R1</sub>, I<sub>R2</sub>, and I<sub>R3</sub>.
-I<sub>R1</sub> = V/R<sub>1<sub> = 5/100 = .05A
-I<sub>R2</sub> = V/R<sub>2<sub> = 5/200 = .025A
-I<sub>R3</sub> = V/R<sub>3<sub> = 5/300 = .0167A
+I<sub>R1</sub> = V/R<sub>1</sub> = 5/100 = .05A
+I<sub>R2</sub> = V/R<sub>2</sub> = 5/200 = .025A
+I<sub>R3</sub> = V/R<sub>3</sub> = 5/300 = .0167A
 
 We could have also gotten to I<sub>Total</sub> by summing I<sub>R1</sub>, I<sub>R2</sub>, and I<sub>R3</sub>. .05+.025+.0167 = .0917A. 
 
 ### Series-Parallel
+
+When working with a mix of series and parallel resistors, we find the equivalent resistance of each subsection of the circuit in order to create a simplified abstraction of it. In the example above, R2 and R3 are in parallel. They are connected in series with R1. We will find the equivalent resistance of R2 and R3 and then imagine that that new resistor value is a single resistor in series with R1. 
+
+1/R<sub>equiv</sub> = 1/R2 + 1/R3 = 1/200 + 1/300 = .00833
+R<sub>equiv</sub> = 1/.00833 = 120Ω.
+
+So now we have R<sub>1</sub> and R<sub>equiv</sub> in series. R<sub>Total</sub> = R<sub>1</sub> + R<sub>equiv</sub> = 100 + 120 = 220Ω.
+
+The current through R1 and into the parallel resistors is I = V/R<sub>Total</sub> = 5/220 = .0227A or 22.7mA.
+We can calculate the voltage drop across R1 using Ohm's law: V<sub>R1</sub> = I*R<sub>1</sub> = .0227 * 100 = 2.27V.
+We could also calculate it as a proportion of total resistance: V<sub>R1</sub> = V<sub>Total</sub> * R<sub>1</sub>/R<sub>Total</sub> = 5 * 100/220 = 2.27V.
+
+The voltage drop will be the same across R2 and R3. V<sub>equiv</sub> = V<sub>Total</sub> * R<sub>equiv</sub>/R<sub>Total</sub> = 5 * 120/220 = 2.73V.
+The current through each resistor can be calculated via Ohm's law.
+I<sub>R2</sub> = V<sub>equiv</sub> / R<sub>2</sub> = 2.73/200 = .0136A.
+I<sub>R3</sub> = V<sub>equiv</sub> / R<sub>2</sub> = 2.73/300 = .0091A.
+
+Just for posterity's sake we can double check that .0136 + .0091 = .0227A which was the current flowing into the node.
 
 
