@@ -5,3 +5,4 @@ In addition to assignments, it hosts some how to content on using electronics te
 
 ## Table of Contents
  - Lab 1: [Instrument Familiarization](Lab1/README.md)
+ - Lab 2: [DC Circuits and Voltage Dividers Lab](Lab2/README.md)
