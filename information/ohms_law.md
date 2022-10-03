@@ -7,4 +7,3 @@ V = I / R
 Check out the video below for further explanation:
 
 [![Link to Ohm's law video](/assets/general_knowledge/ohms_law.png)](https://www.youtube.com/watch?v=HsLLq6Rm5tU)
-
