@@ -126,7 +126,7 @@ Voltage dividers are an important and useful circuit to scale a voltage (signal)
 
 ![DivLoad2](/assets/Lab2-2.jpg)
 
-    - > Measure the voltage
+    - :pencil2: Measure the voltage
 
 ![DivLoad3](/assets/Lab2-18.jpg)
 
