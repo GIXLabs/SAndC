@@ -1,5 +1,5 @@
 # Introduction
-In this lab we will be exploring [Ohm's Law](Lab2/information/ohms_law.md), which specifies the relationship between voltage (V), current (I), and resistance (R).
+In this lab we will be exploring [Ohm's Law](information/ohms_law.md), which specifies the relationship between voltage (V), current (I), and resistance (R).
 V = IR
 
 
