@@ -123,9 +123,7 @@ Voltage dividers are an important and useful circuit to scale a voltage (signal)
 
 5. [Measure current](/Lab1/dmm.md#measuring-current) in the load resistor and [voltage](/Lab1/dmm.md#measuring-voltage) across the load resistor.
     - ✏️ Measure the current
-
-![DivLoad2](/assets/Lab2-2.jpg)
-
+    - ![DivLoad2](/assets/Lab2-2.jpg)
     - ✏️ Measure the voltage
 
 ![DivLoad3](/assets/Lab2-18.jpg)
