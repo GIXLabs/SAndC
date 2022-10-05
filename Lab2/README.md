@@ -19,7 +19,7 @@ V = IR
 1. Set the DMM to measure resistance and measure the resistance of your 1000 Ohm resistor (may show up as 1k on multimeter).
 2. ✏️ Compare measured resistance with “1000 Ohms”.    
     - ✏️ What is the percentage of error? (Tip: it is better to always check the resistance of a resistor before using it.)
-3. Set up the [power supply](/Lab1/dmm.md#power_supply) for +10 V, connect 1000 Ohm resistor across power supply.
+3. Set up the [power supply](/Lab1/power_supply.md) for +10 V, connect 1000 Ohm resistor across power supply.
 4. [Set DMM to Voltage mode](/Lab1/dmm.md#measuring-voltage), and verify +10V DC across 1K Ohm resistor.
 
 ![VerifyVoltage](/assets/Lab2-16.jpg)
@@ -30,14 +30,14 @@ V = IR
     - Connect the red lead (A) of DMM to the resistor
     - Connect the black lead (COM) of DMM to power supply GND
 
-![VerifyCurrent](/assets/Lab2-15.jpg)
+- ![VerifyCurrent](/assets/Lab2-15.jpg)
 
-![DivLoad3](/assets/Lab2-24.png)
+- ![DivLoad3](/assets/Lab2-24.png)
 
     - ✏️ Diagram your circuit (without the DMM)
     - ✏️ Record the Current reading and indicate your measured current with a directional arrow on the circuit.
     - ✏️ Compare the reading to expected current from [Ohm’s Law]. What is the current error if you use the measured vs specified (1000 Ohm) resistance?
-7. [Change the voltage](/Lab1/dmm.md#power_supply) to {5.0V, 2.5V, 0.2V}
+7. [Change the voltage](/Lab1/power_supply.md#voltage) to {5.0V, 2.5V, 0.2V}
 8. ✏️ Record the current in each case and graph voltage (Y axis) vs. Current (X axis). Label your graph with units.
 9. ✏️ Fit a line to your data and compute its slope. Compare with 1000 Ohms.
 
@@ -45,9 +45,9 @@ V = IR
 1. Connect two 1000 Ohm resistors in parallel (connect the two resistors at both ends) with alligator clips or simply twist them together, [connect them between +10V DC and GND](/Lab1/dmm.md#power_supply).
     - ✏️ What is power supply current readout?
 
-![ParCurrent3](/assets/Lab2-23.png)
+- ![ParCurrent3](/assets/Lab2-23.png)
 
-![ParCurrent1](/assets/Lab2-14.jpg)
+- ![ParCurrent1](/assets/Lab2-14.jpg)
 
 2. [Set up your DMM for current measurement](/Lab1/dmm.md#measuring-current). Plug red lead into “A” (see instructions/diagram, 1.5/1.6, above)
 3. ✏️ Measure the current between the power supply ground and the pair of resistors (i.e. total current of both resistors).  
