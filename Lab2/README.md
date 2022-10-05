@@ -1,5 +1,5 @@
 # Introduction
-In this lab we will be exploring [Ohm's Law](https://youtu.be/8jB6hDUqN0Y?t=161), which specifies the relationship between voltage (V), current (I), and resistance (R).
+In this lab we will be exploring [Ohm's Law](https://youtu.be/8jB6hDUqN0Y?t=162), which specifies the relationship between voltage (V), current (I), and resistance (R).
 V = IR
 
 # Skills to learn
@@ -13,9 +13,25 @@ V = IR
 3. ✏️ A 2K and a 500 Ohm resistor are connected in parallel across a 1.5V battery. Find the current draw from the battery and also the current in each resistor.
 4. ✏️ A 100 Ohm and 900 Ohm resistor are connected in series across a 9V battery. Find the voltage across the 100 Ohm resistor.
 
+## Supplies
+- Resistors: 2x 1000 Ohm and 1x 500 Ohm
+- Alligator clip leads
+- Breadboard
+- Handheld multimeter (yellow)
+
+## Write-Up
+The writeup for this lab should contain the following outline:
+1.	Title page (see template in the folder ‘Requirement of Lab Reports’ on Canvas)
+2.	Introduction 
+    - ⅓ of a page describing the purpose and goals of this lab in your own words. Do not reproduce any material from this assignment document in any section of your writeup.
+3.	Results
+    - First include the Pre-lab computations.   
+    - Then, each location in the instructions below marked with ✏️ indicates some data which must appear in your report. Separate each result or related set of results with a section header indicating what it is. For any numerical data or graph describe the meaning of the data.
+4.	Discussion and Conclusions:
+    - In ½ to 1 page, summarize the key learning points from the Results above. 
 
 # Assignment
-## 1. [Ohm’s Law](https://youtu.be/8jB6hDUqN0Y?t=161)
+## 1. [Ohm’s Law](https://youtu.be/8jB6hDUqN0Y?t=162)
 1. Set the DMM to measure resistance and measure the resistance of your 1000 Ohm resistor (may show up as 1k on multimeter).
 2. ✏️ Compare measured resistance with “1000 Ohms”.    
     - ✏️ What is the percentage of error? (Tip: it is better to always check the resistance of a resistor before using it.)
@@ -142,7 +158,6 @@ Voltage dividers are an important and useful circuit to scale a voltage (signal)
     ![LED1](/assets/Lab2-20.png)
 
 2. After you finish the circuit. **Ask a TA to check it.**
-
 
 # Frequently Asked Questions
 **Q: I hear the yellow DMM start beeping when I try to measure voltage or current.**
