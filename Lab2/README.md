@@ -9,9 +9,9 @@ V = IR
 
 # Pre-Lab Calculations
 1. ✏️ A 1000 Ohm resistor is connected to 20 V. Find the current through the resistor:
-2. ✏️ Two 2K Ohm resistors are connected in series. The current through them is 1.5mA. Find the voltage across the two and also across each one separately. 
-3. ✏️ A 2K and a 500 Ohm resistor are connected in parallel across a 1.5V battery. Find the current draw from the battery and also the current in each resistor. 
-4. ✏️ A 100 Ohm and 900 Ohm resistor are connected in series across a 9V battery. Find the voltage across the 100 Ohm resistor. 
+2. ✏️ Two 2K Ohm resistors are connected in series. The current through them is 1.5mA. Find the voltage across the two and also across each one separately.
+3. ✏️ A 2K and a 500 Ohm resistor are connected in parallel across a 1.5V battery. Find the current draw from the battery and also the current in each resistor.
+4. ✏️ A 100 Ohm and 900 Ohm resistor are connected in series across a 9V battery. Find the voltage across the 100 Ohm resistor.
 
 
 # Assignment
@@ -37,6 +37,7 @@ V = IR
     - ✏️ Diagram your circuit (without the DMM)
     - ✏️ Record the Current reading and indicate your measured current with a directional arrow on the circuit.
     - ✏️ Compare the reading to expected current from [Ohm’s Law]. What is the current error if you use the measured vs specified (1000 Ohm) resistance?
+
 7. [Change the voltage](/Lab1/power_supply.md#voltage) to {5.0V, 2.5V, 0.2V}
 8. ✏️ Record the current in each case and graph voltage (Y axis) vs. Current (X axis). Label your graph with units.
 9. ✏️ Fit a line to your data and compute its slope. Compare with 1000 Ohms.
