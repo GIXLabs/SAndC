@@ -5,10 +5,10 @@ V = IR
 
 # Skills to learn
 1. How to understand Ohm's law
-2. How to ditinguish series and parallel
+2. How to distinguish between series and parallel
 3. How to get started with Arduino
 
-## 1. [Ohm’s Law]
+## 1. [Ohm’s Law](information/ohms_law.md)
 1. Set the DMM to measure resistance and measure the resistance of your 1000 Ohm resistor.
 2. Compare measured resistance with “1000 Ohms”.    What is the percentage of error? (Tip: it is better to always check the resistance of a resistor before using it.)
 3. Set up the [power supply](/Lab1/dmm.md#power_supply) for +10 V, connect 1000 Ohm resistor across power supply.
