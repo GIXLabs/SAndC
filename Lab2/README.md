@@ -16,8 +16,9 @@ V = IR
 
 # Assignment
 ## 1. [Ohm’s Law](information/ohms_law.md)
-1. Set the DMM to measure resistance and measure the resistance of your 1000 Ohm resistor.
-2. Compare measured resistance with “1000 Ohms”.    What is the percentage of error? (Tip: it is better to always check the resistance of a resistor before using it.)
+1. Set the DMM to measure resistance and measure the resistance of your 1000 Ohm resistor (may show up as 1k on multimeter).
+2. > Compare measured resistance with “1000 Ohms”.    
+    - > What is the percentage of error? (Tip: it is better to always check the resistance of a resistor before using it.)
 3. Set up the [power supply](/Lab1/dmm.md#power_supply) for +10 V, connect 1000 Ohm resistor across power supply.
 4. [Set DMM to Voltage mode](/Lab1/dmm.md#measuring-voltage), and verify +10V DC across 1K Ohm resistor.
 
@@ -35,10 +36,10 @@ V = IR
 
     - > Diagram your circuit (without the DMM)
     - > Record the Current reading and indicate your measured current with a directional arrow on the circuit.
-    - > Compare the reading to expected current from [Ohm’s Law].  What is the current error if you use the measured vs specified (1000 Ohm) resistance?
+    - > Compare the reading to expected current from [Ohm’s Law]. What is the current error if you use the measured vs specified (1000 Ohm) resistance?
 7. [Change the voltage](/Lab1/dmm.md#power_supply) to {5.0V, 2.5V, 0.2V}
-8. Record the current in each case and graph voltage (Y axis) vs. Current (X axis).  Label your graph with units.
-9. Fit a line to your data and compute its slope.  Compare with 1000 Ohms.
+8. > Record the current in each case and graph voltage (Y axis) vs. Current (X axis). Label your graph with units.
+9. > Fit a line to your data and compute its slope. Compare with 1000 Ohms.
 
 ## 2. [Parallel](/Lab1/dmm.md#series_vs_parallel) Resistors
 1. Connect two 1000 Ohm resistors in parallel (connect the two resistors at both ends) with alligator clips or simply twist them together, [connect them between +10V DC and GND](/Lab1/dmm.md#power_supply).
@@ -48,8 +49,8 @@ V = IR
 
 ![ParCurrent1](/assets/Lab2-14.jpg)
 
-1. [Set up your DMM for current measurement](/Lab1/dmm.md#measuring-current). Plug red lead into “A” (see instructions/diagram, 1.5/1.6, above)
-2. Measure the current between the power supply ground and the pair of resistors (i.e. total current of both resistors).  
+2. [Set up your DMM for current measurement](/Lab1/dmm.md#measuring-current). Plug red lead into “A” (see instructions/diagram, 1.5/1.6, above)
+3. > Measure the current between the power supply ground and the pair of resistors (i.e. total current of both resistors).  
 ![ParCurrent2](/assets/Lab2-13.jpg)
 4. Reconnect resistors and DMM as necessary to measure voltage across the two resistors, and the current in each resistor separately.  
     - > Record your measurements.
@@ -57,14 +58,14 @@ V = IR
 
 ![ParVot](/assets/Lab2-12.jpg)
 
-5. Use Ohm’s law to find the equivalent resistance of the two resistors in parallel.
+5. > Use Ohm’s law to find the equivalent resistance of the two resistors in parallel.
 6. Disconnect the resistors from the power supply and use the DMM in Resistance mode to measure the resistance of the two resistors in parallel.
     - > Compare measured resistance with result from part 2.5
 
 ![ParRes](/assets/Lab2-11.jpg)
 
-7. Diagram the circuit and label all voltages and currents.
-8. Verify that each resistor follows [Ohm’s Law]. i.e. For each resistor, measure the voltage between the two ends and the current goes through it, then plug it into the formula.
+7. > Diagram the circuit and label all voltages and currents.
+8. > Verify that each resistor follows [Ohm’s Law]. i.e. For each resistor, measure the voltage between the two ends and the current goes through it, then plug it into the formula.
 
 ## 3. [Series](/Lab1/dmm.md#series_vs_parallel) Resistors
 1. Connect the 1000 Ohm and 500 Ohm resistors in series (connect only one end)
@@ -73,19 +74,19 @@ V = IR
 
 2. [Set your DMM to current mode](/Lab1/dmm.md#measuring-current) and plug the red lead to A accordingly.
 3. > Open the circuit at three points and measure the current at each gap:
-    - Power supply ground connection
+    - > Power supply ground connection
 
 ![SerCurrent1](/assets/Lab2-9.jpg)
 
-    - Connection between the two resistors
+    - > Connection between the two resistors
 
 ![SerCurrent2](/assets/Lab2-8.jpg)
 
-- [Power supply positive connection](/Lab1/dmm.md#power_supply)
+- > [Power supply positive connection](/Lab1/dmm.md#power_supply)
 
 ![SerCurrent3](/assets/Lab2-7.jpg)
 
-4. Use your DMM in Resistance mode to measure the resistance of the two series connected resistors.
+4. > Use your DMM in Resistance mode to measure the resistance of the two series connected resistors.
 
 ![SerRes](/assets/Lab2-6.jpg)
 
@@ -93,7 +94,7 @@ V = IR
     - > Verify that each resistor follows [Ohm's Law].
 
 ## 4. Voltage Dividers
-Voltage dividers are an important and very useful circuit to scale a voltage (signal) by a factor between 0 and 1.0.    The most famous application of voltage dividers is an audio volume control.
+Voltage dividers are an important and useful circuit to scale a voltage (signal) by a factor between 0 and 1.0. The most famous application of voltage dividers is an audio volume control.
 
 ![DivLoad5](/assets/Lab2-22.png)
 
@@ -131,7 +132,7 @@ Voltage dividers are an important and very useful circuit to scale a voltage (si
 
 6. Explain why this voltage divider does not follow the 4.3.2 voltage prediction now that a load resistor has been added
 
-## 6. Arduino – [Blink a LED](/Lab1/dmm.md#flashing_code)
+## 6. Arduino – [Blink a LED](/Lab2/flashing_code.md)
 1. Open the ‘SIK Guide‘ book of your Arduino Starter Kit. Go to page 21 and finish Circuit 1 – ‘Blinking a LED’
 
 ![LED1](/assets/Lab2-20.png)
