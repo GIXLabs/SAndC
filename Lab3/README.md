@@ -117,3 +117,17 @@ b. Use the signal generator with appropriate settings.  PWM frequency should be 
 	> Document your circuit design and how you chose the right resistor and capacitor.
 > Include a schematic diagram of your circuit design with each component marked with its value.
 > One photo of your circuit on the breadboard.
+
+# Frequently Asked Questions
+**Q: My circuit connection looks correct, but the LED does not light up as expected.**
+
+A: Unlike normal resistors, LEDs only allow current to flow in one direction, from the longer pin (positive) to the shorter pin (negative). You can simply switch the two pins of LED to see if they are reversed.
+
+**Q: In 3.2, the LED cannot fully dim, but it is also difficult to tell when the voltage drops 80%.**
+
+A: You may need to change the horizontal scale (time) to be larger on your oscilloscope so that it shows a longer time period on the screen which makes observations easier. You can also add a horizontal reference bar by pressing the ‘Cursors’ button and then using the knob to adjust the position.
+
+
+**Q: In Part 4, the voltage on the signal generator is set to 3.5V, but the voltage on the oscilloscope is larger than 3.5V.**
+
+A: The voltage measurement on the oscilloscope should never exceed signal generator since the filter circuit could not increase the input voltage. If you find that the voltage on oscilloscope is larger, it is highly possible that the ‘load’ setting on signal generator is wrong. Because we are using a 1000 Ohm resistor, the ‘load’ setting should be ‘High Z’, or you can manually set it to 1000 Ohm.
