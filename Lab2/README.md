@@ -30,9 +30,9 @@ V = IR
     - Connect the red lead (A) of DMM to the resistor
     - Connect the black lead (COM) of DMM to power supply GND
 
-![VerifyCurrent](/assets/Lab2-15.jpg)
+    ![VerifyCurrent](/assets/Lab2-15.jpg)
 
-![DivLoad3](/assets/Lab2-24.png)
+    ![DivLoad3](/assets/Lab2-24.png)
 
     - ✏️ Diagram your circuit (without the DMM)
     - ✏️ Record the Current reading and indicate your measured current with a directional arrow on the circuit.
@@ -79,7 +79,7 @@ V = IR
 3. ✏️ Open the circuit at three points and measure the current at each gap:
     - ✏️ Power supply ground connection
 
-![SerCurrent1](/assets/Lab2-9.jpg)
+    ![SerCurrent1](/assets/Lab2-9.jpg)
 
     - ✏️ Connection between the two resistors
 
@@ -87,11 +87,11 @@ V = IR
 
 - ✏️ [Power supply positive connection](/Lab1/dmm.md#power_supply)
 
-![SerCurrent3](/assets/Lab2-7.jpg)
+    ![SerCurrent3](/assets/Lab2-7.jpg)
 
 4. ✏️ Use your DMM in Resistance mode to measure the resistance of the two series connected resistors.
 
-![SerRes](/assets/Lab2-6.jpg)
+    ![SerRes](/assets/Lab2-6.jpg)
 
     - ✏️ Diagram the circuit and label all voltages and currents.
     - ✏️ Verify that each resistor follows [Ohm's Law].
@@ -106,27 +106,30 @@ Voltage dividers are an important and useful circuit to scale a voltage (signal)
 3. [✏️ Measure and record the voltage](/Lab1/dmm.md#measuring-voltage) between ground and:
     - ✏️ Ground (should be 0.0!!)
 
-![DivVol1](/assets/Lab2-5.jpg)
+    ![DivVol1](/assets/Lab2-5.jpg)
 
     - ✏️ Junction between the two resistors
 
-![DivVol2](/assets/Lab2-4.jpg)
+    ![DivVol2](/assets/Lab2-4.jpg)
 
     - ✏️ Compare voltage measured in 4.3.2 to prediction of voltage divider equation.
     - Power (should be 5.0V!!)
 
-![DivVol3](/assets/Lab2-3.jpg)
+    ![DivVol3](/assets/Lab2-3.jpg)
 
     - ✏️ Compare your measurement with predicted voltage divider output voltage
 4. Connect a second 1000 Ohm, “load” resistor between your voltage divider output (junction between 1000 + 500 Ohm resistors) and ground.
 
-![DivLoad4](/assets/Lab2-21.png)
+    ![DivLoad4](/assets/Lab2-21.png)
 
-![DivLoad1](/assets/Lab2-1.jpg)
+    ![DivLoad1](/assets/Lab2-1.jpg)
 
 5. [Measure current](/Lab1/dmm.md#measuring-current) in the load resistor and [voltage](/Lab1/dmm.md#measuring-voltage) across the load resistor.
+
     - ✏️ Measure the current
-    - ![DivLoad2](/assets/Lab2-2.jpg)
+    
+    ![DivLoad2](/assets/Lab2-2.jpg)
+    
     - ✏️ Measure the voltage
 
 ![DivLoad3](/assets/Lab2-18.jpg)
@@ -143,10 +146,13 @@ Voltage dividers are an important and useful circuit to scale a voltage (signal)
 
 # Frequently Asked Questions
 **Q: I hear the yellow DMM start beeping when I try to measure voltage or current.**
+
 A: The beeping is a warning from DMM that your DMM setting does not match with the lead connected. For example, the pointer is on ‘V’ but the red lead is connected to ‘A’. Once you hear the beeping, please do not perform any measurement until you figure out the issue. Otherwise, the DMM may be damaged.
 
 **Q: How can I use breadboards?**
-A: Please refer to this tutorial on using breadboards.
+
+A: Please refer to [this tutorial](https://www.sciencebuddies.org/science-fair-projects/references/how-to-use-a-breadboard) on using breadboards.
 
 **Q: In 4.4, how can I add the load resistor and measure the current and voltage?**
+
 A: The load resistor should be added in parallel with the 500 Ohm resistor, then you could measure the current and voltage as normal.
