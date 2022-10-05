@@ -30,9 +30,9 @@ V = IR
     - Connect the red lead (A) of DMM to the resistor
     - Connect the black lead (COM) of DMM to power supply GND
 
-- ![VerifyCurrent](/assets/Lab2-15.jpg)
+![VerifyCurrent](/assets/Lab2-15.jpg)
 
-- ![DivLoad3](/assets/Lab2-24.png)
+![DivLoad3](/assets/Lab2-24.png)
 
     - ✏️ Diagram your circuit (without the DMM)
     - ✏️ Record the Current reading and indicate your measured current with a directional arrow on the circuit.
@@ -45,13 +45,15 @@ V = IR
 1. Connect two 1000 Ohm resistors in parallel (connect the two resistors at both ends) with alligator clips or simply twist them together, [connect them between +10V DC and GND](/Lab1/dmm.md#power_supply).
     - ✏️ What is power supply current readout?
 
-- ![ParCurrent3](/assets/Lab2-23.png)
+![ParCurrent3](/assets/Lab2-23.png)
 
-- ![ParCurrent1](/assets/Lab2-14.jpg)
+![ParCurrent1](/assets/Lab2-14.jpg)
 
 2. [Set up your DMM for current measurement](/Lab1/dmm.md#measuring-current). Plug red lead into “A” (see instructions/diagram, 1.5/1.6, above)
 3. ✏️ Measure the current between the power supply ground and the pair of resistors (i.e. total current of both resistors).  
+
 ![ParCurrent2](/assets/Lab2-13.jpg)
+
 4. Reconnect resistors and DMM as necessary to measure voltage across the two resistors, and the current in each resistor separately.  
     - ✏️ Record your measurements.
     - ✏️ Compare your measurement with sum of the two resistor currents.
