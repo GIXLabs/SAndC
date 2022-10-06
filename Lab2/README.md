@@ -152,7 +152,7 @@ Voltage dividers are an important and useful circuit to scale a voltage (signal)
 
    - ✏️ Compare your measurement with predicted voltage divider output voltage
 
-4. Connect a second 1000 Ohm, “load” resistor between your voltage divider output (junction between 1000 + 500 Ohm resistors) and ground.
+4. Connect a second 1000 Ohm, “load” resistor between your voltage divider output (junction between 1000 + 500 Ohm resistors) and ground. Since the circuit is getting more complex, you should consider using a breadboard for this part. The [introduction to breadboarding article](information/breadboard.md) can get you started and the [series vs parallel article](series_vs_parallel.md) has examples.
 
    ![DivLoad4](/assets/Lab2-21.png)
 
