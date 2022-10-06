@@ -94,7 +94,7 @@ The writeup for this lab should contain the following outline:
 6. Disconnect the resistors from the power supply and use the DMM in Resistance mode to measure the resistance of the two resistors in parallel.
    - ✏️ Compare measured resistance with result from part 2.5
 
-   ![ParRes](/assets/Lab2-11.jpg)
+   ![ParRes](/assets/Lab2-11.png)
 
 7. ✏️ Diagram the circuit and label all voltages and currents.
 8. ✏️ Verify that each resistor follows [Ohm’s Law](https://youtu.be/8jB6hDUqN0Y?t=162). i.e. For each resistor, measure the voltage between the two ends and the current goes through it, then plug it into the formula.
