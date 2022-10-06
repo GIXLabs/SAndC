@@ -69,7 +69,7 @@ The writeup for this lab should contain the following outline:
 8. ✏️ Record the current in each case and graph voltage (Y axis) vs. Current (X axis). Label your graph with units.
 9. ✏️ Fit a line to your data and compute its slope. Compare with 1000 Ohms.
 
-## 2. [Parallel](/information/series_vs_parallel.md) Resistors
+## 2. [Parallel](/Lab2/information/series_vs_parallel.md) Resistors
 
 1. Connect two 1000 Ohm resistors in parallel (connect the two resistors at both ends) with alligator clips or simply twist them together, [connect them between +10V DC and GND](/Lab1/dmm.md#power_supply).
 
