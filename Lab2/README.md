@@ -82,19 +82,19 @@ The writeup for this lab should contain the following outline:
 2. [Set up your DMM for current measurement](/Lab1/dmm.md#measuring-current). Plug red lead into “A” (see instructions/diagram, 1.5/1.6, above)
 3. ✏️ Measure the current between the power supply ground and the pair of resistors (i.e. total current of both resistors).
 
-![ParCurrent2](/assets/Lab2-13.jpg)
+   ![ParCurrent2](/assets/Lab2-13.jpg)
 
 4. Reconnect resistors and DMM as necessary to measure voltage across the two resistors, and the current in each resistor separately.
    - ✏️ Record your measurements.
    - ✏️ Compare your measurement with sum of the two resistor currents.
 
-![ParVot](/assets/Lab2-12.jpg)
+   ![ParVot](/assets/Lab2-12.jpg)
 
 5. ✏️ Use Ohm’s law to find the equivalent resistance of the two resistors in parallel.
 6. Disconnect the resistors from the power supply and use the DMM in Resistance mode to measure the resistance of the two resistors in parallel.
    - ✏️ Compare measured resistance with result from part 2.5
 
-![ParRes](/assets/Lab2-11.jpg)
+   ![ParRes](/assets/Lab2-11.jpg)
 
 7. ✏️ Diagram the circuit and label all voltages and currents.
 8. ✏️ Verify that each resistor follows [Ohm’s Law](https://youtu.be/8jB6hDUqN0Y?t=162). i.e. For each resistor, measure the voltage between the two ends and the current goes through it, then plug it into the formula.
@@ -103,9 +103,9 @@ The writeup for this lab should contain the following outline:
 
 1. Connect the 1000 Ohm and 500 Ohm resistors in series (connect only one end)
 
-![SerConnect](/assets/Lab2-19.png)
+   ![SerConnect](/assets/Lab2-19.png)
 
-2. [Set your DMM to current mode](/Lab1/dmm.md#measuring-current) and plug the red lead to A accordingly.
+2. [Set your DMM to current mode](/Lab1/dmm.md#measuring-current) and plug the red lead to A accordingly. Remember, you should start with the A port on the multimeter and switch to the mA/uA port for higher resolution **IF** the current measured with the A port is less than 400 milliamps.
 3. ✏️ Open the circuit at three points and measure the current at each gap:
 
    - ✏️ Power supply ground connection
@@ -114,18 +114,18 @@ The writeup for this lab should contain the following outline:
 
    - ✏️ Connection between the two resistors
 
-![SerCurrent2](/assets/Lab2-8.jpg)
+   ![SerCurrent2](/assets/Lab2-8.jpg)
 
-- ✏️ [Power supply positive connection](/Lab1/power_supply.md)
+   - ✏️ [Power supply positive connection](/Lab1/power_supply.md)
 
-  ![SerCurrent3](/assets/Lab2-7.jpg)
+   ![SerCurrent3](/assets/Lab2-7.jpg)
 
 4. ✏️ Use your DMM in Resistance mode to measure the resistance of the two series connected resistors.
 
    ![SerRes](/assets/Lab2-6.jpg)
 
    - ✏️ Diagram the circuit and label all voltages and currents.
-   - ✏️ Verify that each resistor follows [Ohm's Law].
+   - ✏️ Verify that each resistor follows [Ohm's Law](https://youtu.be/8jB6hDUqN0Y?t=162).
 
 ## 4. Voltage Dividers
 
@@ -158,7 +158,7 @@ Voltage dividers are an important and useful circuit to scale a voltage (signal)
 
    ![DivLoad1](/assets/Lab2-1.jpg)
 
-5. [Measure current](/Lab1/dmm.md#measuring-current) in the load resistor and [voltage](/Lab1/dmm.md#measuring-voltage) across the load resistor.
+5. [Measure current](/Lab1/dmm.md#measuring-current) in the load resistor and [voltage](/Lab1/dmm.md#measuring-voltage) across the load resistor. Remember, you should start with the A port on the multimeter and switch to the mA/uA port for higher resolution **IF** the current measured with the A port is less than 400 milliamps.
 
    - ✏️ Measure the current
 
