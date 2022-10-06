@@ -82,7 +82,7 @@ The writeup for this lab should contain the following outline:
 2. [Set up your DMM for current measurement](/Lab1/dmm.md#measuring-current). Plug red lead into “A” (see instructions/diagram, 1.5/1.6, above)
 3. ✏️ Measure the current between the power supply ground and the pair of resistors (i.e. total current of both resistors).
 
-   ![ParCurrent2](/assets/Lab2-13.jpg)
+   ![ParCurrent2](/assets/Lab2-13.png)
 
 4. Reconnect resistors and DMM as necessary to measure voltage across the two resistors, and the current in each resistor separately.
    - ✏️ Record your measurements.
