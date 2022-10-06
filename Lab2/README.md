@@ -14,7 +14,7 @@ V = IR
 4. ✏️ A 100 Ohm and 900 Ohm resistor are connected in series across a 9V battery. Find the voltage across the 100 Ohm resistor.
 
 ## Supplies
-- Resistors: 2x 1000 Ohm and 1x 500 Ohm
+- Resistors: 2x 1000 Ohm and 1x 500 Ohm (two 1000 Ohm resistors in parallel can work as a 500 Ohm resistor if you cannot find a 500 Ohm resistor)
 - Alligator clip leads
 - Breadboard
 - Handheld multimeter (yellow)
@@ -84,9 +84,9 @@ The writeup for this lab should contain the following outline:
 ![ParRes](/assets/Lab2-11.jpg)
 
 7. ✏️ Diagram the circuit and label all voltages and currents.
-8. ✏️ Verify that each resistor follows [Ohm’s Law]. i.e. For each resistor, measure the voltage between the two ends and the current goes through it, then plug it into the formula.
+8. ✏️ Verify that each resistor follows [Ohm’s Law](https://youtu.be/8jB6hDUqN0Y?t=162). i.e. For each resistor, measure the voltage between the two ends and the current goes through it, then plug it into the formula.
 
-## 3. [Series](/Lab1/dmm.md#series_vs_parallel) Resistors
+## 3. [Series](/information/series_vs_parallel.md) Resistors
 1. Connect the 1000 Ohm and 500 Ohm resistors in series (connect only one end)
 
 ![SerConnect](/assets/Lab2-19.png)
@@ -156,6 +156,7 @@ Voltage dividers are an important and useful circuit to scale a voltage (signal)
 1. Open the ‘SIK Guide‘ book of your Arduino Starter Kit. Go to page 21 and finish Circuit 1 – ‘Blinking a LED’
 
     ![LED1](/assets/Lab2-20.png)
+    - Note: if you do not have the book, you can use this [Arduino tutorial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink). This tutorial uses a different resistor value, but will work just as well.
 
 2. After you finish the circuit. **Ask a TA to check it.**
 
