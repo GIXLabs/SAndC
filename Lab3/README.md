@@ -59,6 +59,7 @@ Build the circuit of Figure 1 with the following simplifications:
 - Place the switch (instead of the location in figure 1) between the “bottom” of the LED (D1) and ground (negative battery terminal)
 *Actually this circuit only have one loop, with LED, R4 and switch.
 
+![Setup 1](assets/setup1.png)
 
 1.1 Check your switch. As shown in the schematic, the switch (SW) will open the circuit when slid to the right position. Does your switch work this way? Use the DMM to find out if it is “press-to-open” or “press-to-close” type switch, or Single Pole Double Throw (SPDT) type switch.
 ✏️ take a photo of your switch and report what you measured with DMM, and which type of switch you have.
@@ -78,6 +79,7 @@ Build the circuit of Figure 1 with the following simplifications:
 The Bi-polar Junction Transistor (BJT) is a versatile device which we will use as a current-controlled switch. A small current going in to the “base” terminal (to the emitter) controls a bigger current flowing from “collector” to “emitter”.
 First we will demonstrate this ability using the switch to change base current input from zero to a small value. This will light the LED. It takes some care to wire up the BJT correctly. Compare the schematic to this diagram to identify the correct pins:
 
+![Setup 2](assets/setup2.png)
 
 2.1 Build the switching BJT circuit. Wire up exactly as shown in Figure 1 except leave out the capacitor C. Operate the switch - LED should go on and off.
   - ✏️ Take a photo of your circuit build.
