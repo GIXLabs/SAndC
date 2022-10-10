@@ -14,7 +14,7 @@ The writeup for this lab should contain the following outline:
 2. Introduction
   - ⅓ of a page describing the purpose and goals of this lab in your own words.  Do not reproduce any material from this assignment document in any section of your writeup.
 3. Results
-  - Each location in the instructions below marked with “>” indicates some data which must appear in your report. Separate each result or related set of results with a section header indicating what it is. For any numerical data or graph describe the meaning of the data.
+  - Each location in the instructions below marked with ✏️ indicates some data which must appear in your report. Separate each result or related set of results with a section header indicating what it is. For any numerical data or graph describe the meaning of the data.
 4.	Discussion and Conclusions:
   - In ½ to 1 page, summarize the key learning points from the Results above.
   - << specific items if nesc>>
@@ -24,57 +24,53 @@ The writeup for this lab should contain the following outline:
 - Review resistance, capacitance and [impedance](https://en.wikipedia.org/wiki/Electrical_impedance) through Wikipedia or other online resources. 
 
 # Parts, tools, supplies required
-- DC power supply(9V), capacitors, resistors, NPN BJT (2N3904), light emitting diode (LED), Arduino Uno, jumper wires.
+- DC power supply(9V) 
+- 1000uF capacitor rated to +10V
+- 220 Ohm resistor
+- 1000 Ohm resistor
+- NPN BJT (2N3904)
+- Light emitting diode (LED) 
+- Arduino Uno
+- Jumper wires
+- Solderless breadboard
 - Function generator
 - Oscilloscope
+- 10X oscilloscope probes
 - Handheld multimeter
 
 # Assignment
-Oscilloscope setup
--	Recalibrate your probes.
--	Make sure all probes are set to 10x and all input channels are also set to 10x (press the colored button and select on menu).
 
 ![Figure 1](assets/main_sch.png)
+
 Figure 1: Delay Circuit with BJT. As shown above is the LED lit or not?   What happens if you press and hold the button?
 
 Parts Needed
--	Resistors: 250, 1000
+-	Resistors: 220, 1000
 -	Capacitor: 1000uF,  >= 10V rating
 -	On/Off SPDT switch
 Equipment:
 - Power supply
 - Fluke DMM
+- Oscilloscope with probes
 
 ## Part 1: Basic LED Circuit
 
-Component Values
-- R2:   1000 Ohm (1K Ohm)
-- R4:   220 Ohm  
-- C:    1000 uF
+Build the circuit below using the values shown in the image. Note: this is a simplification of the circuit in Figure 1. Keep in mind that LEDs are polarized, which means they only work properly when hooked up in the right orientation. The positive side has a longer leg. Sometimes those legs get cut, so you can either try each direction and see what works or look for the flat spot on the plastic lens, which marks the ground (negative) side.
 
-Build the circuit of Figure 1 with the following simplifications:
-- Do not connect battery positive terminal to R4 until step 1.2 below.
-- Omit R2, C, and Q1
-- Perform step 1.1
-- Place the switch (instead of the location in figure 1) between the “bottom” of the LED (D1) and ground (negative battery terminal)
-*Actually this circuit only have one loop, with LED, R4 and switch.
-
-![Setup 1 Schematic](assets/setup1_sch.png)
-
-![Setup 1](assets/setup1.png)
+![Setup 1](assets/setup1.svg)
 
 1.1 Check your switch. As shown in the schematic, the switch (SW) will open the circuit when slid to the right position. Does your switch work this way? Use the DMM to find out if it is “press-to-open” or “press-to-close” type switch, or Single Pole Double Throw (SPDT) type switch.
-✏️ take a photo of your switch and report what you measured with DMM, and which type of switch you have.
+  - ✏️ take a photo of your switch and report what you measured with DMM, and which type of switch you have.
 
 1.2 Operate your circuit. Repeatedly operate your switch and verify that the LED lights up.
   - ✏️ include a small photo of the lit up LED including the switch position.
   - ✏️ Use DMM to measure two voltages:
     1.	✏️ across the LED
-    2.	✏️ across R4.
+    2.	✏️ across R4
 
 1.3  Measure current. Set your DMM to current mode and change the red wire to “mA/uA”. Open circuit between +9V and R4 and connect DMM.   
   - ✏️ What is current with switch open and closed. Does LED still light?
-  - ✏️ Compute R4 current according to measured voltage (step 1.2.1) and its value (200  Ohms or as built).
+  - ✏️ Compute R4 current according to measured voltage (step 1.2.1) and its value (220  Ohms or as built).
 
 ## Part 2: BJT Circuit
 
@@ -83,7 +79,7 @@ First we will demonstrate this ability using the switch to change base current i
 
 ![Transistor](assets/2N3904.png)
 
-![Setup 2](assets/setup2.png)
+![Setup 2](assets/setup2.svg)
 
 2.1 Build the switching BJT circuit. Wire up exactly as shown in Figure 1 except leave out the capacitor C. Operate the switch - LED should go on and off.
   - ✏️ Take a photo of your circuit build.
@@ -94,8 +90,11 @@ First we will demonstrate this ability using the switch to change base current i
   - ✏️ Explain your results in terms of the switching idea described above.
 
 ## Part 3: BJT Timer Circuit
+
 3.1  Now add the capacitor C as shown in Figure 1. Operate the switch.   
-  - ✏️ what happens when you operate the switch?
+  ![Setup 3](assets/setup3.svg)
+
+  - ✏️ What happens when you operate the switch?
 
 3.2 Time responses. Connect both oscilloscope probes ground clips to negative battery voltage (0V). Connect Channel 1 to the capacitor. Connect Channel 2 to the junction of R4 and the LED.   
   - ✏️ capture a screenshot of what happens to these two voltages when you close the switch and then open it.
@@ -106,7 +105,7 @@ First we will demonstrate this ability using the switch to change base current i
 This part will illustrate a practical application of RC circuits: smoothing out pulse-width-modulation to approximate an analog signal. Many low-cost microcontroller (e.g. Arduino) based embedded systems do not have analog outputs, but we can fake one by rapidly flipping a bit on and off.
 
 ![PWM](assets/pwm.png)
-![RC Smoothing](assets/smothed_pwm.png)
+![RC Smoothing](assets/smoothed_pwm.png)
 
 Figure 2: Pulse Width Modulation. Several levels of PWM (top). Smoothing out a PWM signal can approximate an analog signal with lower frequencies (bottom).
 
@@ -118,27 +117,29 @@ By “filtering out” the high switching related frequencies, a RC low-pass fil
 
 Our overall system is shown in Figure 3.
 
-![Filtering Schematic](assets/smothed_pwm.png)
+![Filtering Schematic](assets/rc_filter.png)
 
 Figure 3. Using an RC circuit to “smooth” a PWM signal into an analog signal. The “low-pass” RC circuit shown eliminates high frequency changes and only passes through low frequencies.
 
 Procedure:
 
 1. Generate a PWM signal where you can control the duty cycle. For the source of the PWM signal you have two options:
-  - Use an Arduino with code in Appendix B (below) (determine the PWM switching frequency of this code).
-  - Use the signal generator with appropriate settings. PWM frequency should be 1.0 kHz. Amplitude should be Vmin = 0.0, Vmax = 3.5V.
-2. Design an RC low-pass circuit. Determine a cutoff frequency 10x lower than your PWM switching frequency. Determine your RC time constant based on this frequency (See Appendix A). Set R = 1000 Ohms, determine your “C” value. If exact C value is not available, pick the closest available and
-  - ✏️ document changes in circuit design and parameters due to this approximate value.
+    - Use an Arduino with code [at this link](http://forcetronic.blogspot.com/2018/02/converting-arduino-pwm-output-to-dac.html) (determine the PWM switching frequency of this code).
+    - Use the signal generator with appropriate settings. PWM frequency should be 1.0 kHz. Amplitude should be Vmin = 0.0, Vmax = 3.5V.
+2. Design an RC low-pass circuit. Determine a cutoff frequency 10x lower than your PWM switching frequency. Determine your RC time constant based on this frequency ([see this pdf](assets/low_pass_filter_design.pdf)). Set R = 1000 Ohms, determine your “C” value. If exact C value is not available, pick the closest available and
+    - ✏️ document changes in circuit design and parameters due to this approximate value.
 3. Connect oscilloscope to circuit as shown in Figure 3. Set vertical controls for Channels 1 and 2 to show both waves. Set the time base to show 10 cycles of the PWM input.
+    - Remember to connect your ground clip to ground in the circuit.
+    - Remember to set your probes and oscilloscope to 10x.
 4. Measure input and output for duty cycle of 20%, 60%, 90%
-  - ✏️ capture screen shots of the three duty cycles.
+    - ✏️ capture screen shots of the three duty cycles.
 5. Repeat step two, but set the cutoff frequency 100x lower than the PWM frequency. Measure input and output for duty cycle 50%
-  - ✏️ what is the wave shape of the output signal (screenshot)?
-6. Using this new RC circuit,
-  - ✏️ Make a graph of the DC value of the output vs. PWM duty cycle for duty cycle values of {10%, 30%, 50%, 75%,90%}
-  - ✏️ Document your circuit design and how you chose the right resistor and capacitor.
-  - ✏️ Include a schematic diagram of your circuit design with each component marked with its value.
-  - ✏️ One photo of your circuit on the breadboard.
+    - ✏️ what is the wave shape of the output signal (screenshot)?
+6. Using this new RC circuit:
+    - ✏️ Make a graph of the DC value of the output vs. PWM duty cycle for duty cycle values of {10%, 30%, 50%, 75%,90%}
+    - ✏️ Document your circuit design and how you chose the right resistor and capacitor.
+    - ✏️ Include a schematic diagram of your circuit design with each component marked with its value.
+    - ✏️ One photo of your circuit on the breadboard.
 
 # Frequently Asked Questions
 **Q: My circuit connection looks correct, but the LED does not light up as expected.**
