@@ -34,7 +34,7 @@ Oscilloscope setup
 -	Recalibrate your probes.
 -	Make sure all probes are set to 10x and all input channels are also set to 10x (press the colored button and select on menu).
 
-![Figure 1](Link to figure 1 here)
+![Figure 1](assets/main_sch.png)
 Figure 1: Delay Circuit with BJT. As shown above is the LED lit or not?   What happens if you press and hold the button?
 
 Parts Needed
@@ -59,6 +59,8 @@ Build the circuit of Figure 1 with the following simplifications:
 - Place the switch (instead of the location in figure 1) between the “bottom” of the LED (D1) and ground (negative battery terminal)
 *Actually this circuit only have one loop, with LED, R4 and switch.
 
+![Setup 1 Schematic](assets/setup1_sch.png)
+
 ![Setup 1](assets/setup1.png)
 
 1.1 Check your switch. As shown in the schematic, the switch (SW) will open the circuit when slid to the right position. Does your switch work this way? Use the DMM to find out if it is “press-to-open” or “press-to-close” type switch, or Single Pole Double Throw (SPDT) type switch.
@@ -78,6 +80,8 @@ Build the circuit of Figure 1 with the following simplifications:
 
 The Bi-polar Junction Transistor (BJT) is a versatile device which we will use as a current-controlled switch. A small current going in to the “base” terminal (to the emitter) controls a bigger current flowing from “collector” to “emitter”.
 First we will demonstrate this ability using the switch to change base current input from zero to a small value. This will light the LED. It takes some care to wire up the BJT correctly. Compare the schematic to this diagram to identify the correct pins:
+
+![Transistor](assets/2N3904.png)
 
 ![Setup 2](assets/setup2.png)
 
@@ -101,7 +105,10 @@ First we will demonstrate this ability using the switch to change base current i
 ## Part 4: RC Low-Pass Filter
 This part will illustrate a practical application of RC circuits: smoothing out pulse-width-modulation to approximate an analog signal. Many low-cost microcontroller (e.g. Arduino) based embedded systems do not have analog outputs, but we can fake one by rapidly flipping a bit on and off.
 
-Figure 2: Pulse Width Modulation. Several levels of PWM (left). Smoothing out a PWM signal can approximate an analog signal with lower frequencies (right).
+![PWM](assets/pwm.png)
+![RC Smoothing](assets/smothed_pwm.png)
+
+Figure 2: Pulse Width Modulation. Several levels of PWM (top). Smoothing out a PWM signal can approximate an analog signal with lower frequencies (bottom).
 
 Pulse width modulation (PWM) is a series of pulses which turn ON at regular time intervals but can stay on for different amounts of time. We express this as a percentage of time that the signal is ON. The percentage of ON time is called the duty cycle. If the duty cycle is high, then more energy is delivered to a load. If we switch ON and OFF quickly, then we can modulate this duty-cycle up and down to approximate an analog output. Please review this [introduction to PWM from Sparkfun](https://learn.sparkfun.com/tutorials/pulse-width-modulation/all) if you are not already familiar with it. 
 
@@ -110,6 +117,8 @@ PWM signals have a lot of high frequencies in them due to the switching frequenc
 By “filtering out” the high switching related frequencies, a RC low-pass filter can convert a PWM signal from an Arduino to a “smooth” DC voltage (by filtering out the switching frequency).
 
 Our overall system is shown in Figure 3.
+
+![Filtering Schematic](assets/smothed_pwm.png)
 
 Figure 3. Using an RC circuit to “smooth” a PWM signal into an analog signal. The “low-pass” RC circuit shown eliminates high frequency changes and only passes through low frequencies.
 
