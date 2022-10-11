@@ -6,6 +6,7 @@ In addition to assignments, it hosts some how to content on using electronics te
 ## Table of Contents
  - Lab 1: [Instrument Familiarization](Lab1/README.md)
  - Lab 2: [DC Circuits and Voltage Dividers Lab](Lab2/README.md)
+ - Lab 3: [BJT Timer Circuit](Lab3/README.md)
 
 ## General Tips
  1. Make sure to read the safety manual carefully. Safety is always the No.1 Priority.
