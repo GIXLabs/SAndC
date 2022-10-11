@@ -12,24 +12,27 @@ The writeup for this lab should contain the following outline:
 
 1. Title page (see Title Page template posted on Canvas Laboratory page)
 2. Introduction
-  - ⅓ of a page describing the purpose and goals of this lab in your own words.  Do not reproduce any material from this assignment document in any section of your writeup.
+    - ⅓ of a page describing the purpose and goals of this lab in your own words.  Do not reproduce any material from this assignment document in any section of your writeup.
 3. Results
-  - Each location in the instructions below marked with ✏️ indicates some data which must appear in your report. Separate each result or related set of results with a section header indicating what it is. For any numerical data or graph describe the meaning of the data.
+    - Each location in the instructions below marked with ✏️ indicates some data which must appear in your report. Separate each result or related set of results with a section header indicating what it is. For any numerical data or graph describe the meaning of the data.
 4.	Discussion and Conclusions:
-  - In ½ to 1 page, summarize the key learning points from the Results above.
-  - << specific items if nesc>>
+    - In ½ to 1 page, summarize the key learning points from the Results above.
 
 # Pre-lab Requirements
 - Review the knowledge of voltage division circuit, RC circuits, and BJTs. See TECHIN 512 Virtual Textbook posted on the Canvas Laboratory page.
 - Review resistance, capacitance and [impedance](https://en.wikipedia.org/wiki/Electrical_impedance) through Wikipedia or other online resources. 
 
 # Parts, tools, supplies required
+
+![Components](assets/components.svg)
+
 - DC power supply(9V) 
 - 1000uF capacitor rated to +10V
 - 220 Ohm resistor
 - 1000 Ohm resistor
 - NPN BJT (2N3904)
 - Light emitting diode (LED) 
+- SPDT switch
 - Arduino Uno
 - Jumper wires
 - Solderless breadboard
@@ -37,6 +40,7 @@ The writeup for this lab should contain the following outline:
 - Oscilloscope
 - 10X oscilloscope probes
 - Handheld multimeter
+- Eye protection (for capacitors)
 
 # Assignment
 
@@ -44,26 +48,19 @@ The writeup for this lab should contain the following outline:
 
 Figure 1: Delay Circuit with BJT. As shown above is the LED lit or not?   What happens if you press and hold the button?
 
-Parts Needed
--	Resistors: 220, 1000
--	Capacitor: 1000uF,  >= 10V rating
--	On/Off SPDT switch
-Equipment:
-- Power supply
-- Fluke DMM
-- Oscilloscope with probes
-
 ## Part 1: Basic LED Circuit
 
 Build the circuit below using the values shown in the image. Note: this is a simplification of the circuit in Figure 1. Keep in mind that LEDs are polarized, which means they only work properly when hooked up in the right orientation. The positive side has a longer leg. Sometimes those legs get cut, so you can either try each direction and see what works or look for the flat spot on the plastic lens, which marks the ground (negative) side.
 
 ![Setup 1](assets/setup1.svg)
 
-1.1 Check your switch. As shown in the schematic, the switch (SW) will open the circuit when slid to the right position. Does your switch work this way? Use the DMM to find out if it is “press-to-open” or “press-to-close” type switch, or Single Pole Double Throw (SPDT) type switch.
-  - ✏️ take a photo of your switch and report what you measured with DMM, and which type of switch you have.
+**Note:** your breadboard will look different because you will be using jumpers to make the connections rather than small segments of wire used in these images. The small wire segments make it easier to see what things are connected for demonstration purposes. If you would like your board to look similarly neat, [check out this quick tutorial on making your own jumper wires.](https://youtu.be/ver-Av8vr1Q?t=8)
+
+1.1 Check your switch. As shown in the schematic, the switch (SW) will open the circuit when slid to the right position. Does your switch work this way? Use the DMM to find out if it is “press-to-open” or “press-to-close” type switch, or Single Pole Double Throw (SPDT) type switch. If you put your DMM in resistance mode and press the noise button, it will beep whenever two things are electrically connected. Try switching to this mode and touching the probe tips together.
+  - ✏️ Take a photo of your switch and report what you measured with DMM, and which type of switch you have.
 
 1.2 Operate your circuit. Repeatedly operate your switch and verify that the LED lights up.
-  - ✏️ include a small photo of the lit up LED including the switch position.
+  - ✏️ Include a small photo of the lit up LED including the switch position.
   - ✏️ Use DMM to measure two voltages:
     1.	✏️ across the LED
     2.	✏️ across R4
@@ -75,7 +72,7 @@ Build the circuit below using the values shown in the image. Note: this is a sim
 ## Part 2: BJT Circuit
 
 The Bi-polar Junction Transistor (BJT) is a versatile device which we will use as a current-controlled switch. A small current going in to the “base” terminal (to the emitter) controls a bigger current flowing from “collector” to “emitter”.
-First we will demonstrate this ability using the switch to change base current input from zero to a small value. This will light the LED. It takes some care to wire up the BJT correctly. Compare the schematic to this diagram to identify the correct pins:
+First we will demonstrate this ability using the switch to change base current input from zero to a small value. This will light the LED. It takes some care to wire up the BJT correctly. Compare the schematic to this diagram to identify the correct pins.
 
 ![Transistor](assets/2N3904.png)
 
@@ -91,13 +88,13 @@ First we will demonstrate this ability using the switch to change base current i
 
 ## Part 3: BJT Timer Circuit
 
-3.1  Now add the capacitor C as shown in Figure 1. Operate the switch.   
+3.1  Now add the capacitor C as shown in Figure 1. **Be careful with how you wire the capacitor. Electrolytic capacitors are polarized and will explode if wired backwards.** The white stripe on the side of the capacitor should be on the ground (negative) side of your circuit. Operate the switch.   
   ![Setup 3](assets/setup3.svg)
 
   - ✏️ What happens when you operate the switch?
 
 3.2 Time responses. Connect both oscilloscope probes ground clips to negative battery voltage (0V). Connect Channel 1 to the capacitor. Connect Channel 2 to the junction of R4 and the LED.   
-  - ✏️ capture a screenshot of what happens to these two voltages when you close the switch and then open it.
+  - ✏️ Capture a screenshot of what happens to these two voltages when you close the switch and then open it.
   - ✏️ Add a horizontal bar to the screenshot to illustrate when the LED is ON.
   - ✏️ Document different observed delay times with at least 3 different capacitors (show three screenshots and give C values). It may take up to several minutes until the LED fully dimmed. If the LED keeps glowing, you can record the time when the voltage across the LED drops 80%.
 
@@ -126,15 +123,16 @@ Procedure:
 1. Generate a PWM signal where you can control the duty cycle. For the source of the PWM signal you have two options:
     - Use an Arduino with code [at this link](http://forcetronic.blogspot.com/2018/02/converting-arduino-pwm-output-to-dac.html) (determine the PWM switching frequency of this code).
     - Use the signal generator with appropriate settings. PWM frequency should be 1.0 kHz. Amplitude should be Vmin = 0.0, Vmax = 3.5V.
-2. Design an RC low-pass circuit. Determine a cutoff frequency 10x lower than your PWM switching frequency. Determine your RC time constant based on this frequency ([see this pdf](assets/low_pass_filter_design.pdf)). Set R = 1000 Ohms, determine your “C” value. If exact C value is not available, pick the closest available and
-    - ✏️ document changes in circuit design and parameters due to this approximate value.
+2. Design an RC low-pass circuit. Determine a cutoff frequency 10x lower than your PWM switching frequency. Determine your RC time constant based on this frequency ([see this pdf](assets/low_pass_filter_design.pdf)). Set R = 1000 Ohms, determine your **C** value. If exact C value is not available, pick the closest available and
+    - ✏️ document changes in circuit design and parameters due to this approximate value. **Remember: capacitors explode if wired wrong.** Make sure the side of the capacitor with the white stripe is connected to ground.
 3. Connect oscilloscope to circuit as shown in Figure 3. Set vertical controls for Channels 1 and 2 to show both waves. Set the time base to show 10 cycles of the PWM input.
-    - Remember to connect your ground clip to ground in the circuit.
-    - Remember to set your probes and oscilloscope to 10x.
+    - Connect your ground clip to ground in the circuit.
+    - Set your probes and oscilloscope to 10x.
+    - Calibrate your probes.
 4. Measure input and output for duty cycle of 20%, 60%, 90%
-    - ✏️ capture screen shots of the three duty cycles.
+    - ✏️ Capture screen shots of the three duty cycles.
 5. Repeat step two, but set the cutoff frequency 100x lower than the PWM frequency. Measure input and output for duty cycle 50%
-    - ✏️ what is the wave shape of the output signal (screenshot)?
+    - ✏️ What is the wave shape of the output signal (screenshot)?
 6. Using this new RC circuit:
     - ✏️ Make a graph of the DC value of the output vs. PWM duty cycle for duty cycle values of {10%, 30%, 50%, 75%,90%}
     - ✏️ Document your circuit design and how you chose the right resistor and capacitor.
@@ -154,3 +152,7 @@ A: You may need to change the horizontal scale (time) to be larger on your oscil
 **Q: In Part 4, the voltage on the signal generator is set to 3.5V, but the voltage on the oscilloscope is larger than 3.5V.**
 
 A: The voltage measurement on the oscilloscope should never exceed signal generator since the filter circuit could not increase the input voltage. If you find that the voltage on oscilloscope is larger, it is highly possible that the ‘load’ setting on signal generator is wrong. Because we are using a 1000 Ohm resistor, the ‘load’ setting should be ‘High Z’, or you can manually set it to 1000 Ohm.
+
+**Q: How were the schematics made?**
+
+A: The schematics were all made using Autodesk Eagle, which is used for designing circuit boards. As students, you have free access to Eagle when you sign up for an Autodesk account. 
