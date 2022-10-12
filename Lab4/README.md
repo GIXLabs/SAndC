@@ -51,22 +51,26 @@ Parts:
 
 # Assignment
 
-1. Wire your 555 up in Monostable mode ([Wikipedia reference](https://en.wikipedia.org/wiki/555_timer_IC#Monostable)). Connect the components identified in your pre-lab computations. 
-    1. With Vcc connected to +5V, connect “Output” (555 pin 3) to your oscilloscope and clip the probe ground to ground. 
-    1. Set the signal generator to a frequency of 100Hz. Set pulse duration to 10 microseconds (us), set high level to 4.5 V and low level to 0.1 V. Pulses should be "high" (~5 V) for most of the time and "low" (0~0.2 V) for 10 microsecond (us).
-    1. Connect pulse output from signal generator to “Trigger” on your 555 (555 pin 2). 
-    1. Connect a second oscilloscope channel/probe to Trigger (555 pin 2).
-    1. ✏️ Capture an oscilloscope picture showing three cycles of the input and output pulses. 
-    1. ✏️ Comment on pulse duration of the output pulse compared to calculations and measured R value. 
+## Monostable Mode
 
-2. Referring to the schematic in the “Modes” heading of the 555 Wikipedia Page, wire your 555 up in Astable mode. First 
-    1. ✏️ Measure the exact resistance values you used for R1 and R2. Connect the components identified in your pre-lab computations. 
-    1. ✏️ Measure the frequency of the output signal. How does it compare with calculations and measured R values?
-    1. ✏️ Measure duration of each pulse. How does it compare with calculations and measured R values?
-    1. ✏️ Measure your capacitor on the handheld DMM. 
-    1. ✏️ Explain the difference between the actual frequency and the desired frequency using measured resistance and capacitance.
+Wire your 555 up in Monostable mode ([Wikipedia reference](https://en.wikipedia.org/wiki/555_timer_IC#Monostable)). Connect the components identified in your pre-lab computations. 
+1. With Vcc connected to +5V, connect “Output” (555 pin 3) to your oscilloscope and clip the probe ground to ground. 
+1. Set the signal generator to a frequency of 100Hz. Set pulse duration to 10 microseconds (us), set high level to 4.5 V and low level to 0.1 V. Pulses should be "high" (~5 V) for most of the time and "low" (0~0.2 V) for 10 microsecond (us).
+1. Connect pulse output from signal generator to “Trigger” on your 555 (555 pin 2). 
+1. Connect a second oscilloscope channel/probe to Trigger (555 pin 2).
+1. ✏️ Capture an oscilloscope picture showing three cycles of the input and output pulses. 
+1. ✏️ Comment on pulse duration of the output pulse compared to calculations and measured R value. 
 
-3. Extra Pulse Detector (second week):
+## Astable Mode
+
+Referring to the schematic in the “Modes” heading of the 555 Wikipedia Page, wire your 555 up in Astable mode. First 
+1. ✏️ Measure the exact resistance values you used for R1 and R2. Connect the components identified in your pre-lab computations. 
+1. ✏️ Measure the frequency of the output signal. How does it compare with calculations and measured R values?
+1. ✏️ Measure duration of each pulse. How does it compare with calculations and measured R values?
+1. ✏️ Measure your capacitor on the handheld DMM. 
+1. ✏️ Explain the difference between the actual frequency and the desired frequency using measured resistance and capacitance.
+
+## Extra Pulse Detector (second week)
 
 ![The Emitter](assets/the_emitter.png)
 
@@ -79,15 +83,16 @@ Problem definition:
 Reference: [‘555 Extra Pulse Catcher (Lab Part 3).doc’ under the same folder]()
 
 Design a circuit combining two 555 chips and a 74HC00 quad NAND gate to perform the following function:
-    1. Accept input from [“TECHIN 512 “The Emitter” Simplified Version.doc”] under folder [‘TheEmitterV1_5’]
-    1. Provide an output LED which is normally OFF.
-    1. If in any 1ms period, more than one pulse comes into the input of your circuit, light the LED for 1 second. This functionality is illustrated below:
-
-    1. Build the [555 Extra Pulse Catcher (Lab Part 3).doc’] using your [breadboard](/Lab2/information/breadboard.md). 
-    1. Tests: 
-	1. ✏️ Using “The Emitter” device, validate function of your circuit. 
+1. Accept input from [“TECHIN 512 “The Emitter” Simplified Version.doc”] under folder [‘TheEmitterV1_5’]
+1. Provide an output LED which is normally OFF.
+1. If in any 1ms period, more than one pulse comes into the input of your circuit, light the LED for 1 second. This functionality is illustrated below:
+1. Build the [555 Extra Pulse Catcher (Lab Part 3).doc’] using your [breadboard](/Lab2/information/breadboard.md). 
+1. Tests: 
+    1. ✏️ Using “The Emitter” device, validate function of your circuit. 
 	1. ✏️ With “The Emitter” connected, connect both “IN” and “OUT/LED” of your circuit to the oscilloscope. Trigger on the rising edge of “OUT/LED” and capture both signals in a screen shot. ✏️ Describe how these signals validate the correct operation of your circuit.
 	Notice that Vcc should be 4.5V instead of 5V
+
+# Frequently Asked Questions
 
 **Q: In monostable mode, the circuit connection is correct but the output is not as expected.**
 
