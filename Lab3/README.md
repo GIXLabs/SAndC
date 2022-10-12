@@ -19,7 +19,7 @@ The writeup for this lab should contain the following outline:
     - In ½ to 1 page, summarize the key learning points from the Results above.
 
 # Pre-lab Requirements
-- Review the knowledge of voltage division circuit, RC circuits, and BJTs. See TECHIN 512 Virtual Textbook posted on the Canvas Laboratory page.
+- Review the knowledge of voltage division circuit, RC circuits, and BJTs. See [TECHIN 512 extra resources posted on the Canvas Laboratory page](https://docs.google.com/document/d/1Bf47hfjdwXa7fEtm0arl0bAjzYLDUktPa9syjXYvjqI/edit?usp=sharing).
 - Review resistance, capacitance and [impedance](https://en.wikipedia.org/wiki/Electrical_impedance) through Wikipedia or other online resources. 
 
 # Parts, tools, supplies required
