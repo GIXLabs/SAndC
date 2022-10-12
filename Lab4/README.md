@@ -72,21 +72,21 @@ Parts:
 
 The task is to design a pulse generator checker. “GIX industries LLC” has developed a pulse emission device, “The Emitter” which emits a continuous stream of pulses. Each pulse is ~10 microseconds and they occur at 1000 pulses per second. When the product is defective it produces an additional pulse, in between two normal pulses, but it does this very infrequently, about once every 2-3 seconds.
 
-You can build you own ‘Emitter’ using an Arduino. Please check the folder [‘TheEmitterV1_5’]
+You can build you own ‘Emitter’ using an Arduino. [See the files here for more details.](emitter)
 
 Problem definition: 
 
-Reference: [‘555 Extra Pulse Catcher (Lab Part 3).doc’ under the same folder]
+Reference: [‘555 Extra Pulse Catcher (Lab Part 3).doc’ under the same folder]()
 
 Design a circuit combining two 555 chips and a 74HC00 quad NAND gate to perform the following function:
     1. Accept input from [“TECHIN 512 “The Emitter” Simplified Version.doc”] under folder [‘TheEmitterV1_5’]
     1. Provide an output LED which is normally OFF.
     1. If in any 1ms period, more than one pulse comes into the input of your circuit, light the LED for 1 second. This functionality is illustrated below:
 
-    - Build the [555 Extra Pulse Catcher (Lab Part 3).doc’] using your [breadboard](/Lab2/information/breadboard.md). 
-    - Tests: 
-	- ✏️ Using “The Emitter” device, validate function of your circuit. 
-	- ✏️ With “The Emitter” connected, connect both “IN” and “OUT/LED” of your circuit to the oscilloscope. Trigger on the rising edge of “OUT/LED” and capture both signals in a screen shot. ✏️ Describe how these signals validate the correct operation of your circuit.
+    1. Build the [555 Extra Pulse Catcher (Lab Part 3).doc’] using your [breadboard](/Lab2/information/breadboard.md). 
+    1. Tests: 
+	1. ✏️ Using “The Emitter” device, validate function of your circuit. 
+	1. ✏️ With “The Emitter” connected, connect both “IN” and “OUT/LED” of your circuit to the oscilloscope. Trigger on the rising edge of “OUT/LED” and capture both signals in a screen shot. ✏️ Describe how these signals validate the correct operation of your circuit.
 	Notice that Vcc should be 4.5V instead of 5V
 
 **Q: In monostable mode, the circuit connection is correct but the output is not as expected.**
