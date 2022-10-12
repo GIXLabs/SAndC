@@ -129,6 +129,11 @@ Procedure:
     - Connect your ground clip to ground in the circuit.
     - [Set your probes and oscilloscope to 10x](/Lab1/oscope.md/#connecting-probes).
     - [Calibrate your probes](/Lab1/oscope.md/#calibrating-oscilloscope-probes).
+
+![Setup 4](assets/setup4.svg)
+
+Note: Make sure the red and black clips coming from the signal generator do not touch. Touching them will cause a short, which could damage the machine or cause the cables to get hot.
+
 4. Measure input and output for duty cycle of 20%, 60%, 90%
     - ✏️ Capture screen shots of the three duty cycles.
 5. Repeat step two, but set the cutoff frequency 100x lower than the PWM frequency. Measure input and output for duty cycle 50%
