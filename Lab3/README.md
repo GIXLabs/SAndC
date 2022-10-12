@@ -50,28 +50,29 @@ Figure 1: Delay Circuit with BJT. As shown above is the LED lit or not?   What h
 
 ## Part 1: Basic LED Circuit
 
-Build the circuit below using the values shown in the image. Note: this is a simplification of the circuit in Figure 1. Keep in mind that LEDs are polarized, which means they only work properly when hooked up in the right orientation. The positive side has a longer leg. Sometimes those legs get cut, so you can either try each direction and see what works or look for the flat spot on the plastic lens, which marks the ground (negative) side.
+Build the circuit below on a [breadboard](/Lab2/information/breadboard.md) using the values shown in the image. Note: this is a simplification of the circuit in Figure 1. Keep in mind that LEDs are polarized, which means they only work properly when hooked up in the right orientation. The positive side has a longer leg. Sometimes those legs get cut, so you can either try each direction and see what works or look for the flat spot on the plastic lens, which marks the ground (negative) side.
 
 ![Setup 1](assets/setup1.svg)
 
-**Note:** your breadboard will look different because you will be using jumpers to make the connections rather than small segments of wire used in these images. The small wire segments make it easier to see what things are connected for demonstration purposes. If you would like your board to look similarly neat, [check out this quick tutorial on making your own jumper wires.](https://youtu.be/ver-Av8vr1Q?t=8)
+**Note:** your [breadboard](/Lab2/information/breadboard.md) will look different because you will be using jumpers to make the connections rather than small segments of wire used in these images. The small wire segments make it easier to see what things are connected for demonstration purposes. If you would like your board to look similarly neat, [check out this quick tutorial on making your own jumper wires.](https://youtu.be/ver-Av8vr1Q?t=8)
 
 1.1 Check your switch. As shown in the schematic, the switch (SW) will open the circuit when slid to the right position. Does your switch work this way? Use the DMM to find out if it is “press-to-open” or “press-to-close” type switch, or Single Pole Double Throw (SPDT) type switch. If you put your DMM in resistance mode and press the noise button, it will beep whenever two things are electrically connected. Try switching to this mode and touching the probe tips together.
   - ✏️ Take a photo of your switch and report what you measured with DMM, and which type of switch you have.
 
 1.2 Operate your circuit. Repeatedly operate your switch and verify that the LED lights up.
   - ✏️ Include a small photo of the lit up LED including the switch position.
-  - ✏️ Use DMM to measure two voltages:
+  - ✏️ [Use DMM to measure two voltages](/Lab1/dmm.md/#measuring-voltage):
     1.	✏️ across the LED
     2.	✏️ across R4
 
-1.3  Measure current. Set your DMM to current mode and change the red wire to “mA/uA”. Open circuit between +9V and R4 and connect DMM.   
+1.3  [Measure current](/Lab1/dmm.md/#measuring-current). Set your DMM to current mode and change the red wire to “mA/uA”. Open circuit between +9V and R4 and connect DMM.   
   - ✏️ What is current with switch open and closed. Does LED still light?
   - ✏️ Compute R4 current according to measured voltage (step 1.2.1) and its value (220  Ohms or as built).
 
 ## Part 2: BJT Circuit
 
 The Bi-polar Junction Transistor (BJT) is a versatile device which we will use as a current-controlled switch. A small current going in to the “base” terminal (to the emitter) controls a bigger current flowing from “collector” to “emitter”.
+
 First we will demonstrate this ability using the switch to change base current input from zero to a small value. This will light the LED. It takes some care to wire up the BJT correctly. Compare the schematic to this diagram to identify the correct pins.
 
 ![Transistor](assets/2N3904.png)
@@ -81,7 +82,7 @@ First we will demonstrate this ability using the switch to change base current i
 2.1 Build the switching BJT circuit. Wire up exactly as shown in Figure 1 except leave out the capacitor C. Operate the switch - LED should go on and off.
   - ✏️ Take a photo of your circuit build.
 
-2.2 Measure Currents. For both switch positions, measure the current in
+2.2 [Measure Currents](/Lab1/dmm.md/#measuring-current). Remember that your multimeter must be placed in series with the component you want to measure current through. This means you will always have to break your circuit to measure current. For both switch positions, measure the current in
   - ✏️ R2, the Base circuit
   - ✏️ R4, the LED / Collector circuit.
   - ✏️ Explain your results in terms of the switching idea described above.
@@ -116,18 +117,18 @@ Our overall system is shown in Figure 3.
 
 ![Filtering Schematic](assets/rc_filter.png)
 
-Figure 3. Using an RC circuit to “smooth” a PWM signal into an analog signal. The “low-pass” RC circuit shown eliminates high frequency changes and only passes through low frequencies.
+Figure 3. Using an RC circuit to smooth a PWM signal into an analog signal. The **low-pass** RC circuit shown eliminates high frequency changes and only passes through low frequencies.
 
 Procedure:
 
-1. Generate a PWM signal where you can control the duty cycle. For the source of the PWM signal we recommend you use a signal generator with [1.0 kHz frequency](/Lab1/signal_gen.md/#adjusting-frequency), Vmin of 0.0 V, and Vmax of 3.5 V
+1. Generate a PWM signal where you can control the duty cycle. For the source of the PWM signal we recommend you use a signal generator with [1.0 kHz frequency](/Lab1/signal_gen.md/#adjusting-frequency), [Vmin of 0.0 V, and Vmax of 3.5 V](/Lab1/signal_gen.md/#adjusting-amplitude).
     - If you would like a challenge, you can use an Arduino with code [at this link](http://forcetronic.blogspot.com/2018/02/converting-arduino-pwm-output-to-dac.html) instead of the signal generator.
 2. Design an RC low-pass circuit. Determine a cutoff frequency 10x lower than your PWM switching frequency. Determine your RC time constant based on this frequency ([see this pdf](assets/low_pass_filter_design.pdf)). Set R = 1000 Ohms, determine your **C** value. If exact C value is not available, pick the closest available and
     - ✏️ document changes in circuit design and parameters due to this approximate value. **Remember: capacitors explode if wired wrong.** Make sure the side of the capacitor with the white stripe is connected to ground.
 3. Connect oscilloscope to circuit as shown in Figure 3. Set vertical controls for Channels 1 and 2 to show both waves. Set the time base to show 10 cycles of the PWM input.
     - Connect your ground clip to ground in the circuit.
-    - Set your probes and oscilloscope to 10x.
-    - Calibrate your probes.
+    - [Set your probes and oscilloscope to 10x](/Lab1/oscope.md/#connecting-probes).
+    - [Calibrate your probes](/Lab1/oscope.md/#calibrating-oscilloscope-probes).
 4. Measure input and output for duty cycle of 20%, 60%, 90%
     - ✏️ Capture screen shots of the three duty cycles.
 5. Repeat step two, but set the cutoff frequency 100x lower than the PWM frequency. Measure input and output for duty cycle 50%
