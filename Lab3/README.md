@@ -120,7 +120,7 @@ Figure 3. Using an RC circuit to “smooth” a PWM signal into an analog signal
 
 Procedure:
 
-1. Generate a PWM signal where you can control the duty cycle. For the source of the PWM signal we recommend you use a signal generator with [1.0 kHz frequency](/lab1/assets/signal_gen.md#adjusting-frequency), Vmin of 0.0 V, and Vmax of 3.5 V
+1. Generate a PWM signal where you can control the duty cycle. For the source of the PWM signal we recommend you use a signal generator with [1.0 kHz frequency](/lab1/signal_gen.md#adjusting-frequency), Vmin of 0.0 V, and Vmax of 3.5 V
     - If you would like a challenge, you can use an Arduino with code [at this link](http://forcetronic.blogspot.com/2018/02/converting-arduino-pwm-output-to-dac.html) instead of the signal generator.
 2. Design an RC low-pass circuit. Determine a cutoff frequency 10x lower than your PWM switching frequency. Determine your RC time constant based on this frequency ([see this pdf](assets/low_pass_filter_design.pdf)). Set R = 1000 Ohms, determine your **C** value. If exact C value is not available, pick the closest available and
     - ✏️ document changes in circuit design and parameters due to this approximate value. **Remember: capacitors explode if wired wrong.** Make sure the side of the capacitor with the white stripe is connected to ground.
