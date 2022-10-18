@@ -53,22 +53,26 @@ Parts:
 
 ## Monostable Mode
 
-Wire your 555 up in Monostable mode ([Wikipedia reference](https://en.wikipedia.org/wiki/555_timer_IC#Monostable)). Connect the components identified in your pre-lab computations. 
+Wire your 555 up in Monostable mode ([Wikipedia reference](https://en.wikipedia.org/wiki/555_timer_IC#Monostable)). Use the R and C values from your pre-lab computations. If you need a refresher on breadboards, [review this article here.](/Lab2/information/breadboard.md)
 
 ![Monostable](assets/monostable.svg)
 
-1. With Vcc connected to +5V, connect “Output” (555 pin 3) to your oscilloscope and clip the probe ground to ground. 
-1. Set the signal generator to a frequency of 100Hz. Set pulse duration to 10 microseconds (us), set high level to 4.5 V and low level to 0.1 V. Pulses should be "high" (5 V) for most of the time and "low" (0-0.2 V) for 10 microsecond (us).
-1. Connect pulse output from signal generator to “Trigger” on your 555 (555 pin 2). 
-1. Connect a second oscilloscope channel/probe to Trigger (555 pin 2).
+**Note:** These images do not show connections to the power supply and signal generator. The power line should be connected to a power supply in a similar style to previous labs, the grounds should all be tied together (power supply, signal generator, and circuit), and the signal generator should be attached at the points described below.
+
+1. With Vcc connected to +5V on a power supply, connect “Output” (555 pin 3, see diagram at the top of the page) to your oscilloscope and clip the probe ground to ground. 
+1. Set the signal generator to a frequency of 100Hz. Set pulse duration to 10 microseconds (us), set high level to 4.5 V and low level to 0.1 V. Pulses should be "high" (5 V) for most of the time and "low" (0-0.2 V) for 10 microsecond (us). Refer back to the [Lab 1 references](/Lab1/signal_gen.md) if you need a refresher on the signal generator.
+1. Connect pulse output from signal generator to “Trigger” on your 555 (555 pin 2, see diagram at the top of the page). 
+1. Connect a second oscilloscope channel/probe to Trigger (555 pin 2, see diagram at the top of the page).
 1. ✏️ Capture an oscilloscope picture showing three cycles of the input and output pulses. 
 1. ✏️ Comment on pulse duration of the output pulse compared to calculations and measured R value. 
 
 ## Astable Mode
 
-Referring to the schematic in the “Modes” heading of the 555 Wikipedia Page, wire your 555 up in Astable mode.
+Wire your 555 up in Astable mode ([Wikipedia reference](https://en.wikipedia.org/wiki/555_timer_IC#Astable)). Use the R and C values from your pre-lab computations.
 
 ![Astable](assets/astable.svg)
+
+**Note:** These images do not show connections to the power supply and signal generator. The power line should be connected to a power supply in a similar style to previous labs, the grounds should all be tied together (power supply, signal generator, and circuit), and the signal generator should be attached at the points described below.
 
 1. ✏️ Measure the exact resistance values you used for R1 and R2. Connect the components identified in your pre-lab computations. 
 1. ✏️ Measure the frequency of the output signal. How does it compare with calculations and measured R values?
@@ -86,10 +90,10 @@ You can build you own ‘Emitter’ using an Arduino. [See the files here for mo
 
 Problem definition: 
 
-Reference: [‘555 Extra Pulse Catcher (Lab Part 3).doc’ under the same folder]()
+Reference: [555 Extra Pulse Catcher](555_extra_pulse_catcher.docx)
 
 Design a circuit combining two 555 chips and a 74HC00 quad NAND gate to perform the following function:
-1. Accept input from [“TECHIN 512 “The Emitter” Simplified Version.doc”] under folder [‘TheEmitterV1_5’]
+1. Create the emitter 
 1. Provide an output LED which is normally OFF.
 1. If in any 1ms period, more than one pulse comes into the input of your circuit, light the LED for 1 second. This functionality is illustrated below:
 1. Build the [555 Extra Pulse Catcher (Lab Part 3).doc’] using your [breadboard](/Lab2/information/breadboard.md). 
