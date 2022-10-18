@@ -54,8 +54,11 @@ Parts:
 ## Monostable Mode
 
 Wire your 555 up in Monostable mode ([Wikipedia reference](https://en.wikipedia.org/wiki/555_timer_IC#Monostable)). Connect the components identified in your pre-lab computations. 
+
+![Monostable](assets/monostable.svg)
+
 1. With Vcc connected to +5V, connect “Output” (555 pin 3) to your oscilloscope and clip the probe ground to ground. 
-1. Set the signal generator to a frequency of 100Hz. Set pulse duration to 10 microseconds (us), set high level to 4.5 V and low level to 0.1 V. Pulses should be "high" (~5 V) for most of the time and "low" (0~0.2 V) for 10 microsecond (us).
+1. Set the signal generator to a frequency of 100Hz. Set pulse duration to 10 microseconds (us), set high level to 4.5 V and low level to 0.1 V. Pulses should be "high" (5 V) for most of the time and "low" (0-0.2 V) for 10 microsecond (us).
 1. Connect pulse output from signal generator to “Trigger” on your 555 (555 pin 2). 
 1. Connect a second oscilloscope channel/probe to Trigger (555 pin 2).
 1. ✏️ Capture an oscilloscope picture showing three cycles of the input and output pulses. 
@@ -63,7 +66,10 @@ Wire your 555 up in Monostable mode ([Wikipedia reference](https://en.wikipedia.
 
 ## Astable Mode
 
-Referring to the schematic in the “Modes” heading of the 555 Wikipedia Page, wire your 555 up in Astable mode. First 
+Referring to the schematic in the “Modes” heading of the 555 Wikipedia Page, wire your 555 up in Astable mode.
+
+![Astable](assets/astable.svg)
+
 1. ✏️ Measure the exact resistance values you used for R1 and R2. Connect the components identified in your pre-lab computations. 
 1. ✏️ Measure the frequency of the output signal. How does it compare with calculations and measured R values?
 1. ✏️ Measure duration of each pulse. How does it compare with calculations and measured R values?
