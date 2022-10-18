@@ -12,8 +12,8 @@ The [555 Timer (click for datasheet)](https://www.ti.com/lit/ds/symlink/ne555.pd
 
 References: [Teardown of a 555 (with interactive die photo)](http://www.righto.com/2016/02/555-timer-teardown-inside-worlds-most.html)
 
-
 # Write-Up
+
 The writeup for this lab should contain the following outline:
 1. Title page (see template in the folder ‘Requirement of Lab Reports’)
 2. Introduction 
