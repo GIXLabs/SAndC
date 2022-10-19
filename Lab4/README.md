@@ -7,7 +7,7 @@ The purpose of this lab is to learn about the many uses of one of the first IC�
 
 The [555 Timer (click for datasheet)](https://www.ti.com/lit/ds/symlink/ne555.pdf) consists of a voltage divider (three 5k resistors, hence 555) two comparators (triangles), a bi-stable circuit (flip-flop, green box), and a couple of output driving circuits (“Output Driver” and NPN bipolar transistor). The [555](https://en.wikipedia.org/wiki/555_timer_IC) has been produced for decades by many companies. These parts function as follows:
 - Comparator: Output logic 1 if input “+” is greater than input “-”, otherwise output logic 0.
-- Flip-Flop: A momentary pulse on the “Set” input, S, sets output Q = 1, Q(bar) = 0. A pulse on the “Reset” input R, sets Q=0. If both S and R are 0, the output keeps its state from the most recent input pulse. If  both S and R are 1, the output is undefined. A Flip-flop can be thought of as a 1-bit memory. 
+- Flip-Flop: A momentary pulse on the “Set” input, S, sets output Q = 1, Q(bar) = 0. A pulse on the “Reset” input R, sets Q=0. If both S and R are 0, the output keeps its state from the most recent input pulse. If  both S and R are 1, the output is undefined. A Flip-flop can be thought of as a 1-bit memory.
 - Output Driver: supports up to about 100Ma output current in most conditions (see datasheet).
 
 References: [Teardown of a 555 (with interactive die photo)](http://www.righto.com/2016/02/555-timer-teardown-inside-worlds-most.html)
@@ -16,12 +16,12 @@ References: [Teardown of a 555 (with interactive die photo)](http://www.righto.c
 
 The writeup for this lab should contain the following outline:
 1. Title page (see template in the folder ‘Requirement of Lab Reports’)
-2. Introduction 
+2. Introduction
 ⅓ of a page describing the purpose and goals of this lab in your own words. Do not reproduce any material from this assignment document in any section of your writeup.
 3. Results
-Each location in the instructions below marked with “✏️” indicates some data which must appear in your report. Separate each result or related set of results with a sub-section header indicating what it is. For any numerical data or graph describe the meaning of the data. Always label and describe the X and Y axis of any graph. When comparing two graphs, always plot them with the same X and Y axis limits. 
+Each location in the instructions below marked with “✏️” indicates some data which must appear in your report. Separate each result or related set of results with a sub-section header indicating what it is. For any numerical data or graph describe the meaning of the data. Always label and describe the X and Y axis of any graph. When comparing two graphs, always plot them with the same X and Y axis limits.
 4.	Discussion and Conclusions
-- In ½ to 1 page, summarize the key learning points from the Results above. 
+- In ½ to 1 page, summarize the key learning points from the Results above.
 
 # Preparation
 
@@ -43,7 +43,7 @@ Each location in the instructions below marked with “✏️” indicates some 
 
 The above should be completed before the scheduled lab start time.  
 
-Parts: 
+Parts:
 - 555 timer in 8-pin DIP package
 - 74HC00 Quad NAND Gate
 - Jumper wires
@@ -59,12 +59,12 @@ Wire your 555 up in Monostable mode ([Wikipedia reference](https://en.wikipedia.
 
 **Note:** These images do not show connections to the power supply and signal generator. The power line should be connected to a power supply in a similar style to previous labs, the grounds should all be tied together (power supply, signal generator, and circuit), and the signal generator should be attached at the points described below.
 
-1. With Vcc connected to +5V on a power supply, connect “Output” (555 pin 3, see diagram at the top of the page) to your oscilloscope and clip the probe ground to ground. 
+1. With Vcc connected to +5V on a power supply, connect “Output” (555 pin 3, see diagram at the top of the page) to your oscilloscope and clip the probe ground to ground.
 1. Set the signal generator to a frequency of 100Hz. Set pulse duration to 10 microseconds (us), set high level to 4.5 V and low level to 0.1 V. Pulses should be "high" (5 V) for most of the time and "low" (0-0.2 V) for 10 microsecond (us). Refer back to the [Lab 1 references](/Lab1/signal_gen.md) if you need a refresher on the signal generator.
-1. Connect pulse output from signal generator to “Trigger” on your 555 (555 pin 2, see diagram at the top of the page). 
+1. Connect pulse output from signal generator to “Trigger” on your 555 (555 pin 2, see diagram at the top of the page).
 1. Connect a second oscilloscope channel/probe to Trigger (555 pin 2, see diagram at the top of the page).
-1. ✏️ Capture an oscilloscope picture showing three cycles of the input and output pulses. 
-1. ✏️ Comment on pulse duration of the output pulse compared to calculations and measured R value. 
+1. ✏️ Capture an oscilloscope picture showing three cycles of the input and output pulses.
+1. ✏️ Comment on pulse duration of the output pulse compared to calculations and measured R value.
 
 ## Astable Mode
 
@@ -74,10 +74,10 @@ Wire your 555 up in Astable mode ([Wikipedia reference](https://en.wikipedia.org
 
 **Note:** These images do not show connections to the power supply and signal generator. The power line should be connected to a power supply in a similar style to previous labs, the grounds should all be tied together (power supply, signal generator, and circuit), and the signal generator should be attached at the points described below.
 
-1. ✏️ Measure the exact resistance values you used for R1 and R2. Connect the components identified in your pre-lab computations. 
+1. ✏️ Measure the exact resistance values you used for R1 and R2. Connect the components identified in your pre-lab computations.
 1. ✏️ Measure the frequency of the output signal. How does it compare with calculations and measured R values?
 1. ✏️ Measure duration of each pulse. How does it compare with calculations and measured R values?
-1. ✏️ Measure your capacitor on the handheld DMM. 
+1. ✏️ Measure your capacitor on the handheld DMM.
 1. ✏️ Explain the difference between the actual frequency and the desired frequency using measured resistance and capacitance.
 
 ## Extra Pulse Detector (second week)
@@ -88,17 +88,17 @@ The task is to design a pulse generator checker. “GIX industries LLC” has de
 
 You can build you own ‘Emitter’ using an Arduino. [See the files here for more details.](emitter)
 
-Problem definition: 
+Problem definition:
 
 Reference: [555 Extra Pulse Catcher](555_extra_pulse_catcher.docx)
 
 Design a circuit combining two 555 chips and a 74HC00 quad NAND gate to perform the following function:
-1. Create the emitter 
+1. Create the emitter using the [instructions in this document.](emitter/how_to_build_extra_pulse_emitter.docx)
 1. Provide an output LED which is normally OFF.
 1. If in any 1ms period, more than one pulse comes into the input of your circuit, light the LED for 1 second. This functionality is illustrated below:
-1. Build the [555 Extra Pulse Catcher (Lab Part 3).doc’] using your [breadboard](/Lab2/information/breadboard.md). 
-1. Tests: 
-    1. ✏️ Using “The Emitter” device, validate function of your circuit. 
+1. Build the [555 Extra Pulse Catcher](555_extra_pulse_catcher.docx) using your [breadboard](/Lab2/information/breadboard.md).
+1. Tests:
+    1. ✏️ Using “The Emitter” device, validate function of your circuit.
 	1. ✏️ With “The Emitter” connected, connect both “IN” and “OUT/LED” of your circuit to the oscilloscope. Trigger on the rising edge of “OUT/LED” and capture both signals in a screen shot. ✏️ Describe how these signals validate the correct operation of your circuit.
 	Notice that Vcc should be 4.5V instead of 5V
 
@@ -124,4 +124,4 @@ A: First, it is easiest to check all the resistors and capacitors. You can use D
 
 A: Schematic symbols are used when diagramming a larger circuit, so they often prioritize a format that shows the flow of information in a circuit. For example: pins that are most often inputs are often on the left of the schematic symbol while outputs are often on the right. This convention makes it easier to see how a circuit works from a schematic, with information flowing generally from the left side to the right side. Keep this in mind when you eventually make your own schematic symbols for your own circuit boards as it will make debugging the circuit much simpler.
 
-The physical pins, however, are often constrained by how the circuitry on the silicon die is laid out, so often inputs and outputs are mixed on either side of the integrated circuit (IC). 
+The physical pins, however, are often constrained by how the circuitry on the silicon die is laid out, so often inputs and outputs are mixed on either side of the integrated circuit (IC).
