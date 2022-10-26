@@ -72,12 +72,12 @@ Wire your 555 up in Astable mode ([Wikipedia reference](https://en.wikipedia.org
 
 ![Astable](assets/astable.svg)
 
-**Note:** These images do not show connections to the power supply and signal generator. The power line should be connected to a power supply in a similar style to previous labs, the grounds should all be tied together (power supply, signal generator, and circuit), and the signal generator should be attached at the points described below.
+**Note:** These images do not show connections to the power supply and signal generator. The power line should be connected to a power supply in a similar style to previous labs, the grounds should all be tied together (power supply, and circuit).
 
 1. ✏️ Measure the exact resistance values you used for R1 and R2. Connect the components identified in your pre-lab computations.
 1. ✏️ Measure the frequency of the output signal. How does it compare with calculations and measured R values?
 1. ✏️ Measure duration of each pulse. How does it compare with calculations and measured R values?
-1. ✏️ Measure your capacitor on the handheld DMM.
+1. Assuming capacitor is accurate.
 1. ✏️ Explain the difference between the actual frequency and the desired frequency using measured resistance and capacitance.
 
 ## Extra Pulse Detector (second week)
