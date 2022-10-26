@@ -96,6 +96,9 @@ Design a circuit combining two 555 chips and a 74HC00 quad NAND gate to perform 
 1. Create the emitter using the [instructions in this document.](emitter/how_to_build_extra_pulse_emitter.docx)
 1. Provide an output LED which is normally OFF.
 1. If in any 1ms period, more than one pulse comes into the input of your circuit, light the LED for 1 second. This functionality is illustrated below:
+
+![Pulse example](assets/pulse_example.png)
+
 1. Build the [555 Extra Pulse Catcher](555_extra_pulse_catcher.docx) using your [breadboard](/Lab2/information/breadboard.md).
 1. Tests:
     1. ✏️ Using “The Emitter” device, validate function of your circuit.
@@ -125,3 +128,15 @@ A: First, it is easiest to check all the resistors and capacitors. You can use D
 A: Schematic symbols are used when diagramming a larger circuit, so they often prioritize a format that shows the flow of information in a circuit. For example: pins that are most often inputs are often on the left of the schematic symbol while outputs are often on the right. This convention makes it easier to see how a circuit works from a schematic, with information flowing generally from the left side to the right side. Keep this in mind when you eventually make your own schematic symbols for your own circuit boards as it will make debugging the circuit much simpler.
 
 The physical pins, however, are often constrained by how the circuitry on the silicon die is laid out, so often inputs and outputs are mixed on either side of the integrated circuit (IC).
+
+**Q: In monostable mode, why am I getting an output signal that looks like this?**
+
+![No Power](assets/no_power.svg)
+
+A: Check whether your power supply is on (On/Off button should be glowing). It should also be connected to the appropriate pins on the breadboard.
+
+**Q: In monostable mode, the output pulse seems unstable and looks like the gif below. Why is it unstable?**
+
+![Pulse Too Wide](assets/unstable_pulse.gif)
+ 
+ A: The output pulse is too long, which means it misses several trigger pulses from the signal generator and triggers whenever the next pulse occurs. This can be solved by configuring your R and C values to get an appropriate output pulse width. See the [Wikipedia reference](https://en.wikipedia.org/wiki/555_timer_IC#Monostable).
