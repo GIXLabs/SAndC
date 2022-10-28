@@ -101,9 +101,9 @@ Design a circuit combining two 555 chips and a 74HC00 quad NAND gate to perform 
 
 1. Build the [555 Extra Pulse Catcher](555_extra_pulse_catcher.docx) using your [breadboard](/Lab2/information/breadboard.md).
 1. Tests:
-    1. ✏️ Using “The Emitter” device, validate function of your circuit.
+    1. ✏️ Using “The Emitter” device, validate function of your circuit and ask a TA to check.
 	1. ✏️ With “The Emitter” connected, connect both “IN” and “OUT/LED” of your circuit to the oscilloscope. Trigger on the rising edge of “OUT/LED” and capture both signals in a screen shot. ✏️ Describe how these signals validate the correct operation of your circuit.
-	Notice that Vcc should be 4.5V instead of 5V
+	Notice that Vcc should be 4.0V ~ 4.5V instead of 5V
 
 # Frequently Asked Questions
 
