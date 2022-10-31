@@ -1,74 +1,83 @@
-Strain Gage / Load Cell
+# Strain Gage / Load Cell
 
-Introduction
+## Introduction
 The purpose of this lab is to learn about measurement of Force and Strain. We will learn about ideal and non-ideal behavior of practical force sensors. Measuring force is most often used to measure weight (the force of gravity developed by a Mass).
 
-Background
+## Background
 Key terms:
 
-Strain size deformation of a material. Often expressed:
-Strain = 𝜺 (epsilon) = ΔL / L
-(note the units (mm, inch etc) cancel out! Strain has no units (it’s “dimensionless”)
-For strong materials like metal, strain is very small, like 10-5
+- **Strain**: size deformation of a material. Often expressed:
+	- Strain = 𝜺 (epsilon) = ΔL / L
+	- (note the units (mm, inch etc) cancel out! Strain has no units (it’s dimensionless, but you will sometimes see it listed as in/in or mm/mm)
+	- For strong materials like metal, strain is very small, like 10-5
 
-Stress force per unit area.
-Stress = σ= F/A (sigma)
-(units of stress are Pascals or pounds-per-square-inch, PSI)
+- **Stress**: force per unit area.
+	- Stress = σ= F/A (sigma)
+	- (units of stress are Pascals or pounds-per-square-inch, PSI)
 
-Under some conditions, strain is proportional to stress by the simple equation:
-ϵ= E σ
-(Hooke’s Law). E is Young’s modulus. Most Force/Weight sensors exploit this by measuring strain and calibrating it to stress -✏️ Force. If the stress or strain is too big, the material might crack or deform, breaking this relationship (so be gentle with strain gages and load cells!).
+Under some conditions, strain is proportional to stress by the simple equation, known as Hooke's Law:
+
+`ϵ= E σ`
+
+E is Young’s modulus and is a material property. Most force/weight sensors measure change in resistance due to strain, which is then converted to a stress based on the Young's modulus of the load cell. If the stress or strain is too big, the material might crack or deform, breaking this relationship. The stress is then converted to force based on the geometry of the load cell.
 
 We will learn about two sensors:
 
-Strain gage: a sensor which can measure very small strains on a surface. As the gage is stretched, its resistance will change.
-Load Cell: a metal structure which has a linear relationship between stress and strain so that it follows Hooke’s Law. A strain gage is applied to the surface of a load cell.
+**Strain gage**: a sensor which can measure very small strains on a surface. As the gage is stretched, its resistance will change.
+
+**Load Cell**: a metal structure which has a linear relationship between stress and strain so that it follows Hooke’s Law. A strain gage is applied to the surface of a load cell.
 
 Resistive Heating
 We have from Ohm’s Law: V=IR. We also know that power is: P =IV. From this we can easily get P= I2R. Power in a resistor converts directly to heat and heat converts to temperature. Thus any resistor will heat up more and more as power is increased. Strain gages are resistors. One thing we will study in this lab is how strain gages respond to changes in temperature.
 
-[StrainGaugeLoadCellBackground.pdf] This material (From Prof. Hannaford’s EE543 course notes) goes into more depth and detail on load cell design.
-[ Sparkfun Tutorial ] Detailed info on hooking up a bridge-based load cell to Arduino
-[instructables] Similar tutorial.
+- [Background](background.pdf): This material (From Prof. Hannaford’s EE543 course notes) goes into more depth and detail on load cell design.
+- [Sparkfun Tutorial](https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide/all): Detailed info on hooking up a brid(ge-based load cell to Arduino
+- [Instructables Tutorial](https://www.instructables.com/Arduino-Scale-With-5kg-Load-Cell-and-HX711-Amplifi/): Similar tutorial.
 
-Preparation:
-Pre-lab computations:
-None but see Computer Preparation below
+## Preparation:
+### Pre-lab computations:
+- None but see Computer Preparation below
 
-Computer Preparation
-Make sure your laptop can do Arduino development (one such laptop per lab bench team).
-Install the HX711 chip library [HX711_Library.zip] ( Library installation help ) or go to https://www.arduino.cc/reference/en/libraries/hx711-arduino-library/
+### Computer Preparation
+- Make sure your laptop can do Arduino development (one such laptop per lab bench team).
+- Install the HX711 chip library [using the instructions here](https://www.arduino.cc/reference/en/libraries/hx711-arduino-library/)
 
 Parts, tools, supplies required:
-Strain gage [Ebay Part]
-Simplistic “Diving Board” load cell
-5Kg load cell [Ebay Link]
-Load Cell A to D-SPI interface (HX711) chip:
-Load Cell mounting base (supplied by GIX).
-Test Weight Set
-DMM with Type K thermocouple plug
-Power Supply
-Cup of ice cubes, Heat gun, Soldering iron
-Arduino, USB cable
-[HX711_driver_TECHIN512_GIX_rev01.ino ] Prepare Arduino code
-HX711 chip Arduino driver (software, see below)
+- Strain gage [Ebay Part]
+- “Diving Board” load cell
+- 5Kg load cell [Ebay Link]
+- Load Cell A to D-SPI interface (HX711) chip:
+- Load Cell mounting base (supplied by GIX).
+- Test Weight Set
+- DMM with Type K thermocouple plug
+- Power Supply
+- Cup of ice cubes 
+- Heat gun 
+- Soldering iron
+- Arduino
+- USB cable
+- [Arduino code](src/scale_reader/scale_reader.ino)
+- [HX711 chip Arduino driver](https://www.arduino.cc/reference/en/libraries/hx711-arduino-library/)
 
-Procedure:
+## Procedure:
 
-Strain Gage Measurements
+1. Strain Gage Measurements
 In this section you will study the resistance of the individual strain gage and its sensitivity to temperature.
-
-Resistance temperature sensitivity. We will use the resistance of the strain gage to heat it up a little bit and then see how much the resistance changes.
-Set power supply to 2.0V. (set current limit to about 200mA)
-Set up the Bench-Top DMM (not the Fluke yellow hand held DMMs) to measure current. Using “LO” and “mA” inputs, connect it in series with the strain gage and the power supply.
-Using the button labeled “Rate”, set the Bench-DMM to “slow” -- this means it will average several readings to get more accuracy (5 ½ digits!!!). Record all 5 digits from the DMM in “slow” mode. If the last digit is flickering between two values, split the difference .. example: 1.4297{3 / 4} ---✏️ 1.429735
-Read current from the DMM.
-✏️ What is the voltage, V (assume the power supply is accurate), and current, I? ✏️Compute the resistance? (R=V/I). ✏️ What is the power dissipated in the strain gage? (P = I*V or P=I2R).
-Change power supply voltage to +5V Wait for 3 minutes.
-✏️ Measure/compute R = V/I. ✏️What is resistance? ✏️ Did it change?
-✏️ Compute the power dissipated in the strain gage resistance
-Reduce voltage to 1.0V. Wait 3 minutes. During this time, predict the current using both values of resistance.
-✏️ record current and compute resistance after 3 min of cooling.
+	1. Resistance temperature sensitivity. We will use the resistance of the strain gage to heat it up a little bit and then see how much the resistance changes.
+		1. Set power supply to 2.0V. (set current limit to about 200mA)
+		1. Set up the Bench-Top DMM (not the Fluke yellow hand held DMMs) to measure current. Using “LO” and “mA” inputs, connect it in series with the strain gage and the power supply.
+		1. Using the button labeled “Rate”, set the Bench-DMM to “slow” -- this means it will average several readings to get more accuracy (5 ½ digits). Record all 5 digits from the DMM in “slow” mode. If the last digit is flickering between two values, split the difference. For example: 1.4297{3 / 4} becomes 1.429735.
+		1. Read current from the DMM.
+		1. ✏️ What is the voltage, V (assume the power supply is accurate), and current, I? 
+		1. ✏️ Compute the resistance (R=V/I). 
+		1. ✏️ What is the power dissipated in the strain gage? (P = I*V or P=I2R).
+		1. Change power supply voltage to +5V Wait for 3 minutes. 
+		1. ✏️ Measure/compute R = V/I. 
+		1. ✏️What is resistance? 
+		1. ✏️ Did it change?
+		1. ✏️ Compute the power dissipated in the strain gage resistance
+		1. Reduce voltage to 1.0V. Wait 3 minutes. During this time, predict the current using both values of resistance.
+		1. ✏️ record current and compute resistance after 3 min of cooling.
 Delta-R vs cold (ice cube)
 In this section, we will study how resistance of the gage ( ) changes with temperature.
 Place the strain gage (not the diving board) on several sheets of paper or a notebook (thermal insulation from the desk).
