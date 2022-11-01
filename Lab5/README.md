@@ -100,7 +100,7 @@ The diving board is a load cell with a single strain gage. We’ll measure its s
 1. Set heat gun switch to “Low” and verify that it is blowing room temperature air.
 1. Blow room temperature air on the “diving board” strain gage for 1 min. ✏️ Compute and record resistance without touching the gage.
 1. Tape Type K thermocouple onto diving board near the strain gage (leave tip out in open air just above strain gage).
-1. Set the heat-gun to high. From a distance of 12” (50cm), heat the strain gage with the heat gun for 15 seconds (**DO NOT APPLY HEAT CLOSER THAN 12” / 50cm or you WILL damage the strain gage.**) ✏️ Record hot air temperature with DMM.
+1. Set the heat-gun to high. From a distance of 12” (50cm), heat the strain gage with the heat gun for 15 seconds (**DO NOT APPLY HEAT CLOSER THAN 12” / 30cm or you WILL damage the strain gage.**) ✏️ Record hot air temperature with DMM.
 1. ✏️ Compute and record resistance when gage is heated (but not pushed or deformed).
 
 ### Load Cell Measurements ### 
@@ -110,8 +110,8 @@ Finally we will study a weight measurement system consisting of a load cell moun
 
 1. Plug an Arduino into your prepared laptop.
 1. Using male-to-female jumper wires, connect Arduino with load cell HX711 chip via SPI with the following wiring:
-	1. Arduino pin 6 to HX711 CLK
-	1. Arduino pin 5 to HX711 DOUT
+	1. Arduino pin 6 to HX711 SCK
+	1. Arduino pin 5 to HX711 DT
 	1. Arduino pin 5V to HX711 VCC
 	1. Arduino pin GND to HX711 GND
 1. Download and run [pre-written sketch](scale_driver.ino) which can:
@@ -126,7 +126,7 @@ Finally we will study a weight measurement system consisting of a load cell moun
 ### Temperature Sensitivity ###
 1. Place a weight between 100-500 grams on your platform. ✏️ Record the weight reading at room temperature.
 1. Place the type K thermocouple tip inside the two holes in the load cell beam.
-1. Set the heat-gun to high. From a distance of 12” (50cm), heat the strain gage with the heat gun for 15 seconds (**DO NOT APPLY HEAT CLOSER THAN 12” / 50cm or you WILL damage the strain gage.**) ✏️ Record hot air temperature from Fluke DMM.
+1. Set the heat-gun to high. From a distance of 12” (50cm), heat the strain gage with the heat gun for 15 seconds (**DO NOT APPLY HEAT CLOSER THAN 12” / 30cm or you WILL damage the strain gage.**) ✏️ Record hot air temperature from Fluke DMM.
 1. ✏️ Record the weight reading and air temperature.
 1. ✏️ Remove heat gun. ✏️ How long does it take for the weight reading to return to within 1% of the room temperature weight? 
 	1. Some of the strain gauges’ readings may not return to 1%. In this case, wait until the reading is stable and record the stable value.
