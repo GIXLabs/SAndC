@@ -5,7 +5,7 @@ The purpose of this lab is to learn about measurement of Force and Strain. We wi
 
 ### Key Terms and Equations
 - **Strain**: Deformation of a material normalized by the starting length.
-	- `Strain = 𝜺 = ΔL / L`
+	- `Strain = 𝜺 = ΔL/L`
 	- The units (mm, inch etc) cancel out. Strain is unitless, but you will sometimes see it listed as in/in or mm/mm.
 
 - **Stress**: Force per unit area.
@@ -14,7 +14,7 @@ The purpose of this lab is to learn about measurement of Force and Strain. We wi
 
 Under some conditions, strain is proportional to stress by this simple equation, known as Hooke's Law:
 
-`ϵ= E σ`
+`ϵ = Eσ`
 
 E is Young’s modulus and is a material property. Most force/weight sensors measure change in resistance due to strain, which is then converted to a stress based on the Young's modulus of the load cell. If the stress or strain is too big, the material might crack or deform, breaking this relationship. The stress is then converted to force based on the geometry of the load cell. 
 
@@ -103,7 +103,9 @@ The diving board is a load cell with a single strain gage. We’ll measure its s
 
 ### Load Cell Measurements ### 
 Finally we will study a weight measurement system consisting of a load cell mounted between two platforms. The setup below is shown without the top plate for clarity.
+
 ![Arduino HX711 Setup](assets/arduino_hx711.png)
+
 1. Plug an Arduino into your prepared laptop.
 1. Using male-to-female jumper wires, connect Arduino with load cell HX711 chip via SPI with the following wiring:
 	1. Arduino pin 6 to HX711 CLK
