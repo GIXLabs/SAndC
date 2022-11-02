@@ -133,3 +133,12 @@ Finally we will study a weight measurement system consisting of a load cell moun
 
 ## Write-Up
 Same instructions as previous TECHIN 512 labs
+
+## Frequently Asked Questions
+**Q: When measuring the current on the strain gage, the value is very small and results in a large resistance.**
+
+A: Please check if the thin wires of the strain gage have insulating coating. If it is yellow, it means that the insulating coating is not removed. Please find another strain gage or you can use the diving board which contains a stain gage and is ready to be measured.
+
+**Q: How do I calibrate the load cell?**
+
+A: There are many different ways to calibrate sensors. We use basic linear regression in this lab. The goal is to find the relationship ‘y = ax + b’ where ‘x’ is the raw value of your sensor, ‘y’ is the calibrated output (during calibration, it is also called ground truth), ‘a’ is usually called scale, and ‘b’ is usually called ‘bias’. After measuring 1g, 10g, and 100g, you now have 3 pairs of (x, y). There are many ways to do linear regression. You can do it manually, use Excel, search for online websites, or write a script.
