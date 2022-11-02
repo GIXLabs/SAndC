@@ -8,34 +8,35 @@
  Arduino pin GND -> HX711 GND 
 */
 
-#include "HX711.h"
+#include <HX711.h>
 
-HX711 scale(5, 6);
+HX711 scale;
+const int LOADCELL_DOUT_PIN = 5;
+const int LOADCELL_SCK_PIN = 6;
 
-float calibration_factor = 100; // this calibration factor is adjusted according to my load cell
+
+float calibration_factor = -100; // this calibration factor is adjusted according to my load cell
  
 
-void setup() {
+void setup() 
+{
   Serial.begin(9600);
   Serial.println("GIX Techin512 HX711 calibration sketch");
   Serial.println("Remove all weight from scale");
   Serial.println("After readings begin, place known weight on scale"); 
-
+  scale.begin(5,6);
   scale.set_scale();
   scale.tare();  //Reset the scale to 0
 
   long zero_factor = scale.read(); //Get a baseline reading 
 }
 
-void loop() {
+void loop() 
+{
   long reading;
   delay(200);
   Serial.print("Reading: ");
   reading = scale.read();
- // if (units < 0)
- // {
- //  units = 0.00;
- //  }
   Serial.print(reading);
   Serial.print(" raw");  
   Serial.println();
