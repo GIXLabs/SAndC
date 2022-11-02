@@ -39,12 +39,13 @@ We have from Ohm’s Law: V=IR. We also know that power is: P=IV. From this we c
 - Make sure your laptop can do Arduino development (one such laptop per lab bench team).
 - Install the HX711 chip library [using the instructions here](https://www.arduino.cc/reference/en/libraries/hx711-arduino-library/)
 
-Parts, tools, supplies required:
+### Parts, Tools, and Supplies
+
+![supplies](assets/supplies.svg)
+
 - Strain gage
 - “Diving Board” load cell
-- 5Kg load cell
-- Load cell A to D-SPI interface (HX711) chip
-- Load cell mounting base (supplied by GIX)
+- Platform load cell
 - Test weight set
 - Benchtop DMM
 - Fluke DMM with Type K thermocouple plug
@@ -73,8 +74,8 @@ In this section you will study the resistance of the individual strain gage and 
 	1. ✏️ Compute the resistance using Ohm's Law V=IR. 
 	1. ✏️ What is the power dissipated in the strain gage? (P = IV or P=I<sup>2</sup>R).
 	1. Change power supply voltage to +5V Wait for 3 minutes. 
-	1. ✏️ Measure/compute R = V/I. 
-	1. ✏️ What is resistance? 
+	1. Measure/compute R = V/I. 
+	1. ✏️ What is the resistance? 
 	1. ✏️ Did it change?
 	1. ✏️ Compute the power dissipated in the strain gage resistance
 	1. Reduce voltage to 1.0V. Wait 3 minutes. During this time, predict the current using both values of resistance.
