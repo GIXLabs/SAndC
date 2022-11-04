@@ -65,7 +65,7 @@ In this section you will study the resistance of the individual strain gage and 
 ![Setup 1](assets/setup1.svg)
 
 1. Resistance temperature sensitivity. We will use the resistance of the strain gage to heat it up a little bit and then see how much the resistance changes.
-	1. Set power supply to 2.0V and current limit to about 200mA.
+	1. Set power supply to 2.0V and current limit to about 150mA.
 	1. Set up the bench-top DMM (not the Fluke yellow handheld DMMs, which we will need later to measure temperature) to measure current. Using “LO” and “mA” inputs, connect it in series with the strain gage and the power supply.
 	1. Using the button labeled “Rate”, set the Bench-DMM to “slow” -- this means it will average several readings to get more accuracy (5 ½ digits). Record all 5 digits from the DMM in “slow” mode. If the last digit is flickering between two values, split the difference. For example: 1.4297{3 / 4} becomes 1.429735.
 	1. Read current from the DMM.
@@ -80,7 +80,7 @@ In this section you will study the resistance of the individual strain gage and 
 	1. Reduce voltage to 1.0V. Wait 3 minutes. During this time, predict the current using both values of resistance.
 	1. ✏️ Record current and compute resistance after 3 min of cooling.
 1. Delta-R vs cold (ice cube) In this section, we will study how resistance of the gage changes with temperature.
-	1. Place the strain gage (not the diving board) on several sheets of paper or a notebook (thermal insulation from the desk).
+	1. Place the strain gage on several sheets of paper or a notebook (thermal insulation from the desk). Or you can use the 'diving board' instead, which makes measurement easier.
 	1. Set power supply to 1.0 V, ✏️ measure current / compute resistance.
 	1. Apply an ice cube to the gage. Use a plastic bag or some other methods to apply ice, in order to prevent direct contact. Water may affect measurement. ✏️ What is change in resistance?
 	1. Use temperature attachment (type “K” thermocouple) with yellow Fluke DMM to ✏️ measure room temperature. Then, ✏️ press your finger on the tip of the thermocouple and record temperature.
