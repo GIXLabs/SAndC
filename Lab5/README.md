@@ -114,7 +114,7 @@ Finally we will study a weight measurement system consisting of a load cell moun
 	1. Arduino pin 5 to HX711 DT
 	1. Arduino pin 5V to HX711 VCC
 	1. Arduino pin GND to HX711 GND
-1. Download and run [pre-written sketch](scale_driver.ino) which can:
+1. Download and run [pre-written sketch](src/scale_reader/scale_reader.ino) which can:
 	1. Read load cell, type sensor reading on Laptop Screen (terminal)
 	1. Repeat
 1. Calibrate the load cell with weight set:
