@@ -52,7 +52,6 @@ We have from Ohm’s Law: V=IR. We also know that power is: P=IV. From this we c
 - Power supply
 - Cup of ice cubes 
 - Heat gun 
-- Soldering iron
 - Arduino
 - USB cable
 - [Arduino code](src/scale_reader/scale_reader.ino)
@@ -61,7 +60,7 @@ We have from Ohm’s Law: V=IR. We also know that power is: P=IV. From this we c
 ## Procedure:
 
 ### Strain Gage Measurements
-In this section you will study the resistance of the individual strain gage and its sensitivity to temperature.
+In this section you will study the resistance of the individual strain gage and its sensitivity to temperature. (You can use the 'diving board', which makes measurements easier, instead of a single strain gauge.)
 
 ![Setup 1](assets/setup1.svg)
 
