@@ -55,9 +55,10 @@ Compute all resistor values for step 2 below.
 
 ![One-wire sensor](assets/onewire.png)
 
-1. We have two types of one-wire sensors: Stainless Steel cylinder, or BJT package. Use appropriate hookup as shown above.
+1. We have two types of one-wire sensors: stainless steel cylinder, or BJT package. Use appropriate hookup as shown above.
 1. Hook up to Arduino, install and run driver software (see Resources above).
-1. Download the [one-wire-512.ino](one-wire-512/one-wire-512.ino) to the Arduino, print values to your PC. Note: this is one of the example files when installing the library through the library manager.
+1. Using the library manager in the Arduino IDE, install the OneWire library by Paul Stoffregen (Tools \> Manage Libraries \> Search: OneWire). 
+1. Open the example sketch that came with the library (File \> Examples \> OneWire \> DS18x20_Temperature)
 1. As you get each sensor working, take each one to the ice-water and boiling-water baths.
 1. ✏️ Record reading of the sensor in ice water & boiled water.
 1. ✏️ Using the fact that ice-water is very close to 0 deg C and boiling water is very close to 100C, derive 2nd order polynomial calibration factors for thermistor. (If you find your type-K sensor or one-wire sensor is also not very accurate, you can also perform calibration. In this case, a linear calibration is often good enough)
@@ -72,7 +73,7 @@ Compute all resistor values for step 2 below.
     - ✏️ 0&deg;C 
     - ✏️ 100&deg;C
 1. The Arduino analog input can handle input voltages from 0-5V. Design a DC circuit making a voltage divider with
-    - 5V input (from Vcc pin on arduino)
+    - 5V input (from 5V pin on arduino)
     - A resistor R
     - The thermistor
     - So that the voltage across the 10K-thermistor voltage will range from 0-5V for any temperature from -10&deg;C to + 110&deg;C.
@@ -90,12 +91,15 @@ Compute all resistor values for step 2 below.
 Now you have some familiarity with temperature sensors. Let's use a hardware board to get large data sets and do analysis.
 
 1. Set up environment:
-    - Arduino: [install](https://www.arduino.cc/en/software)
     - Install nRF52840 board manager: [install](https://learn.adafruit.com/adafruit-feather-sense/arduino-support-setup)
-    - Python 3 (3.7 or higher): [install python3](https://www.python.org/downloads/)
-    - Install Python Serial Port Extension: `pip3 install pyserial`
+    - Add the following libraries to the Arduino IDE:
+        - Adafruit_BMP280
+        - Adafruit_LSM6DS
+        - Adafruit_SHT31
+        - Adafruit_APDS9960
+    - Install Python serial port module: `pip3 install pyserial`
     - Google Colab [open](https://colab.research.google.com/)
-1. Upload the [SensorController](adafruit_nRF52840_Sense/SensorController/../Tech512-Lab6Part3-52840/SensorController/SensorController.ino) to **nRF52840**, you will see reading of the temperature sensor on the board, the data will be printed around every 0.5 seconds.
+1. Upload the [SensorController](https://github.com/adafruit/Adafruit_Learning_System_Guides/blob/main/Adafruit_Feather_Sense/feather_sense_sensor_demo/feather_sense_sensor_demo.ino) to **nRF52840**, you will see reading of the temperature sensor on the board, the data will be printed around every 0.5 seconds.
     ![serial](assets/serial_monitor.png)
 1. Uncomment **Serial.print** command from line 68-95. Take a screenshot of reading from all sensors on the board.
 1. **Close the Serial Monitor in Arduino studio** and run [logging.py](src/logging.py). The software will create a csv file to logs/{currentTime}.csv and you can stop it by CTRL+C
