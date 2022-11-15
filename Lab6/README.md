@@ -55,7 +55,7 @@ Compute all resistor values for step 2 below.
 
 ![One-wire sensor](assets/onewire.png)
 
-1. We have two types of one-wire sensors: Stainless Steel cylinder, or BJT package. Use appropriate hookup as shown:
+1. We have two types of one-wire sensors: Stainless Steel cylinder, or BJT package. Use appropriate hookup as shown above.
 1. Hook up to Arduino, install and run driver software (see Resources above).
 1. Download the [one-wire-512.ino](one-wire-512/one-wire-512.ino) to the Arduino, print values to your PC. Note: this is one of the example files when installing the library through the library manager.
 1. As you get each sensor working, take each one to the ice-water and boiling-water baths.
@@ -66,26 +66,24 @@ Compute all resistor values for step 2 below.
 
 ![Thermistor](assets/thermistor.png)
 
-1.  Attach Fluke DMM to thermistor with alligator clips
-1.  ✏️ Using water baths, record resistance at 
+1. Attach Fluke DMM to thermistor with alligator clips
+1. ✏️ Using water baths, record resistance at 
     - ✏️ Room temperature 
     - ✏️ 0&deg;C 
     - ✏️ 100&deg;C
-1.  The Arduino analog input can handle input voltages from 0-5V. Design a DC circuit making a voltage divider with
-    1.  5V input (from Vcc pin on arduino)
-    1.  A resistor R
-    1.  The thermistor
-    1.  So that the voltage across the 10K-thermistor voltage will range from 0-5V for any temperature from -10&deg;C to + 110&deg;C.
+1. The Arduino analog input can handle input voltages from 0-5V. Design a DC circuit making a voltage divider with
+    - 5V input (from Vcc pin on arduino)
+    - A resistor R
+    - The thermistor
+    - So that the voltage across the 10K-thermistor voltage will range from 0-5V for any temperature from -10&deg;C to + 110&deg;C.
 1.  You should **NOT** expect a straight line relationship. 
-    - ✏️ Try to fit a 2nd order polynomial (y = ax^2 + bx + c) to three data points: 0&deg;C, Room Temp, 100&deg;C (where y is resistance and x is temperature).
+    - ✏️ Try to fit a 2nd order polynomial (y = ax^2 + bx + c) (or T = a*log(R)+b) to three data points: 0&deg;C, Room Temp, 100&deg;C (where y is resistance and x is temperature).
 1.  Write an Arduino sketch which reads the analog port and prints the reading.
-    1.  ✏️ Demonstrate that it works using the water baths.
-
-For two points extra credit:
-✏️ Implement the polynomial equation (iv) on the Arduino
-✏️ Demo correct temperature readout
-
-✏️ Record reading of the sensor in ice water & boiled water.
+    - ✏️ Demonstrate that it works using the water baths.
+1. For two points extra credit:
+    - ✏️ Implement the polynomial equation on the Arduino
+    - ✏️ Demo correct temperature readout
+1. ✏️ Record reading of the sensor in ice water & boiled water.
 
 ## Adafruit Feather nRF52840 Sense:
 
@@ -93,24 +91,20 @@ Now you have some familiarity with temperature sensors. Let's use a hardware boa
 
 1. Set up environment:
     - Arduino: [install](https://www.arduino.cc/en/software)
-    - Please install all libraries in **libs** folder (Sketch -\> Include Library -\> Add .ZIP Library)
     - Install nRF52840 board manager: [install](https://learn.adafruit.com/adafruit-feather-sense/arduino-support-setup)
     - Python 3 (3.7 or higher): [install python3](https://www.python.org/downloads/)
     - Install Python Serial Port Extension: `pip3 install pyserial`
     - Google Colab [open](https://colab.research.google.com/)
-1. Once you're done with the installation
 1. Upload the [SensorController](adafruit_nRF52840_Sense/SensorController/../Tech512-Lab6Part3-52840/SensorController/SensorController.ino) to **nRF52840**, you will see reading of the temperature sensor on the board, the data will be printed around every 0.5 seconds.
     ![serial](assets/serial_monitor.png)
 1. Uncomment **Serial.print** command from line 68-95. Take a screenshot of reading from all sensors on the board.
-1. **Close the Serial Monitor in Arduino studio** and run [logging.py](adafruit_nRF52840_Sense/Tech512-Lab6Part3-52840/logging.py). The software will create a csv file to logs/{currentTime}.csv and you can stop it by CTRL+C
+1. **Close the Serial Monitor in Arduino studio** and run [logging.py](src/logging.py). The software will create a csv file to logs/{currentTime}.csv and you can stop it by CTRL+C
     ![logging](assets/logging.png)
 1. Create a Colab or run [lab6.ipynb](adafruit_nRF52840_Sense/Tech512-Lab6Part3-52840/lab6.ipynb) with Jupyter. You can upload the csv file by drag and drop to the file menu.
     ![jupyter](assets/jupyter.png)
 1. ✏️ Plot the temperature data with time
 1. ✏️ Open-ended question: Capture the data for more than 1 minute. Choose the data you are interested in, plot the graph, do analyze: what do you get from the data?
-
-### Hint:
-
-1.  You can collect accelerometer data and measure the number of steps the user takes within one minute
-1.  You can breathe towards the nRF52840 board and get your breath temperature, breath humidity, and change in air pressure. (An example for cohort 4: [adds Calypso Mask M3.ppt])
-1.  Analyze the levels of sound in different room or different machine (the sound of 3D printer VS the sound of laser cutter)
+    1. Hints
+        1. You can collect accelerometer data and measure the number of steps the user takes within one minute
+        1. You can breathe towards the nRF52840 board and get your breath temperature, breath humidity, and change in air pressure.
+        1. Analyze the levels of sound in different room or different machine (the sound of 3D printer VS the sound of laser cutter)
