@@ -53,7 +53,7 @@ Compute all resistor values for step 2 below.
 
 ## One-Wire Sensor
 
-<img src="assets/one_wire.png" alt="One-wire Sensor" width="350"/>
+<img src="assets/one_wire.png" alt="One-wire Sensor" width="550"/>
 
 1. We have two types of one-wire sensors: stainless steel cylinder, or BJT package. Use appropriate hookup as shown above.
 2. Hook up to Arduino, install and run driver software (see Resources above).
