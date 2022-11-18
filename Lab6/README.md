@@ -43,7 +43,6 @@ None.
 - MF52 10KOhm thermistor
 - Ice-water
 - Boiling water
-- Heat gun
 
 # Procedure
 
