@@ -41,7 +41,6 @@ Compute all resistor values for step 2 below.
 - Dallas Semi "One-Wire" temperature sensor
 - Type K thermocouple with Max6675 thermocouple amplifier/SPI interface breakout
 - MF52 10KOhm thermistor
-- Diode
 - Ice-water
 - Boiling water
 - Heat gun
