@@ -97,7 +97,7 @@ Now you have some familiarity with temperature sensors. Let's use a hardware boa
      - Adafruit_LSM6DS
      - Adafruit_SHT31
      - Adafruit_APDS9960
-   - Google Colab [open](https://colab.research.google.com/) or [Anaconda](anaconda.md)
+   - [Anaconda](anaconda.md) or your local Python environment
    - Ensure that you are using python3 to use the pip3 install
    - Open your terminal and install pyserial module: `pip3 install pyserial`
 1. Upload the [SensorController](https://github.com/GIXLabs/SAndC/blob/main/Lab6/src/SensorController/SensorController.ino) to **nRF52840**, you will see reading of the temperature sensor on the board, the data will be printed around every 0.5 seconds.
