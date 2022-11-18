@@ -45,7 +45,9 @@ None.
 - Boiling water
 
 # Procedure
-
+```diff
+- Be careful with water, please keep (hot) water away from yourself and intruments.
+```
 1. A lab station will be set up with the water baths. Please coordinate with other groups for their use.
 1. Referring to the Resources and your pre-lab calculations above, interface each device to the either an Arduino or DMM as follows:
 
