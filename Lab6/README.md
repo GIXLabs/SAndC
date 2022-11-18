@@ -74,7 +74,7 @@ Compute all resistor values for step 2 below.
    - ✏️ 100&deg;C
 3. The Arduino analog input can handle input voltages from 0-5V. Design a DC circuit making a voltage divider with:
    - 5V input (from 5V pin on arduino)
-   - Resistor (R)
+   - Resistor (R) around 10K Ohm
    - Thermistor
    - The voltage across the 10K-thermistor voltage should range from 0-5V for any temperature from -10&deg;C to + 110&deg;C.
 4. You should **NOT** expect a straight line relationship.
