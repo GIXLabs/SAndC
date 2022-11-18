@@ -34,7 +34,7 @@ The writeup for this lab should contain the following outline:
 
 # Pre-lab computations:
 
-Compute all resistor values for step 2 below.
+None.
 
 ## Parts, tools, supplies required
 
