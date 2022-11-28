@@ -56,11 +56,11 @@ We will use Python for signal process in this Lab. If you are not familiar with 
    - Enter 'numpy', 'matplotlib', 'pyserial'.
    - Check the module 'numpy', 'matplotlib', 'pyserial'.
    - Finally, click 'Apply' at the bottom right corner.
-     ![Anaconda Interface](assets/numpy_installation.png)
+     <img src="assets/numpy_installation.png" alt="Anaconda" width="350"/>
 
 3. Install Spyder
    - Spyder is a Python IDE (Integrated development environment), which is a interface to write and test Python scripts. There are many different IDE for Python. You can choose your own favorite, but we will use Spyder as an example. To install Spyder, go to 'Home' page and select the environment you just created, then click 'Install' under Spyder.
-     ![Spyder Interface](assets/spyder_interface.png)
+     <img src="assets/spyder_interface.png" alt="Spyder Interface" width="350"/>
    - To test if the Python environment is ready to go, open [test_environment.py](code/test_environment.py) in Spyder and run it. It should show a plot and raise no error.
 
 ## Parts, tools, supplies required:
@@ -77,8 +77,8 @@ All the code in this Lab is provided in the 'code' folder. But you are welcome t
 
    1. Connect Arduino to your PC.
    2. Connect the pulse oximeter sensor to Arduino, <span style="color: red;">red</span> pin to 3.3V, <span style="color: black;">black</span> pin to GND and <span style="color: purple;">purple</span> pin to Analog input **A0** by default.
-      ![Arduino Connection](assets/arduino_con1.png)
-      ![Arduino Connection](assets/arduino_con1_1.png)
+      <img src="assets/arduino_con1.png" alt="Arduino Connection" width="350"/>
+      <img src="assets/arduino_con1_1.png" alt="Arduino Connection" width="350"/>
 
 2. **Install and Upload Arduino Script**
 
