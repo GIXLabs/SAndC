@@ -30,6 +30,8 @@ Pre-lab computations:
 
 We will use Python for signal process in this Lab. If you are not familiar with Python, please follow the steps to prepare Python workspace. Detailed instruction on Python is beyond the scope of this lab, but it is recommended to explore more on Python, as it can be very useful in your future courses.
 
+For more information on setting up Anaconda and Spyder click [here](/Lab6/anaconda.md).
+
 ## Parts, tools, supplies required:
 
 - Arduino
@@ -43,7 +45,7 @@ All the code in this Lab is provided in the 'src' folder, but you are welcome to
 1. **Setup hardware**
 
    1. Connect Arduino to your PC.
-   2. Connect the pulse oximeter sensor to Arduino, <span style="color: red;">red</span> pin to 3.3V, <span style="color: black;">black</span> pin to GND and <span style="color: purple;">purple</span> pin to Analog input **A0** by default.
+   2. Connect the pulse oximeter sensor to Arduino, red pin to 3.3V, black pin to GND and purple pin to Analog input **A0** by default.
       ![Arduino Connections](assets/arduino_conn.svg)
 
 2. **Install and Upload Arduino Script**
@@ -61,7 +63,7 @@ All the code in this Lab is provided in the 'src' folder, but you are welcome to
 ## Record data on your PC
 
 - Open Spyder, make sure the virtual environment is correct.
-- In Spyder, open the file [serial_reader_PPG.py](code/serial_reader_PPG.py). You may need to change the serial setting, as shown in the following figure.
+- In Spyder, open the file [serial_reader_PPG.py](src/serial_reader_PPG.py). You may need to change the serial setting, as shown in the following figure.
 - Run the Python script, make sure the sensor is correctly placed on your skin. It will record the raw PPG sensor reading for 10s. The data will be saved as a '.txt' file in the same folder of '**serial_reader_PPG.py**'.
 - If the recording is successful, you can see a plot pop up as the following figure shows.
 - ✏️ Take a screenshot of this figure.
@@ -70,19 +72,19 @@ All the code in this Lab is provided in the 'src' folder, but you are welcome to
 - In medical practice, data such as PPG or ECG are usually considered as the private of patients. So you are also welcome to use anonymous recording in this lab, for example, by writing '**member 1**' instead of your name.
 
 ## Filter the noise using moving average
-1. In Spyder, open [moving_average_filter.py](code/moving_average_filter.py), enter the file name of your recorded data.
+1. In Spyder, open [moving_average_filter.py](src/moving_average_filter.py), enter the file name of your recorded data.
    1. Run this script, a figure should pop up.
    1. ✏️ Take a screenshot of the figure and describe what you find when applying moving average and with different window size k. You can use '**Zoom**' button to Zoom in and get a better observation.
    1. Repeat the steps for each trail you just recorded.
 1. Filter the noise using exponential decay
-   1.  In Spyder, open [exponential_decay_filter.py](code/exponential_decay_filter.py), enter the file name of your recorded data.
+   1.  In Spyder, open [exponential_decay_filter.py](src/exponential_decay_filter.py), enter the file name of your recorded data.
    1.  Run this script, a figure should pop up.
    1.  ✏️ Take a screen shot of the figure and describe what you find when applying moving average and with different exponential factor .
    1.  Repeat the steps for each trail you just recorded.
 
 ## Estimate your heart rate
 
-6.  In Spyder, open [heart_rate_estimate.py](code/heart_rate_estimate.py), enter the file name of your recorded data.
+6.  In Spyder, open [heart_rate_estimate.py](src/heart_rate_estimate.py), enter the file name of your recorded data.
 7.  Run this script, a figure should pop up and show the filtered signal by exponential decay.
 8.  You can check the coordinates of the peaks by pointing your cursor on the peak and the coordinate is on the top right corner.
 9.  Find the time interval between 2 peaks, as the following figure shows. Repeat for 5 times and calculate the average of t.
