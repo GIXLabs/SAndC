@@ -9,6 +9,9 @@ In addition to assignments, it hosts some how to content on using electronics te
  - Lab 3: [BJT Timer Circuit](Lab3)
  - Lab 4: [555 Timer](Lab4)
  - Lab 5: [Strain Gages and Load Cells](Lab5)
+ - Lab 6: [Temperature](Lab6)
+ - Lab 7: [PPG Sensor](Lab7)
+
 
 ## General Tips
 1. Make sure to read the safety manual carefully. Safety is always the No.1 Priority.
