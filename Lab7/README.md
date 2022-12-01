@@ -70,6 +70,9 @@ All the code in this Lab is provided in the ['src'](src/) folder, but you are we
 ## Test the sensor
 
 1. Use two fingers to hold the sensor or use tape to fix the sensor on one of your fingers or on your ear. Make sure the front side of the sensor is touching your skin.
+
+![PPG on hand](assets/ppg_hand.svg)
+
 1. In Arduino IDE, go to 'Tools-Serial Plotter', if everything is set correctly, you should see similar plots as the following figure and a yellow LED on your Arduino blinking on your heartbeat. Make sure the baud rate is **57600**. If you see that signal reaches the upper limit 1000 or the peak is not obvious, you may need to adjust the pressure applied on the sensor.
 
    ![Serial Plotter Example](assets/serial_plotter_ex.png)
