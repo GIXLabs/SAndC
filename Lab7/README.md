@@ -8,7 +8,9 @@ The purpose of this lab is to learn about measurement of photoplethysmogram (PPG
 
    For more details, please see [Wikipedia – Photoplethysmogram](<https://en.wikipedia.org/wiki/Photoplethysmogram#:~:text=A%20photoplethysmogram%20(PPG)%20is%20an,measures%20changes%20in%20light%20absorption.>).
 
-![UW pulse oximeter](assets/UW_pulse_oximeter.png)
+   ![ICU Monitor](https://www.cardiacdirect.com/wp-content/uploads/2021/06/patient-monitor-screen.png)
+
+   ![UW pulse oximeter](assets/UW_pulse_oximeter.png)
 
 2. Low pass filters can help with reducing the noise in the signals of sensors. Low pass filters exist in many different forms. For hardware side, as introduced in Lab 3, an RC circuit can be used as a low pass filter when output is connected to the capacitor. In this lab, we will look at the software side where filters are applied by code and algorithms.
 
@@ -16,7 +18,7 @@ The purpose of this lab is to learn about measurement of photoplethysmogram (PPG
 
    For more details, please see [Wikipedia- Moving average](https://en.wikipedia.org/wiki/Moving_average#Other_weightings).
 
-![Moving Average Example](assets/moving_average_ex.png)
+   ![Moving Average Example](assets/moving_average_ex.png)
 
 4. Exponential decay filter (also called exponential smoothing) is a rule of thumb method to filter out noise in time series signals. It can be implemented by the following equation:
 
@@ -41,7 +43,7 @@ For more information on setting up Anaconda and Spyder click [here](/Lab6/anacon
 - Arduino
 - Pulse Oximeter sensor
 
-![PPG Sensor](assets/ppg_sensor.png)
+   ![PPG Sensor](assets/ppg_sensor.png)
 
 - Source code (src) folder
 
@@ -66,7 +68,7 @@ All the code in this Lab is provided in the 'src' folder, but you are welcome to
 1.  Use two fingers to hold the sensor or use tape to fix the sensor on one of your fingers or on your ear. Make sure the front side of the sensor is touching your skin.
 2.  In Arduino IDE, go to 'Tools-Serial Plotter', if everything is set correctly, you should see similar plots as the following figure and a yellow LED on your Arduino blinking on your heartbeat. Make sure the baud rate is **57600**. If you see that signal reaches the upper limit 1000 or the peak is not obvious, you may need to adjust the pressure applied on the sensor.
 
-![Serial Plotter Example](assets/serial_plotter_ex.png)
+   ![Serial Plotter Example](assets/serial_plotter_ex.png)
 
 3. ✏️ Take a photo of your sensor setup and a screenshot of the serial plotter.
 
@@ -74,32 +76,32 @@ All the code in this Lab is provided in the 'src' folder, but you are welcome to
 
 - Open Spyder, make sure the virtual environment is correct.
 
-![Spyder Enviroment Check](assets/spyder_env_check.png)
+   ![Spyder Enviroment Check](assets/spyder_env_check.png)
 
 - In Spyder, open the file [serial_reader_PPG.py](src/serial_reader_PPG.py). You may need to change the serial setting, as shown in the following figure.
 
-![Spyder Com Port Check](assets/change_com.png)
+   ![Spyder Com Port Check](assets/change_com.png)
 
 - Run the Python script, make sure the sensor is correctly placed on your skin. It will record the raw PPG sensor reading for 10s. The data will be saved as a '.txt' file in the same folder of '**serial_reader_PPG.py**'.
 
-![Text Output File](assets/text_output_file.png)
+   ![Text Output File](assets/text_output_file.png)
 
 - If the recording is successful, you can see a plot pop up as the following figure shows.
 
-![PPG Data](assets/filtered_data.png)
+   ![PPG Data](assets/filtered_data.png)
 
 - ✏️ Take a screenshot of this figure.
 - Repeat this step to record 1 trail for each member in your group. Make sure to change the file name in the script. Otherwise, it will overwrite existed files.
 
-![Change filename](assets/change_filename.png)
+   ![Change filename](assets/change_filename.png)
 
 - If you find any of the following error, just close the current Console and run again.
 
-![Python error 1](assets/python_error1.png)
+   ![Python error 1](assets/python_error1.png)
 
-![Python error 2](assets/python_error2.png)
+   ![Python error 2](assets/python_error2.png)
 
-![Python error 3](assets/python_error3.png)
+   ![Python error 3](assets/python_error3.png)
 
 - In medical practice, data such as PPG or ECG are usually considered as the private of patients. So you are also welcome to use anonymous recording in this lab, for example, by writing '**member 1**' instead of your name.
 
@@ -111,7 +113,7 @@ All the code in this Lab is provided in the 'src' folder, but you are welcome to
   1. Run this script, a figure should pop up.
   1. ✏️ Take a screenshot of the figure and describe what you find when applying moving average and with different window size k. You can use '**Zoom**' button to Zoom in and get a better observation.
 
-   ![Zooming in](assets/zoom_in.png)
+      ![Zooming in](assets/zoom_in.png)
 
   1. Repeat the steps for each trail you just recorded.
 1. Filter the noise using exponential decay
@@ -150,3 +152,8 @@ The writeup for this lab should contain the following outline:
    ⅓ of a page describing the purpose and goals of this lab in your own words. Do not reproduce any material from this assignment document in any section of your writeup.
 3. Results
    Each location in the instructions below marked with “✏️” indicates some data which must appear in your report.
+
+# Frequently Asked Questions
+**Q: I have Python installed on my PC, why should I use Anaconda?**
+
+A: If you have Python already installed, it could work well in this lab. However, Anaconda can be very useful in the future when you work on several Python projects simultaneously. Anaconda helps you to create and manage multiple virtual Python environments, which could prevent conflict of library dependencies.  
