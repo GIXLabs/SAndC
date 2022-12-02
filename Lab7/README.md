@@ -63,9 +63,8 @@ All the code in this Lab is provided in the ['src'](src/) folder, but you are we
 
 1. **Install and Upload Arduino Script**
 
-   - [Install PulseSensor Library](https://pulsesensor.com/pages/installing-our-playground-for-pulsesensor-arduino)
 
-   - [Pulse Sensor Code and Guide](https://pulsesensor.com/pages/code-and-guide)
+   - [Pulse Sensor Code](https://github.com/GIXLabs/SAndC/tree/main/Lab7/src/PulseSensor)
 
 ## Test the sensor
 
