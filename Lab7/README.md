@@ -26,7 +26,7 @@ The purpose of this lab is to learn about measurement of photoplethysmogram (PPG
 
    S<sub>k</sub> = αx<sub>k</sub> + (1 - α) S<sub>k-1</sub>
 
-   where S is the filtered signal, x is the original signal and is the exponential factor. For more details, please see [Wikipedia - Exponential smoothing](https://en.wikipedia.org/wiki/Exponential_smoothing).
+   where S is the filtered signal, x is the original signal and $/alpha$ is the exponential factor. For more details, please see [Wikipedia - Exponential smoothing](https://en.wikipedia.org/wiki/Exponential_smoothing).
 
 # Preparation
 
