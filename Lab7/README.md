@@ -8,7 +8,7 @@ The purpose of this lab is to learn about measurement of photoplethysmogram (PPG
 
    For more details, please see [Wikipedia – Photoplethysmogram](<https://en.wikipedia.org/wiki/Photoplethysmogram#:~:text=A%20photoplethysmogram%20(PPG)%20is%20an,measures%20changes%20in%20light%20absorption.>).
 
-   - Below are images showing and ICU monitor where "Pleth" is PPG data as well as a pulse oximeter used at the UW Mexical Center. 
+   - Below are images showing and ICU monitor where "Pleth" is PPG data as well as a pulse oximeter used at the UW Medical Center. 
 
       ![ICU Monitor](https://www.cardiacdirect.com/wp-content/uploads/2021/06/patient-monitor-screen.png)
 
