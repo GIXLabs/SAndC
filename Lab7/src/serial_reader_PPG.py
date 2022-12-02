@@ -14,7 +14,23 @@ file_name = 'trail_2.txt'
 record_time = 10 # length of the trail in second
 
 # set up the serial line
-ser = serial.Serial('COM12', 57600)
+
+serialPort = None
+usingPorts = list(list_ports.comports())
+for port in usingPorts:
+    #debug to detect Serial name
+    print(port.description)
+    if sys.platform.startswith('win'):
+        if "Serial" in port.description:
+            serialPort = port.device
+            break
+        # end
+    elif sys.platform.startswith('darwin'):
+        if "Sense" in port.description:
+            serialPort = port.device
+            break
+
+ser = serial.Serial(serialPort, 57600)
 time.sleep(3)
 
 
