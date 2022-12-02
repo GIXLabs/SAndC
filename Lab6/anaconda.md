@@ -19,4 +19,4 @@ We will use Python for signal process in this Lab. If you are not familiar with 
  
     ![spyder](assets/spyder.png)
 
-    - To test if the Python environment is ready to go, open ‘test_environment.py’ in Spyder and run it. It should show a plot and raise no error.
+    - To test if the Python environment is ready to go, open ‘[test_environment.py](https://github.com/GIXLabs/SAndC/blob/main/Lab7/src/test_environment.py)’ in Spyder and run it. It should show a plot and raise no error.
