@@ -4,11 +4,16 @@ UW GIX
 Techin 512
 Lab 7
 """
-
+import os
+import sys
 import serial
 import time
 import numpy as np
 import matplotlib.pyplot as plt
+
+import serial.tools.list_ports as list_ports
+
+from datetime import datetime
 
 file_name = 'trail_2.txt'
 record_time = 10 # length of the trail in second
