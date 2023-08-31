@@ -99,7 +99,7 @@ First we will demonstrate this ability using the switch to change base current i
 
 ## Part 3: BJT Timer Circuit
 
-3.1 Now add the capacitor C as shown in Figure 1. **Be careful with how you wire the capacitor. Electrolytic capacitors are polarized and will explode if wired backwards.** The white stripe on the side of the capacitor should be on the ground (negative) side of your circuit. Operate the switch.  
+3.1 Now add the capacitor C as shown in Figure 1. **Be careful with how you wire the capacitor. Electrolytic capacitors are polarized and may explode if wired backwards.** The white stripe on the side of the capacitor should be on the ground (negative) side of your circuit. Operate the switch.  
  ![Setup 3](assets/setup3.svg)
 
 - ✏️ What happens when you operate the switch?
