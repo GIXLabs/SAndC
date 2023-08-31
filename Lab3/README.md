@@ -136,7 +136,7 @@ Procedure:
 1. Generate a PWM signal where you can control the duty cycle. For the source of the PWM signal we recommend you use a signal generator with [1.0 kHz frequency](/Lab1/signal_gen.md/#adjusting-frequency), [Vmin of 0.0 V, and Vmax of 3.5 V](/Lab1/signal_gen.md/#adjusting-amplitude).
    - If you would like a challenge, you can use an Arduino with code [at this link](http://forcetronic.blogspot.com/2018/02/converting-arduino-pwm-output-to-dac.html) instead of the signal generator.
 2. Design an RC low-pass circuit. Determine a cutoff frequency 10x lower than your PWM switching frequency. Determine your RC time constant based on this frequency ([see this pdf](assets/low_pass_filter_design.pdf)). Set R = 1000 Ohms, determine your **C** value. If exact C value is not available, pick the closest available and
-   - ✏️ document changes in circuit design and parameters due to this approximate value. **Remember: capacitors explode if wired wrong.** Make sure the side of the capacitor with the white stripe is connected to ground.
+   - ✏️ document changes in circuit design and parameters due to this approximate value. **Remember: capacitors may explode if wired wrong.** Make sure the side of the capacitor with the white stripe is connected to ground.
 3. Connect oscilloscope to circuit as shown in Figure 3. Set vertical controls for Channels 1 and 2 to show both waves. Set the time base to show 10 cycles of the PWM input.
    - Connect your ground clip to ground in the circuit.
    - [Set your probes and oscilloscope to 10x](/Lab1/oscope.md/#connecting-probes).
