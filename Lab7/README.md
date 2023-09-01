@@ -126,7 +126,7 @@ All the code in this Lab is provided in the ['src'](src/) folder, but you are we
 ## Filter the noise using exponential decay
 1. In Spyder, open [exponential_decay_filter.py](src/exponential_decay_filter.py), enter the file name of your recorded data.
 1. Run this script, a figure should pop up.
-1. ✏️ Take a screen shot of the figure and describe what you find when applying moving average and with different exponential factors.
+1. ✏️ Take a screenshot of the figure and describe what you find when applying the filter and with different exponential factors.
 1. Repeat the steps for each trial you just recorded.
 
 ## Estimate your heart rate
