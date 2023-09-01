@@ -109,7 +109,7 @@ All the code in this Lab is provided in the ['src'](src/) folder, but you are we
 
    ![Python error 3](assets/python_error3.png)
 
-1. In medical practice, data such as PPG or ECG are usually considered as the private of patients. So you are also welcome to use anonymous recording in this lab, for example, by writing '**member 1**' instead of your name.
+1. In medical practice, data such as PPG or ECG are usually considered as the privacy of patients. So you are also welcome to use anonymous recording in this lab, for example, by writing '**member 1**' instead of your name.
 
 ## Filter the noise using moving average
 1. In Spyder, open [moving_average_filter.py](src/moving_average_filter.py), remember to change the file name of your recorded data.
