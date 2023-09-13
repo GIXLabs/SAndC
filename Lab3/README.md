@@ -32,7 +32,7 @@ The writeup for this lab should contain the following outline:
 
 - DC power supply(9V)
 - 1000uF capacitor rated to +10V
-- 220 Ohm resistor
+- 200-300 Ohm resistor
 - 1000 Ohm resistor
 - NPN BJT (2N3904)
 - Light emitting diode (LED)
