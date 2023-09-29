@@ -38,8 +38,8 @@ The corresponding assignment in the original document will be referenced in pare
 1. For the last setup [connect your signal generator and oscilloscope up across a 47 Ohm resistor.](oscope.md/#investigating-a-circuit) Remember to change the probe input back to 10X. On the signal generator, [set the load to 47 Ohms](signal_gen.md/#changing-mode) and [generate a ramp waveform (50/50)](signal_gen.md/#changing-the-waveform), with [peak-to-peak amplitude of 2.5 V, minimum voltage at 0.0V](signal_gen.md/#adjusting-amplitude), and [frequency set to 100kHz](signal_gen.md/#adjusting-frequency). Remember to turn the signal on. On the oscilloscope set the horizontal scale to 4 microseconds (us) per division.
     1. Take a screenshot of the wave on your oscilloscope (**Signal Generator & Oscilloscope / Visualize a Signal 16>**).
     1. [Read and record the peak-to-peak amplitude and minimum voltage.](oscope.md/#measuring-voltage) (**Signal Generator & Oscilloscope / Visualize a Signal 17>**)
-    1. Repeat the previous steps for each setting in the table below. Note: you just did W0 in the previous step. For each:
-        1. Record the settings (horizontal scale, vertical scale, trigger mode) (**Signal Generator / Waveforms 3>**)
+    1. Repeat the previous steps for each setting in the table below. You may need to change the horizontal scale to obtain a good visualization. Note: you just did W0 in the previous step. For each:
+        1. Record the settings (horizontal scale, vertical scale) (**Signal Generator / Waveforms 3>**)
         1. Take a screenshot of the waveform (**Signal Generator / Waveforms 4>**)
 
 | Test Case | Waveform | Frequency | Peak to Peak Voltage | Vmin |
