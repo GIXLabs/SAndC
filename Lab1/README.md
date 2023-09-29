@@ -53,7 +53,7 @@ The corresponding assignment in the original document will be referenced in pare
 # Write-Up
 The write-up (done outside of lab time) for this lab should use the following format:
 
-1. **Title page** (see template in the folder ‘Requirement of Lab Reports’)
+1. **Title page** ([Report Template])
 1. **Introduction:** ⅓ of a page describing the purpose and goals of this lab in your own words. Do not reproduce any material from this assignment document in any section of your write-up.
 1. **Results:** Each line in the Assignment section indicates some data which must appear in your report. Separate each result or related set of results with a section header indicating what it is. For any numerical data or graph describe the meaning of the data.
 1. **Discussion and Conclusions:** In ½ to 1 page, summarize the key learning points from the Results above.
