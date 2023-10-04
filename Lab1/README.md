@@ -64,7 +64,7 @@ The write-up (done outside of lab time) for this lab should use the following fo
 A: Please check if the output of the signal generator is ‘On’. There is a yellow button ‘On/Off’ on the signal generator. It will light up if the output is ‘On’.
 
 
-**Q: I have signal wave(s) shown on the oscilloscope, but how to I measure the voltage?**
+**Q: I have signal wave(s) shown on the oscilloscope, but how do I measure the voltage?**
 
 A: You need to add measurement on the screen of oscilloscope. See the [oscilloscope article.](oscope.md/#measuring-voltage)
 
