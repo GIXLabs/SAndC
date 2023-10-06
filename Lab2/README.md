@@ -90,7 +90,7 @@ The writeup for this lab should contain the following outline:
 
    ![ParVot](/assets/Lab2-12.jpg)
 
-5. ✏️ Use Ohm’s law to find the equivalent resistance of the two resistors in parallel.
+5. ✏️ Use Ohm’s law to find the equivalent resistance of the two resistors in parallel (based on ideal value shown in the figure).
 6. Disconnect the resistors from the power supply and use the DMM in Resistance mode to measure the resistance of the two resistors in parallel.
    - ✏️ Compare measured resistance with result from part 2.5
 
@@ -124,7 +124,7 @@ The writeup for this lab should contain the following outline:
 
    ![SerRes](/assets/Lab2-6.jpg)
 
-   - ✏️ Diagram the circuit and label all voltages and currents.
+   - ✏️ Diagram the circuit and label all (measured) voltages and currents.
    - ✏️ Verify that each resistor follows [Ohm's Law](https://youtu.be/8jB6hDUqN0Y?t=162).
 
 ## 4. Voltage Dividers
