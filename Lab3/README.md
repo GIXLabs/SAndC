@@ -107,7 +107,7 @@ First we will demonstrate this ability using the switch to change base current i
   3.2 Time responses. Connect both oscilloscope probes ground clips to negative battery voltage (0V). Connect Channel 1 to the capacitor(+). Connect Channel 2 to the junction of R4 and the LED.
 
 - ✏️ Capture a screenshot of what happens to these two voltages when you close the switch and then open it.
-- ✏️ Add a horizontal bar to the screenshot to illustrate when the LED is ON.
+- ✏️ Add a horizontal bar to the screenshot to illustrate when the LED is ON, overlapping with Channel 1 (capasitor +).
 - ✏️ Document different observed delay times with at least 3 different capacitors (show three screenshots and give C values). It may take up to several minutes until the LED fully dimmed. If the LED keeps glowing, you can record the time when the voltage across the LED drops 80%.
 
 ## Part 4: RC Low-Pass Filter
