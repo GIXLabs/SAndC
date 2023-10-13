@@ -104,7 +104,7 @@ First we will demonstrate this ability using the switch to change base current i
 
 - ✏️ What happens when you operate the switch?
 
-  3.2 Time responses. Connect both oscilloscope probes ground clips to negative battery voltage (0V). Connect Channel 1 to the capacitor. Connect Channel 2 to the junction of R4 and the LED.
+  3.2 Time responses. Connect both oscilloscope probes ground clips to negative battery voltage (0V). Connect Channel 1 to the capacitor(+). Connect Channel 2 to the junction of R4 and the LED.
 
 - ✏️ Capture a screenshot of what happens to these two voltages when you close the switch and then open it.
 - ✏️ Add a horizontal bar to the screenshot to illustrate when the LED is ON.
