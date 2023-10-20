@@ -63,7 +63,7 @@ Wire your 555 up in Monostable mode ([Wikipedia reference](https://en.wikipedia.
 1. Set the signal generator to a frequency of 100Hz. Set high level to 4.5 V and low level to 0.1 V. Pulses should be "high" (5 V) for most of the time and "low" (0-0.2 V) for 10 microsecond (us). Refer back to the [Lab 1 references](/Lab1/signal_gen.md) if you need a refresher on the signal generator.
 1. Connect pulse output from signal generator to “Trigger” on your 555 (555 pin 2, see diagram at the top of the page).
 1. Connect a second oscilloscope channel/probe to Trigger (555 pin 2, see diagram at the top of the page).
-1. ✏️ Capture an oscilloscope picture showing three cycles of the input and output pulses.
+1. ✏️ Capture an oscilloscope picture showing 3-4 cycles of the input and output pulses.
 1. ✏️ Comment on pulse duration of the output pulse compared to calculations and measured R value.
 
 ## Astable Mode
@@ -72,7 +72,7 @@ Wire your 555 up in Astable mode ([Wikipedia reference](https://en.wikipedia.org
 
 ![Astable](assets/astable.svg)
 
-**Note:** These images do not show connections to the power supply and signal generator. The power line should be connected to a power supply in a similar style to previous labs, the grounds should all be tied together (power supply, and circuit).
+**Note:** The power line should be connected to a power supply in a similar style to previous labs, the grounds should all be tied together (power supply, and circuit).
 
 1. ✏️ Measure the exact resistance values you used for R1 and R2. Connect the components identified in your pre-lab computations.
 1. ✏️ Measure the frequency of the output signal. How does it compare with calculations and measured R values?
