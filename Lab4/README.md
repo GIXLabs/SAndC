@@ -78,7 +78,7 @@ Wire your 555 up in Astable mode ([Wikipedia reference](https://en.wikipedia.org
 1. ✏️ Measure the frequency of the output signal. How does it compare with calculations and measured R values?
 1. ✏️ Measure duration of each pulse. How does it compare with calculations and measured R values?
 1. Assuming capacitor is accurate.
-1. ✏️ Explain the difference between the actual frequency and the desired frequency using measured resistance and capacitance.
+1. ✏️ Explain the difference between the actual frequency and the desired frequency using measured resistance and capacitance (assume 100 pF capacitor is accurate, the value is too small for DMM).
 
 ## Extra Pulse Detector (second week)
 
