@@ -27,7 +27,7 @@ Each location in the instructions below marked with “✏️” indicates some 
 
 ## Pre-lab computations
 - Study the [555 Wikipedia Page](https://en.wikipedia.org/wiki/555_timer_IC). Referring to the section on [“Monostable mode,”](https://en.wikipedia.org/wiki/555_timer_IC#Monostable) compute R (Assume C = 0.1uF) for an output pulse width of 1.0 milliseconds (10-3 sec).
-- Referring to the section on [“Astable mode,”](https://en.wikipedia.org/wiki/555_timer_IC#Astable) compute values of R1 to achieve a frequency, f = 100,000 Hz, duty 52.8%. Assume C = 100pF, R2 = 68 kΩ.
+- Referring to the section on [“Astable mode,”](https://en.wikipedia.org/wiki/555_timer_IC#Astable) compute values of R1 to achieve a frequency, f = 100k Hz, duty 52.8%. Assume C = 100pF, R2 = 68 kΩ.
 
 ![Nand Gate](assets/nand.png)
 
