@@ -104,7 +104,7 @@ Design a circuit combining two 555 chips and a 74HC00 quad NAND gate to perform 
 	**Notice that Vcc should be 3.5V ~ 4.2V instead of 5V**
 
 This is how the extra pulse catcher circuit works:
-![](assets/lab4_how_catcher_works.jpg)
+![How extra pulse catcher works](assets/lab4_how_catcher_works.jpg)
 
 # Frequently Asked Questions
 
