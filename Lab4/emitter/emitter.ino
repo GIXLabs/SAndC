@@ -8,7 +8,7 @@ Based on:
 #define  LED_OUTPUT  2
 #define  PULSE 6
 #define  SCOPETRIG 13
-#define  GLITCH_DELAY_MIN 500 // one glitch every GLITCH_DELAY ms
+#define  GLITCH_DELAY_MIN 1500 // one glitch every GLITCH_DELAY ms
 #define  GLITCH_DELAY_MAX 3000
 
 int glitch_delay = GLITCH_DELAY_MIN;
