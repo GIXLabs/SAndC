@@ -103,6 +103,9 @@ Design a circuit combining two 555 chips and a 74HC00 quad NAND gate to perform 
 	1. ✏️ With “The Emitter” connected, connect both “IN” and “OUT/LED” of your circuit to the oscilloscope. Trigger on the rising edge of “OUT/LED” and capture both signals in a screen shot. ✏️ Describe how these signals validate the correct operation of your circuit.
 	**Notice that Vcc should be 3.5V ~ 4.2V instead of 5V**
 
+This is how the extra pulse catcher circuit works:
+![](assets/lab4_how_catcher_works.jpg)
+
 # Frequently Asked Questions
 
 **Q: In monostable mode, the circuit connection is correct but the output is not as expected.**
