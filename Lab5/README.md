@@ -117,7 +117,7 @@ Finally, we will study a weight measurement system consisting of a load cell mou
 1. Download and run [pre-written sketch](src/scale_reader/scale_reader.ino) which can:
 	1. Read load cell, type sensor reading on Laptop Screen (terminal)
 	1. Repeat
-1. Calibrate the load cell with weight set:
+1. Calibrate the load cell with weight set(you can find the overview of our weight set [here](assets/weight_set_J0104.png))
 	1. Apply 1g, 10g, and 100g to the center target on the TOP platform.
 	1. ✏️ Record load cell reading at each weight. Use each weight 3 times and average the results.
 	1. ✏️ Using a spreadsheet, or graph paper, fit a linear equation to your calibration data and add it to the Arduino sketch so that the Arduino prints grams on your laptop.
