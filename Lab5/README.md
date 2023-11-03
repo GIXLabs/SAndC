@@ -60,51 +60,51 @@ We have from Ohm’s Law: V=IR. We also know that power is: P=IV. From this we c
 ## Procedure:
 
 ### Strain Gage Measurements
-In this section you will study the resistance of the individual strain gage and its sensitivity to temperature. (You can use the 'diving board', which makes measurements easier, instead of a single strain gauge.)
+In this section, you will study the resistance of the individual strain gage and its sensitivity to temperature. (You can use the 'diving board', which makes measurements easier, instead of a single strain gauge.)
 
 ![Setup 1](assets/setup1.svg)
 
-1. Resistance temperature sensitivity. We will use the resistance of the strain gage to heat it up a little bit and then see how much the resistance changes.
+1. Resistance temperature sensitivity. We will use the resistance of the strain gauge to heat it up a little bit and then see how much the resistance changes.
 	1. Set power supply to 2.0V and current limit to about 150mA.
-	1. Set up the bench-top DMM (not the Fluke yellow handheld DMMs, which we will need later to measure temperature) to measure current. Using “LO” and “mA” inputs, connect it in series with the strain gage and the power supply.
+	1. Set up the bench-top DMM (not the Fluke yellow handheld DMMs, which we will need later to measure temperature) to measure current. Using “LO” and “mA” inputs, connect it in series with the strain gauge and the power supply.
 	1. Using the button labeled “Rate”, set the Bench-DMM to “slow” -- this means it will average several readings to get more accuracy (5 ½ digits). Record all 5 digits from the DMM in “slow” mode. If the last digit is flickering between two values, split the difference. For example: 1.4297{3 / 4} becomes 1.429735.
 	1. Read current from the DMM.
-	1. ✏️ What is the voltage, V (read from power supply, assume the power supply is accurate), and current, I(measure from your DMM)? 
+	1. ✏️ What is the voltage, V (read from the power supply, assume the power supply is accurate), and current, I(measure from your DMM)? 
 	1. ✏️ Compute the resistance using Ohm's Law V=IR. 
-	1. ✏️ What is the power dissipated in the strain gage? (P = IV or P=I<sup>2</sup>R).
+	1. ✏️ What is the power dissipated in the strain gauge? (P = IV or P=I<sup>2</sup>R).
 	1. Change power supply voltage to +5V Wait for 3 minutes. 
 	1. Measure/compute R = V/I. 
 	1. ✏️ What is the resistance? 
 	1. ✏️ Did it change?
 	1. ✏️ Compute the power dissipated in the strain gage resistance
 	1. Reduce voltage to 1.0V. Wait 3 minutes. During this time, predict the current using both values of resistance.
-	1. ✏️ Record current and compute resistance after 3 min of cooling.
-1. Delta-R vs cold (ice cube) In this section, we will study how resistance of the gage changes with temperature.
-	1. Place the strain gage on several sheets of paper or a notebook (thermal insulation from the desk). Or you can use the 'diving board' instead, which makes measurement easier.
+	1. ✏️ Record current and compute resistance after 3 min of waiting above.
+1. Delta-R vs cold (ice cube) In this section, we will study how the resistance of the gage changes with temperature.
+	1. Place the strain gauge on several sheets of paper or a notebook (thermal insulation from the desk). Or you can use the 'diving board' instead, which makes measurement easier.
 	1. Set power supply to 1.0 V, ✏️ measure current / compute resistance.
-	1. Apply an ice cube to the gage. Use a plastic bag or some other methods to apply ice, in order to prevent direct contact. Water may affect measurement. ✏️ What is change in resistance?
-	1. Use temperature attachment (type “K” thermocouple) with yellow Fluke DMM to ✏️ measure room temperature. Then, ✏️ press your finger on the tip of the thermocouple and record temperature.
+	1. Apply an ice cube to the gage. Use a plastic bag or some other method to apply ice, in order to prevent direct contact. Water may affect the measurement. ✏️ What is change in resistance?
+	1. Use temperature attachment (type “K” thermocouple) with yellow Fluke DMM to ✏️ measure room temperature. Then, ✏️ press your finger on the tip of the thermocouple and record the temperature.
 	1. Assume the ice is approximately 0 deg C. Cycle the gage 5 times between 0C and room temperature. ✏️ Record resistance at each temperature for each cycle. Average your results at each temperature.
 	1. ✏️ Compute coefficient of thermal resistivity: G = ΔR/ΔT
 
 ### “Diving Board” Load Cell
-The diving board is a load cell with a single strain gage. We’ll measure its sensitivity to strain and temperature. The strain gage is the same type (nominal resistance 350 Ohm) but it is glued to a beam of acrylic material.
+The diving board is a load cell with a single strain gauge. We’ll measure its sensitivity to strain and temperature. The strain gage is the same type (nominal resistance 350 Ohm) but it is glued to a beam of acrylic material.
 
 ![Diving Board Picture](assets/diving_board.png)
 
 ![Setup 2](assets/setup2.svg)
 
 1. Hook up the diving board leads to the bench-top DMM the same way as in part 1. Set the DMM to “slow” for maximum accuracy. Using 2.0V from the power supply, ✏️ Compute and record the resistance.
-1. Stretch the gage by gently pressing down on the end of the diving board until it touches the base. ✏️ Compute and record resistance when gage is deflected.
+1. Stretch the gauge by gently pressing down on the end of the diving board until it touches the base. ✏️ Compute and record resistance when gage is deflected.
 1. Release the “diving board”
 1. Set heat gun switch to “Low” and verify that it is blowing room temperature air.
-1. Blow room temperature air on the “diving board” strain gage for 1 min. ✏️ Compute and record resistance without touching the gage.
+1. Blow room temperature air on the “diving board” strain gauge for 1 min. ✏️ Compute and record resistance without touching the gage.
 1. Tape Type K thermocouple onto diving board near the strain gage (leave tip out in open air just above strain gage).
 1. Set the heat-gun to high. From a distance of 12” (50cm), heat the strain gage with the heat gun for 15 seconds (**DO NOT APPLY HEAT CLOSER THAN 12” / 30cm or you WILL damage the strain gage.**) ✏️ Record hot air temperature with DMM.
-1. ✏️ Compute and record resistance when gage is heated (but not pushed or deformed).
+1. ✏️ Compute and record resistance when the gauge is heated (but not pushed or deformed).
 
 ### Load Cell Measurements ### 
-Finally we will study a weight measurement system consisting of a load cell mounted between two platforms. The setup below is shown without the top plate for clarity.
+Finally, we will study a weight measurement system consisting of a load cell mounted between two platforms. The setup below is shown without the top plate for clarity.
 
 ![Arduino HX711 Setup](assets/arduino_hx711.png)
 
@@ -118,7 +118,7 @@ Finally we will study a weight measurement system consisting of a load cell moun
 	1. Read load cell, type sensor reading on Laptop Screen (terminal)
 	1. Repeat
 1. Calibrate the load cell with weight set:
-	1. Apply 1g, 10g, 100g to the center target on the TOP platform.
+	1. Apply 1g, 10g, and 100g to the center target on the TOP platform.
 	1. ✏️ Record load cell reading at each weight. Use each weight 3 times and average the results.
 	1. ✏️ Using a spreadsheet, or graph paper, fit a linear equation to your calibration data and add it to the Arduino sketch so that the Arduino prints grams on your laptop.
 	1. ✏️ Record calibrated reading for each weight. Verify your calibration.
@@ -135,9 +135,9 @@ Finally we will study a weight measurement system consisting of a load cell moun
 Same instructions as previous TECHIN 512 labs
 
 ## Frequently Asked Questions
-**Q: When measuring the current on the strain gage, the value is very small and results in a large resistance.**
+**Q: When measuring the current on the strain gauge, the value is very small and results in a large resistance.**
 
-A: Please check if the thin wires of the strain gage have insulating coating. If it is yellow, it means that the insulating coating is not removed. Please find another strain gage or you can use the diving board which contains a stain gage and is ready to be measured.
+A: Please check if the thin wires of the strain gauge have an insulating coating. If it is yellow, it means that the insulating coating is not removed. Please find another strain gauge or you can use the diving board which contains a stain gauge and is ready to be measured.
 
 **Q: How do I calibrate the load cell?**
 
