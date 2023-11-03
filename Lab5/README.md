@@ -137,7 +137,7 @@ Same instructions as previous TECHIN 512 labs
 ## Frequently Asked Questions
 **Q: My code can not compile with the error 'no module named HX711'...**
 
-A: Browse arduino HX711 Library [here](https://www.arduino.cc/reference/en/libraries/hx711-arduino-library/) and install the latest version, then in your Arduino IDE, install that library in Sketch -> Include Library -> Add .ZIP Library. After that, compile your code again.
+A: Browse arduino HX711 Library [here](https://www.arduino.cc/reference/en/libraries/hx711-arduino-library/) and download the latest version of that library, then in your Arduino IDE, in Sketch -> Include Library -> Add .ZIP Library, select the .zip library that you just downloaded. After that, compile your code again.
 
 **Q: When measuring the current on the strain gauge, the value is very small and results in a large resistance.**
 
