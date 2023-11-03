@@ -135,6 +135,10 @@ Finally, we will study a weight measurement system consisting of a load cell mou
 Same instructions as previous TECHIN 512 labs
 
 ## Frequently Asked Questions
+**Q: My code can not compile with the error 'no module named HX711'...**
+
+A: Browse arduino HX711 Library [here](https://www.arduino.cc/reference/en/libraries/hx711-arduino-library/) and install the latest version, then in your Arduino IDE, install that library in Sketch -> Include Library -> Add .ZIP Library. After that, compile your code again.
+
 **Q: When measuring the current on the strain gauge, the value is very small and results in a large resistance.**
 
 A: Please check if the thin wires of the strain gauge have an insulating coating. If it is yellow, it means that the insulating coating is not removed. Please find another strain gauge or you can use the diving board which contains a stain gauge and is ready to be measured.
