@@ -69,7 +69,7 @@ In this section you will study the resistance of the individual strain gage and 
 	1. Set up the bench-top DMM (not the Fluke yellow handheld DMMs, which we will need later to measure temperature) to measure current. Using “LO” and “mA” inputs, connect it in series with the strain gage and the power supply.
 	1. Using the button labeled “Rate”, set the Bench-DMM to “slow” -- this means it will average several readings to get more accuracy (5 ½ digits). Record all 5 digits from the DMM in “slow” mode. If the last digit is flickering between two values, split the difference. For example: 1.4297{3 / 4} becomes 1.429735.
 	1. Read current from the DMM.
-	1. ✏️ What is the voltage, V (assume the power supply is accurate), and current, I? 
+	1. ✏️ What is the voltage, V (read from power supply, assume the power supply is accurate), and current, I(measure from your DMM)? 
 	1. ✏️ Compute the resistance using Ohm's Law V=IR. 
 	1. ✏️ What is the power dissipated in the strain gage? (P = IV or P=I<sup>2</sup>R).
 	1. Change power supply voltage to +5V Wait for 3 minutes. 
