@@ -40,7 +40,7 @@ if not serialPort:
 bandRate = 115200  # In arduino, Serial.begin(band_rate)
 
 # log file
-logName = "{}/logs/{}.csv".format(os.getcwd(), datetime.now().strftime("%Y-%m-%d_%H_%M"))
+logName = "{}/{}.csv".format(os.getcwd(), datetime.now().strftime("%Y-%m-%d_%H_%M"))
 csvFile = open(logName, 'w', newline = '')
 csvWriter = csv.writer(csvFile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
 csvWriter.writerow(["time"]
