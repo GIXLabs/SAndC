@@ -78,13 +78,13 @@ None.
    - Thermistor
    - The voltage across the 10K-thermistor voltage should range from 0-5V for any temperature from -10&deg;C to + 110&deg;C.
 4. You should **NOT** expect a straight line relationship.
-   - ✏️ Try to fit a Logarithmic function T = a\*log(R)+b or 2nd order polynomial (R = aT^2 + bT + c) to three data points: 0&deg;C, Room Temp, 100&deg;C (where y is resistance and x is temperature).
+   - ✏️ Try to fit a logarithmic function T = a\*log(R)+b or 2nd order polynomial (R = aT^2 + bT + c) to three data points: 0&deg;C, Room Temp, 100&deg;C (where y is resistance and x is temperature).
 5. Write an Arduino sketch which reads the analog port and prints the reading.
    - ✏️ Demonstrate that it works using the water baths.
-6. For two points extra credit:
-   - ✏️ Implement the polynomial equation on the Arduino.
-   - ✏️ Demo correct temperature readout.
-7. ✏️ Record reading of the sensor in ice water & boiled water.
+6. ✏️ Record reading of the sensor in ice water & boiled water.
+7. For 2 points extra credit:
+   - ✏️ Implement the logarithmic or polynomial equation on the Arduino.
+   - ✏️ Take a screenshot of the correct temperature readout.
 
 ## Adafruit Feather nRF52840 Sense:
 
