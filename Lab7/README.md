@@ -167,7 +167,7 @@ A: You can also use terminal.
 1. Create a folder anywhere you like, for example, ```~/home/Desktop/lab7_env```
 2. Open a terminal.
 3. Create a virtual environment named `venv` in your terminal: ```python3 -m venv  ~/home/Desktop/lab7_env```, remember to replace the dir to the correct folder if you created the virtual in other dirs.
-4. Activate the virtual environment. `source ~/home/Desktop/lab7_env/bin/activate` if using macOS, or `C:\> <venv>\Scripts\activate.bat` if using windows.
+4. Activate the virtual environment. `source ~/home/Desktop/lab7_env/bin/activate` if using macOS, or `C:\> ~\home\Desktop\lab7_env\Scripts\activate.bat` if using windows.
 5. In your virtual environment, you can install required packages in the script.
 
 Refer to [this](https://docs.python.org/3/library/venv.html) about creating python virtual environments.
