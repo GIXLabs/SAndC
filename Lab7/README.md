@@ -78,7 +78,7 @@ All the code in this Lab is provided in the ['src'](src/) folder, but you are we
 
 1. ✏️ Take a photo of your sensor setup and a screenshot of the serial plotter.
 
-## Record data on your PC
+## Record data on your PC (You can also use alternative methods instead of Spyder, please refer Q&A)
 
 1. Open Spyder, make sure the virtual environment is correct.
 
@@ -159,3 +159,15 @@ Same instructions as previous TECHIN 512 labs.
 **Q: I have Python installed on my PC, why should I use Anaconda?**
 
 A: If you have Python already installed, it could work well in this lab. However, Anaconda can be very useful in the future when you work on several Python projects simultaneously. Anaconda helps you to create and manage multiple virtual Python environments, which could prevent conflict of library dependencies.  
+
+**Q: If I don't have Spyder installed, can I also create a virtual environment and run the script?**
+
+A: You can also use terminal.
+
+1. Create a folder anywhere you like, for example, ```~/home/Desktop/lab7_env```
+2. Open a terminal.
+3. Create a virtual environment named `venv` in your terminal: ```python3 -m venv  ~/home/Desktop/lab7_env```, remember to replace the dir to the correct folder if you created the virtual in other dirs.
+4. Activate the virtual environment. `source ~/home/Desktop/lab7_env/bin/activate` if using macOS, or `C:\> <venv>\Scripts\activate.bat` if using windows.
+5. In your virtual environment, you can install required packages in the script.
+
+Refer to [this](https://docs.python.org/3/library/venv.html) about creating python virtual environments.
