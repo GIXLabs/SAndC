@@ -168,13 +168,20 @@ Voltage dividers are an important and useful circuit to scale a voltage (signal)
 
 6. Explain why this voltage divider does not follow the 4.3.2 voltage prediction now that a load resistor has been added.
 
-## 5. Arduino – [Blink a LED](/Lab2/information/flashing_code.md)
+<!-- This is the old version using Arduino -->
+<!-- ## 5. Arduino – [Blink an LED](/Lab2/information/flashing_code.md)
 
 1. Open the ‘SIK Guide‘ book of your Arduino Starter Kit. Go to page 21 and finish Circuit 1 – ‘Blinking a LED’
 
    ![LED1](/assets/Lab2-20.png)
 
    - Note: if you do not have the book, you can use this [Arduino tutorial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink). This tutorial uses a different resistor value, but will work just as well.
+
+2. ✏️ After you finish the circuit. **Ask a TA to check it.** -->
+
+## 5. ESP 32 – Blink an LED
+
+1. Follow this [video tutorial](https://www.youtube.com/watch?v=xPlN_Tk3VLQ&list=PLWNDWPAClRVqNUIuJylljkQfFSeIpuxUi) (first 19 mins) and blink an LED using ESP 32.
 
 2. ✏️ After you finish the circuit. **Ask a TA to check it.**
 
