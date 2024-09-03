@@ -7,7 +7,7 @@ V = IR
 
 1. How to understand Ohm's law
 2. How to distinguish between series and parallel
-3. How to get started with Arduino
+3. How to get started with ESP 32
 
 # Pre-Lab Calculations
 
