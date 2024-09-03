@@ -14,7 +14,7 @@ For those who have not done any electronics work before, this can be a stressful
 - [How to Use an Oscilloscope](oscope.md)
 
 # Assignment
-Note: the lab write-up on Canvas is the ultimate source of truth for what should go into your report. Below are all of the items marked with a ">" in the original write-up, but please [submit and issue](https://github.com/GIXLabs/SAndC/issues) if you find an discrepancies.
+Note: the lab write-up on Canvas is the ultimate source of truth for what should go into your report. Below are all of the items marked with a ">" in the original write-up, but please [submit an issue](https://github.com/GIXLabs/SAndC/issues) if you find an discrepancies.
 
 The corresponding assignment in the original document will be referenced in parentheses in line with this write-up. For example (**DC Voltage: >**) corresponds with the ">" on line labeled 5 in the DC Voltage section of the Canvas document.
 
