@@ -7,7 +7,7 @@ V = IR
 
 1. How to understand Ohm's law
 2. How to distinguish between series and parallel
-3. How to get started with Arduino
+3. How to get started with ESP32
 
 # Pre-Lab Calculations
 
@@ -167,6 +167,36 @@ Voltage dividers are an important and useful circuit to scale a voltage (signal)
    ![DivLoad3](/assets/Lab2-18.jpg)
 
 6. Explain why this voltage divider does not follow the 4.3.2 voltage prediction now that a load resistor has been added.
+
+## 5. ESP32 - Blink a LED
+
+1. Setup ESP32 with MicroPython
+
+Before proceed with the steps below, make sure you have Thonny IDE and USB to UART bridge driver successfully installed, as well as MicroPython configured to ESP32 downloaded. 
+- Thonny IDE download [link](https://thonny.org/)
+- Check the dev board model, and download the USB to UART bridge driver. The link for CP210X is [here](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers). Install the driver on your laptop. You may have to change the laptop security setting to unblock extensions to successfully install it. The release note included in the installation package is a good resource for FAQ.
+- Download latest and stable release of MicroPython firmware for ESP32. The link is here: https://micropython.org/download/ESP32_GENERIC/ We will use the downloaded file later, please make sure you can locate it later.
+
+Let's now put things together.
+
+- Connect ESP32 dev board with your laptop.
+- Open Thonny IDE. Click on “Tools” → “Manage Plug-Ins”. Type in esptool in the search field as shown below. Depending on the operating system on your laptop, the figure may look different. Install esptool by clicking on it (in the red box).
+- Click on “Tools” → “Options” → “Interpreter”. Select MicroPython (ESP32) as the interpreter of Thonny. Select the option with USB to UART as the port. 
+- Click on “Install or update MicroPython (esptool)”. Click on the icon ≡. Choose the “Select local MicroPython image” option. Browse through your local files and find the MicroPython file downloaded before. 
+- Click on button “Install”. You may have to push the boot button on the board to write to it.
+- Copy and paste the following code line by line to the Shell window in Thonny.
+
+```
+>>> Import machine
+>>> led = machine.Pin(2, machine.Pin.OUT)
+>>> led.on()
+```
+What did you observe after entering the 3rd and 4th line? Add comments to the code based on your observation. Feel free to read the documentation or utilize other resources to understand this code implementation.
+
+For Windows users, feel free to refer to this [tutorial](https://www.youtube.com/watch?si=JNdeSa-IPverrW2t&v=elBtWZ_fOZU&feature=youtu.be)
+
+
+
 
 ## 5. Arduino – [Blink a LED](/Lab2/information/flashing_code.md)
 
