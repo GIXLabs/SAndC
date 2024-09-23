@@ -181,7 +181,9 @@ Let's now put things together.
 
 - Connect ESP32 dev board with your laptop.
 - Open Thonny IDE. Click on “Tools” → “Manage Plug-Ins”. Type in esptool in the search field as shown below. Depending on the operating system on your laptop, the figure may look different. Install esptool by clicking on it (in the red box).
+![IntermediateStep-1](/assets/Lab2-25.png)
 - Click on “Tools” → “Options” → “Interpreter”. Select MicroPython (ESP32) as the interpreter of Thonny. Select the option with USB to UART as the port. 
+![IntermediateStep-2](/assets/Lab2-26.png)
 - Click on “Install or update MicroPython (esptool)”. Click on the icon ≡. Choose the “Select local MicroPython image” option. Browse through your local files and find the MicroPython file downloaded before. 
 - Click on button “Install”. You may have to push the boot button on the board to write to it.
 - Copy and paste the following code line by line to the Shell window in Thonny.
