@@ -197,18 +197,14 @@ What did you observe after entering the 3rd and 4th line? Add comments to the co
 
 For Windows users, feel free to refer to this [tutorial](https://www.youtube.com/watch?si=JNdeSa-IPverrW2t&v=elBtWZ_fOZU&feature=youtu.be)
 
+2. Blink a LED on breadboard
 
+- Play with the [interactive simulation tool](https://wokwi.com/projects/359801682833812481) to understand the expected observations.
+- Build your circuit, either following the circuit provided by the tool in step 1, or as illustrated in lecture slides. Run the code provided in Step 1 and verify if you obtain the same results as simulation. To successfully blink the LED, make sure the output pin specified in code is consistent with your circuit.
+- Connect another led into the circuit in series, and rerun the code. Draw the diagram, and test your circuit. What could you observe?
+- Expand the circuit in step 2 so that two such circuits are connected in series. Draw the diagram and build your circuit. What could you observe?
+- Based on your result in step 4, can you make two leds blink at different frequencies? Would you choose series or parallel connection? Justify your answer.
 
-
-## 5. Arduino – [Blink a LED](/Lab2/information/flashing_code.md)
-
-1. Open the ‘SIK Guide‘ book of your Arduino Starter Kit. Go to page 21 and finish Circuit 1 – ‘Blinking a LED’
-
-   ![LED1](/assets/Lab2-20.png)
-
-   - Note: if you do not have the book, you can use this [Arduino tutorial](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink). This tutorial uses a different resistor value, but will work just as well.
-
-2. ✏️ After you finish the circuit. **Ask a TA to check it.**
 
 # Frequently Asked Questions
 
