@@ -201,10 +201,20 @@ For Windows users, feel free to refer to this [tutorial](https://www.youtube.com
 2. Blink a LED on breadboard
 
 - Play with the [interactive simulation tool](https://wokwi.com/projects/359801682833812481) to understand the expected observations.
-- Build your circuit, either following the circuit provided by the tool in step 1, or as illustrated in lecture slides. Run the code provided in Step 1 and verify if you obtain the same results as simulation. To successfully blink the LED, make sure the output pin specified in code is consistent with your circuit.
-- Connect another led into the circuit in series, and rerun the code. Draw the diagram, and test your circuit. What could you observe?
-- Expand the circuit in step 2 so that two such circuits are connected in series. Draw the diagram and build your circuit. What could you observe?
-- Based on your result in step 4, can you make two leds blink at different frequencies? Would you choose series or parallel connection? Justify your answer.
+- Take out a LED from your ESP32 kit, and observe the lengths of the pins. You should expect one pin to be longer than another. The longer pin should alwasy connect to the positive voltage so that the LED can light up.
+- ✏️ Build your circuit, either following the circuit provided by the tool in the previous step, or as illustrated in lecture slides. Run the code provided by the simulation tool and verify if you obtain the same results as simulation. To successfully blink the LED, make sure the output pin specified in code is consistent with your circuit. Take a picture of your circuit and include it in your report. 
+- ✏️ Connect another led into the circuit in series, remove the resistor from your circuit, and re-run the code. Draw the diagram, and test your circuit. What could you observe? Note: You may want to use two red LEDs in this step to observe the blink effect. 
+- ✏️ Based on your results in previous steps, can you make two leds blink at different frequencies? Would you choose series or parallel connection? Justify your answer. Build the circuit and take a picture. Complete the following program and test your circuit.
+```
+from machine import Pin
+from utime import sleep
+
+print("Hello, ESP32!")
+
+led_1 = Pin(15, Pin.OUT)
+led_2 = Pin(2, Pin.OUT)
+while True:
+```
 
 
 # Frequently Asked Questions
