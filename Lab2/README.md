@@ -192,6 +192,7 @@ Let's now put things together.
 >>> Import machine
 >>> led = machine.Pin(2, machine.Pin.OUT)
 >>> led.on()
+>>> led.off()
 ```
 What did you observe after entering the 3rd and 4th line? Add comments to the code based on your observation. Feel free to read the documentation or utilize other resources to understand this code implementation.
 
