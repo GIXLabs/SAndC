@@ -202,10 +202,11 @@ For Windows users, feel free to refer to this [tutorial](https://www.youtube.com
 
 - Play with the [interactive simulation tool](https://wokwi.com/projects/359801682833812481) to understand the expected observations. Double click on the resistor to read its value.
 - Take out a LED from your ESP32 kit, and observe the lengths of the pins. You should expect one pin to be longer than another. The longer pin should alwasy connect to the positive voltage so that the LED can light up.
-- ✏️ Build your circuit on the bread board, either following the circuit provided by the tool in the previous step, or as illustrated in lecture slides. Run the code provided by the simulation tool and verify if you obtain the same results as simulation. To successfully blink the LED, make sure the output pin specified in code is consistent with your circuit. Take a picture of your circuit and include it in your report. 
+- ✏️ Build your circuit on the bread board, either following the circuit provided by the tool in the previous step, or as illustrated in lecture slides. Run the code provided by the simulation tool and verify if you obtain the same results as simulation. Add comments to your code and include the code with comments in your lab report. To successfully blink the LED, make sure the output pin specified in code is consistent with your circuit. Take a picture of your circuit and include it in your report.
+![IntermediateStep-1](/assets/lab2-27.png)
 - ✏️ Connect another LED into the circuit in series, remove the resistor from your circuit, and re-run the code. Draw the diagram, and test your circuit. What could you observe? Note: You may want to use two red LEDs in this step to observe the blink effect.
 - ✏️ Compared to the circuit with single LED in the simulator, are the leds in series brigher or dimmer? For each red LED, it requires ~2V to light up. Can you explain why the LEDs in series become brighter or dimmer using your knowledge of voltage divider?
-- ✏️ Based on your results in previous steps, can you blink two LEDs at different frequencies? Would you choose series or parallel connection? Justify your answer. Build the circuit and take a picture. Complete the following program and test your circuit. (Hint: You need two resistors to complete the circuit.)
+- ✏️ Based on your results in previous steps, can you blink two LEDs at different frequencies? Build the circuit and take a picture. Complete the following program with appropriate comments and test your circuit. (Hint: You need two resistors to complete the circuit.)
 ```
 from machine import Pin
 from utime import sleep
