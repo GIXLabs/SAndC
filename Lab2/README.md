@@ -189,7 +189,7 @@ Let's now put things together.
 - Copy and paste the following code line by line to the Shell window in Thonny.
 
 ```
->>> Import machine
+>>> import machine
 >>> led = machine.Pin(2, machine.Pin.OUT)
 >>> led.on()
 >>> led.off()
