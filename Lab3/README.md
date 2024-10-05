@@ -143,6 +143,7 @@ Procedure:
      signal = PWM(Pin(5), frequency) # set PWM output on PIN 5 with specified frequency
      signal.duty(duty_cycle)
      ```
+     To stop generating the PWM signal, you can type `signal.deinit()` in the shell window.
 2. Design an RC low-pass circuit. Determine a cutoff frequency 10x lower than your PWM switching frequency. Determine your RC time constant based on this frequency ([see this pdf](assets/low_pass_filter_design.pdf)). Set R = 1000 Ohms, determine your **C** value. If exact C value is not available, pick the closest available and
    - ✏️ document changes in circuit design and parameters due to this approximate value. **Remember: capacitors may explode if wired wrong.** Make sure the side of the capacitor with the white stripe is connected to ground.
 3. Connect oscilloscope to circuit as shown in Figure 3. Set vertical controls for Channels 1 and 2 to show both waves. Set the time base to show 10 cycles of the PWM input.
