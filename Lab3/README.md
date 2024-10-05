@@ -37,7 +37,6 @@ The writeup for this lab should contain the following outline:
 - NPN BJT (2N3904)
 - Light emitting diode (LED)
 - SPDT switch
-- Arduino Uno
 - Jumper wires
 - Solderless breadboard
 - Function generator
@@ -112,7 +111,7 @@ First we will demonstrate this ability using the switch to change base current i
 
 ## Part 4: RC Low-Pass Filter
 
-This part will illustrate a practical application of RC circuits: smoothing out pulse-width-modulation to approximate an analog signal. Many low-cost microcontroller (e.g. Arduino) based embedded systems do not have analog outputs, but we can fake one by rapidly flipping a bit on and off.
+This part will illustrate a practical application of RC circuits: smoothing out pulse-width-modulation to approximate an analog signal. Many low-cost microcontroller (e.g. ESP32 and Arduino) based embedded systems do not have analog outputs, but we can fake one by rapidly flipping a bit on and off.
 
 ![PWM](assets/pwm.png)
 ![RC Smoothing](assets/smoothed_pwm.png)
@@ -123,7 +122,7 @@ Pulse width modulation (PWM) is a series of pulses which turn ON at regular time
 
 PWM signals have a lot of high frequencies in them due to the switching frequency and also harmonics from the rectangular wave shape. They also have a DC component (0 frequency) which depends only on the ratio of on to off times (duty cycle). We will build a low-pass filter to get rid of the high frequencies and only let through the lowest frequencies to reveal the DC component of the PWM signal.
 
-By “filtering out” the high switching related frequencies, a RC low-pass filter can convert a PWM signal from an Arduino to a “smooth” DC voltage (by filtering out the switching frequency).
+By “filtering out” the high switching related frequencies, a RC low-pass filter can convert a PWM signal from ESP32 to a “smooth” DC voltage (by filtering out the switching frequency).
 
 Our overall system is shown in Figure 3.
 
@@ -134,7 +133,16 @@ Figure 3. Using an RC circuit to smooth a PWM signal into an analog signal. The 
 Procedure:
 
 1. Generate a PWM signal where you can control the duty cycle. For the source of the PWM signal we recommend you use a signal generator with [1.0 kHz frequency](/Lab1/signal_gen.md/#adjusting-frequency), [Vmin of 0.0 V, and Vmax of 3.5 V](/Lab1/signal_gen.md/#adjusting-amplitude).
-   - If you would like a challenge, you can use an Arduino with code [at this link](http://forcetronic.blogspot.com/2018/02/converting-arduino-pwm-output-to-dac.html) instead of the signal generator.
+   - If you would like a challenge, you can use an ESP32 dev board with the code below or Arduino with code [at this link](http://forcetronic.blogspot.com/2018/02/converting-arduino-pwm-output-to-dac.html) instead of the signal generator.
+     ```
+     from machine import Pin, PWM
+     from time import sleep
+
+     frequency = 1000 # set the frequency to 1KHz
+     duty_cycle = 205 # approximately 20% duty cycle, min = 0, max = 1024
+     signal = PWM(Pin(5), frequency) # set PWM output on PIN 5 with specified frequency
+     signal.duty(duty_cycle)
+     ```
 2. Design an RC low-pass circuit. Determine a cutoff frequency 10x lower than your PWM switching frequency. Determine your RC time constant based on this frequency ([see this pdf](assets/low_pass_filter_design.pdf)). Set R = 1000 Ohms, determine your **C** value. If exact C value is not available, pick the closest available and
    - ✏️ document changes in circuit design and parameters due to this approximate value. **Remember: capacitors may explode if wired wrong.** Make sure the side of the capacitor with the white stripe is connected to ground.
 3. Connect oscilloscope to circuit as shown in Figure 3. Set vertical controls for Channels 1 and 2 to show both waves. Set the time base to show 10 cycles of the PWM input.
