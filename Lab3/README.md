@@ -160,7 +160,7 @@ Note: Make sure the red and black clips coming from the signal generator do not 
 5. Repeat step two, but set the cutoff frequency 100x lower than the PWM frequency. Measure input and output for duty cycle 50%
    - ✏️ What is the wave shape of the output signal (screenshot)?
 6. Using this new RC circuit:
-   - ✏️ Make a graph of the DC value of the output vs. PWM duty cycle for duty cycle values of {10%, 30%, 50%, 75%,90%}
+   - ✏️ Make a graph of the mean voltage of the output vs. PWM duty cycle for duty cycle values of {10%, 30%, 50%, 75%,90%}
    - ✏️ Document your circuit design and how you chose the right resistor and capacitor.
    - ✏️ Include a schematic diagram of your circuit design with each component marked with its value.
    - ✏️ One photo of your circuit on the breadboard.
