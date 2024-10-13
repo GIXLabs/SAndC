@@ -83,25 +83,25 @@ None.
    - Your analog input should be the voltage that you measured earlier. You can refer to [this page](https://docs.sunfounder.com/projects/esp32-starter-kit/en/latest/micropython/basic_projects/py_thermistor.html) for a more detailed implementation.
    ```
    # Import the necessary libraries
-from machine import ADC, Pin
-import time
-import math
+   from machine import ADC, Pin
+   import time
+   import math
 
-# Fill in the beta value based on your research on the datasheet
-beta = 
+   # Fill in the beta value based on your research on the datasheet
+   beta = 
 
-# Create an ADC object for thermistor
-thermistor = ADC(Pin(4, Pin.IN))
+   # Create an ADC object for thermistor
+   thermistor = ADC(Pin(4, Pin.IN))
 
-# Set the attenuation
-thermistor.atten(thermistor.ATTN_11DB)
+   # Set the attenuation
+   thermistor.atten(thermistor.ATTN_11DB)
 
-# Start an infinite loop to continuously monitor the temperature
-while True:
-    # Read the voltage in microvolts and convert it to volts
-    Vr = thermistor.read_uv() / 1000000
-    print(Vr)
-    time.sleep(0.5)
+   # Start an infinite loop to continuously monitor the temperature
+   while True:
+       # Read the voltage in microvolts and convert it to volts
+       Vr = thermistor.read_uv() / 1000000
+       print(Vr)
+       time.sleep(0.5)
    ```
    - ✏️ Demonstrate that it works using the water baths.
 8. ✏️ Record reading of the sensor in ice water & boiled water.
