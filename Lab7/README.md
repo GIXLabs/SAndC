@@ -42,7 +42,7 @@ For more information on setting up Anaconda and Spyder click [here](/Lab6/anacon
 
 # Parts, tools, supplies required:
 
-- Arduino
+- ESP32
 - Pulse oximeter sensor
 
    ![PPG Sensor](assets/ppg_sensor.png)
@@ -55,16 +55,16 @@ All the code in this Lab is provided in the ['src'](src/) folder, but you are we
 
 1. **Setup hardware**
 
-   1. Connect the pulse oximeter sensor to Arduino, red pin to 3.3V, black pin to GND and purple pin to Analog input **A0** by default.
+   1. Connect the pulse oximeter sensor to ESP32 dev board, red pin to 3.3V, black pin to GND and purple pin to ADC Pin 4.
  
-      ![Arduino Connections](assets/arduino_conn.svg)
+      ![ESP32 Connections](assets/ESP32_conn.svg)
 
    1. Connect the Arduino to your PC.
 
 1. **Install and Upload Arduino Script**
 
 
-   - [Pulse Sensor Code](https://github.com/GIXLabs/SAndC/tree/main/Lab7/src/PulseSensor)
+   - [Pulse Sensor Code](https://github.com/GIXLabs/SAndC/blob/main/Lab7/src/PulseSensor/PulseSensor.py)
 
 ## Test the sensor
 
@@ -72,7 +72,7 @@ All the code in this Lab is provided in the ['src'](src/) folder, but you are we
 
    ![PPG on hand](assets/ppg_hand.svg)
 
-1. In Arduino IDE, go to 'Tools-Serial Plotter', if everything is set correctly, you should see similar plots as the following figure and a yellow LED on your Arduino blinking on your heartbeat. Make sure the baud rate is **57600**. If you see that signal reaches the upper limit 1000 or the peak is not obvious, you may need to adjust the pressure applied on the sensor.
+1. In Thonny IDE, go to 'View-->Plotter', if everything is set correctly, you should see similar plots as the following figure and a blue LED on your ESP32 blinking on your heartbeat. Make sure the baud rate is **57600**. If you see that signal reaches the upper limit 1000 or the peak is not obvious, you may need to adjust the pressure applied on the sensor.
 
    ![Serial Plotter Example](assets/serial_plotter_ex.png)
 
