@@ -97,7 +97,14 @@ Design a circuit combining two 555 chips and a 74HC00 quad NAND gate to perform 
 
 ![Pulse example](assets/pulse_example.png)
 
-1. Build the [555 Extra Pulse Catcher](555_extra_pulse_catcher.docx) using your [breadboard](/Lab2/information/breadboard.md).
+1. Build the [555 Extra Pulse Catcher](555_extra_pulse_catcher.docx) using your [breadboard](/Lab2/information/breadboard.md). Since you will use a lot of jumper wires, it would be easier to keep track of your circuit by following a consistent color coding, as detailed below:
+   1. Connections to GND use black wires.
+   2. Connections to Vcc uses red wires.
+   3. Connections to 3.3V uses orange wires.
+   4. Connections to >5V uses yellow wires.
+   5. General inputs use white and grey wires.
+   6. Data signals use green wires.
+   7. Output signals use blue wires.
 1. Tests:
     1. ✏️ Using “The Emitter” device, validate function of your circuit and ask a TA to check.
 	1. ✏️ With “The Emitter” connected, connect both “IN” and “OUT/LED” of your circuit to the oscilloscope. Trigger on the rising edge of “OUT/LED” and capture both signals in a screen shot. ✏️ Describe how these signals validate the correct operation of your circuit.
