@@ -54,7 +54,7 @@ None.
 
 ## One-Wire Sensor
 
-<img src="assets/one_wire_ESP32.png" alt="One-wire Sensor" width="550"/>
+<img src="assets/one_wire.png" alt="One-wire Sensor" width="550"/>
 
 1. We have two types of one-wire sensors: stainless steel cylinder, or BJT package. Use appropriate hookup as shown above.
 2. Hook up to ESP32 dev board (see Resources above) and follow the steps therein.
