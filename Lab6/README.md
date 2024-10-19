@@ -18,10 +18,9 @@ The purpose of this lab is to learn about several of the ways to sense temperatu
 
 ## One-Wire
 
-- [**For ESP32: DS18B20 Temperature Sensor with ESP32 and ESP8266**](https://randomnerdtutorials.com/micropython-ds18b20-esp32-esp8266/)
-- [**Optional for Arduino: One-Wire to Arduino Interfacing**](https://www.tweaking4all.com/hardware/arduino/arduino-ds18b20-temperature-sensor/)
-- [**Optional for Arduino: One-Wire Arduino Library**](https://www.pjrc.com/teensy/td_libs_OneWire.html)
-- [**Optional for Arduino: 1-Wire Tutorial**](https://www.hacktronics.com/tutorials/arduino-1-wire-tutorial.html)
+- [**One-Wire to Arduino Interfacing**](https://www.tweaking4all.com/hardware/arduino/arduino-ds18b20-temperature-sensor/)
+- [**One-Wire Arduino Library**](https://www.pjrc.com/teensy/td_libs_OneWire.html)
+- [**1-Wire Tutorial**](https://www.hacktronics.com/tutorials/arduino-1-wire-tutorial.html)
 
 # Write-Up
 
@@ -57,10 +56,12 @@ None.
 <img src="assets/one_wire.png" alt="One-wire Sensor" width="550"/>
 
 1. We have two types of one-wire sensors: stainless steel cylinder, or BJT package. Use appropriate hookup as shown above.
-2. Hook up to ESP32 dev board (see Resources above) and follow the steps therein.
+2. Hook up to Arduino, install and run driver software (see Resources above).
+3. Using the library manager in the Arduino IDE, install the OneWire library by Paul Stoffregen (Tools \> Manage Libraries \> Search: OneWire).
+4. Open the example sketch that came with the library (File \> Examples \> OneWire \> DS18x20_Temperature) and upload the code to your Arduino.
    1. **Note:** You may need to change the pin number at the top of the code depending on how you wired it.
-3. As you get each sensor working, take each one to the ice-water and boiling-water baths.
-4. ✏️ Record reading of the sensor in ice water & boiled water.
+5. As you get each sensor working, take each one to the ice-water and boiling-water baths.
+6. ✏️ Record reading of the sensor in ice water & boiled water.
 
 ## Thermistor:
 
