@@ -71,42 +71,20 @@ None.
    - ✏️ Room temperature
    - ✏️ 0&deg;C
    - ✏️ 100&deg;C
-3. The ESP32 analog input can handle input voltages from 0-3.3V. Design a DC circuit making a voltage divider with:
-   - 3.3V input (from 3.3V pin on ESP32 dev board)
+3. The Arduino analog input can handle input voltages from 0-5V. Design a DC circuit making a voltage divider with:
+   - 5V input (from 5V pin on arduino)
    - Resistor (R) around 10K Ohm
    - Thermistor
-   - The voltage across the 10K-thermistor voltage should range from 0-3.3V for any temperature from -10&deg;C to + 110&deg;C.
+   - The voltage across the 10K-thermistor voltage should range from 0-5V for any temperature from -10&deg;C to + 110&deg;C.
 4. You should **NOT** expect a straight line relationship.
    - Recall the voltage dividers' equation, use the voltage divider you designed and the voltage measured (V) to calculate the thermometer's resistance(R), and record the relationship between R and T.
    - ✏️ Try to fit a logarithmic function T = a\*log(R)+b or 2nd order polynomial (R = aT^2 + bT + c) to three data points: 0&deg;C, Room Temp, 100&deg;C (where y is resistance and x is temperature).
-6. Read the datasheet of thermistor to find its beta value. Fill the beta value into the following code to read the analog port and print the reading.
-   - Your analog input should be the voltage that you measured earlier. You can refer to [this page](https://docs.sunfounder.com/projects/esp32-starter-kit/en/latest/micropython/basic_projects/py_thermistor.html) for a more detailed implementation.
-   ```
-   # Import the necessary libraries
-from machine import ADC, Pin
-import time
-import math
-
-# Fill in the beta value based on your research on the datasheet
-beta = 
-
-# Create an ADC object for thermistor
-thermistor = ADC(Pin(4, Pin.IN))
-
-# Set the attenuation
-thermistor.atten(thermistor.ATTN_11DB)
-
-# Start an infinite loop to continuously monitor the temperature
-while True:
-    # Read the voltage in microvolts and convert it to volts
-    Vr = thermistor.read_uv() / 1000000
-    print(Vr)
-    time.sleep(0.5)
-   ```
+6. Write an Arduino sketch that reads the analog port and prints the reading.
+   - Your analog input should be the voltage that you measured earlier. You can refer to [this page](https://www.arduino.cc/en/Tutorial/BuiltInExamples/AnalogInput) for Arduino Analog Input.
    - ✏️ Demonstrate that it works using the water baths.
 8. ✏️ Record reading of the sensor in ice water & boiled water.
 9. For 2 points extra credit:
-   - ✏️ Implement the logarithmic or polynomial equation on the ESP32.
+   - ✏️ Implement the logarithmic or polynomial equation on the Arduino.
    - ✏️ Take a screenshot of the correct temperature readout.
 
 ## Adafruit Feather nRF52840 Sense:
