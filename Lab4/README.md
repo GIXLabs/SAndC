@@ -114,9 +114,6 @@ This is how the extra pulse catcher circuit works:
 
 ![How extra pulse catcher works](assets/lab4_how_catcher_works.jpg)
 
-Image of completed circuit:
-
-![Completed Pulse Catcher Circuit](assets/pulse_catcher_circuit.jpg)
 
 Correct circuit operation:
 
