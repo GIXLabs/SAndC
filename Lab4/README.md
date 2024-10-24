@@ -114,6 +114,18 @@ This is how the extra pulse catcher circuit works:
 
 ![How extra pulse catcher works](assets/lab4_how_catcher_works.jpg)
 
+Image of completed circuit:
+
+![Completed Pulse Catcher Circuit](assets/pulse_catcher_circuit.jpg)
+
+Correct circuit operation:
+
+![Circuit Operating Properly](assets/pulse_catcher_working.gif)
+
+How to set trigger on Oscope:
+
+![Setting Trigger on Oscope](assets/oscope_trigger.gif)
+
 # Frequently Asked Questions
 
 **Q: In monostable mode, the circuit connection is correct but the output is not as expected.**
