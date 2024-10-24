@@ -112,7 +112,7 @@ Design a circuit combining two 555 chips and a 74HC00 quad NAND gate to perform 
 
 This is how the extra pulse catcher circuit works:
 
-![How extra pulse catcher works](assets/lab4_how_catcher_works.jpg)
+![How extra pulse catcher works](assets/lab4_how_extra_pulse_catcher_works.png)
 
 
 Correct circuit operation:
