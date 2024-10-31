@@ -115,7 +115,7 @@ Finally, we will study a weight measurement system consisting of a load cell mou
 	1. HX711 VCC to ESP32 3V pin
 	1. HX711 GND to ESP32 GND
 1. Download the [pre-written script](src/Micropython/main.py) and associated packages in the same folder.
-	1. There are three files that you will need to download: main.py, hx711.py, and LLS.py
+	1. There are three files that you will need to download: [main.py](src/Micropython/main.py), [hx711.py](src/Micropython/hx711.py), and [LLS.py](src/Micropython/LLS.py)
 	1. hx711.py (driver for the sensor) and LLS.py (Linear Least Squares implementation) have functions needed by main.py
 	1. For Thonny, to add packages you will need to right click on the left panel with Micropython Device selected, create new file(s), and copy and save contents of the scripts mentioned above into the new files
 	1. Make sure to keep the same file names, or update main.py to reflect changes in package names
