@@ -104,10 +104,36 @@ The diving board is a load cell with a single strain gauge. We’ll measure its 
 1. ✏️ Compute and record resistance when the gauge is heated (but not pushed or deformed).
 
 ### Load Cell Measurements ### 
-Finally, we will study a weight measurement system consisting of a load cell mounted between two platforms. The setup below is shown without the top plate for clarity.
+Finally, we will study a weight measurement system consisting of a load cell mounted between two platforms. You can do either the Micropython or Arduino setup to complete the next section.  
 
 ![Arduino HX711 Setup](assets/arduino_hx711.png)
-
+#### ESP32 Micropython Setup
+1. Plug an ESP32 into your laptop
+1. Use jumper cables to connect the HX711 to your ESP32 with the following wiring (You will need to change the main script to make sure it is using the same pin numbers as the ones you select):
+	1. HX711 SCK to any digital pin on the ESP32
+	1. HX711 DT (Data) to any digital pin on the ESP32
+	1. HX711 VCC to ESP32 3V pin
+	1. HX711 GND to ESP32 GND
+1. Download the [pre-written script](src/Micropython/main.py) and associated packages in the same folder.
+	1. There are three files that you will need to download: main.py, hx711.py, and LLS.py
+	1. hx711.py (driver for the sensor) and LLS.py (Linear Least Squares implementation) have functions needed by main.py
+	1. For Thonny, to add packages you will need to right click on the left panel with Micropython Device selected, create new file(s), and copy and save contents of the scripts mentioned above into the new files
+	1. Make sure to keep the same file names, or update main.py to reflect changes in package names
+	1. Read through the main.py script to get a basic understanding of how it works
+	![Thonny add new files](assets/Thonny.svg)
+1. Run the main.py script which does the following:
+	1. Prompts users to enter number of data points to collect per weight for linear regression. Take at least three readings per weight, the more readings you take the more accurate calibration will be
+	1. Prompts users to add weight to scale and collects raw data readings. This repeats for any number of weights you want to collect raw data for (Use at least 1g, 10g, and 100g)
+	1. Performs [linear regression](https://en.wikipedia.org/wiki/Linear_regression) using the [Linear Least Squares](https://en.wikipedia.org/wiki/Linear_least_squares) algorithm on the data collected
+	1. Runs an infinite loop that prints calibrated data (in grams) to the console
+1. ✏️ What you need to collect for your write up:
+	1. ✏️ From the script determine what data structure and variable name the data points are being stored into
+	1. ✏️ For each weight used to collect data, use indexing to show at least three data points collected and take a screenshot(s)
+	1. ✏️ Linear Regression aims to find the relation 'y = mx + b' where m is sometimes called the scale or weight and b is called the bias. From the script find the values of m and b that were calculated from the data.
+	1. ✏️ From the script determine the data structure and variable names of the input data to perform linear regression
+	1. ✏️ Record calibrated data readings for each weight used to collect raw data readings
+	1. ✏️ Apply the 100g weight to each target on the top platform. What is the variation in measured weight due to location?
+#### Arduino Setup
 1. Plug an Arduino into your prepared laptop.
 1. Using male-to-female jumper wires, connect Arduino with load cell HX711 chip via SPI with the following wiring:
 	1. Arduino pin 6 to HX711 SCK
@@ -124,6 +150,7 @@ Finally, we will study a weight measurement system consisting of a load cell mou
 	1. ✏️ Record calibrated reading for each weight. Verify your calibration.
 	1. Apply the 100g weight to each target on the top platform in turn. ✏️ What is the variation in weight measured due to location??
 ### Temperature Sensitivity ###
+If you used the micropython setup: Once you have ran main.py once you do not need to run it again (it will make you go through the calibration process) to get calibrated data readings. You can get calibrated data readings by using the m and b values you recorded or by using the code in the infinite while loop at the bottom of main.py
 1. Place a weight between 100-500 grams on your platform. ✏️ Record the weight reading at room temperature.
 1. Place the type K thermocouple tip inside the two holes in the load cell beam.
 1. Set the heat-gun to high. From a distance of 12” (50cm), heat the strain gage with the heat gun for 15 seconds (**DO NOT APPLY HEAT CLOSER THAN 12” / 30cm or you WILL damage the strain gage.**) ✏️ Record hot air temperature from Fluke DMM.
