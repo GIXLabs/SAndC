@@ -118,9 +118,9 @@ Finally, we will study a weight measurement system consisting of a load cell mou
 	1. There are three files that you will need to download: [main.py](src/Micropython/main.py), [hx711.py](src/Micropython/hx711.py), and [LLS.py](src/Micropython/LLS.py)
 	1. hx711.py (driver for the sensor) and LLS.py (Linear Least Squares implementation) have functions needed by main.py
 	1. For Thonny, to add packages you will need to right click on the left panel with Micropython Device selected, create new file(s), and copy and save contents of the scripts mentioned above into the new files
+	![Thonny add new files](assets/Thonny.svg)
 	1. Make sure to keep the same file names, or update main.py to reflect changes in package names
 	1. Read through the main.py script to get a basic understanding of how it works
-	![Thonny add new files](assets/Thonny.svg)
 1. Run the main.py script which does the following:
 	1. Prompts users to enter number of data points to collect per weight for linear regression. Take at least three readings per weight, the more readings you take the more accurate calibration will be
 	1. Prompts users to add weight to scale and collects raw data readings. This repeats for any number of weights you want to collect raw data for (Use at least 1g, 10g, and 100g)
