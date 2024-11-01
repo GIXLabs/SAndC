@@ -122,8 +122,8 @@ Finally, we will study a weight measurement system consisting of a load cell mou
 	1. Make sure to keep the same file names, or update main.py to reflect changes in package names
 	1. Read through the main.py script to get a basic understanding of how it works
 1. Run the main.py script which does the following:
-	1. Prompts users to enter number of data points to collect per weight for linear regression. Take at least three readings per weight, the more readings you take the more accurate calibration will be
-	1. Prompts users to add weight to scale and collects raw data readings. This repeats for any number of weights you want to collect raw data for (Use at least 1g, 10g, and 100g)
+	1. Prompts users to enter number of data points to collect per weight for linear regression. Take at least 100 readings per weight, the more readings you take the more accurate calibration will be
+	1. Prompts users to add weight to scale and collects raw data readings. This repeats for any number of weights you want to collect raw data for (Use at least 0g, 1g, 10g, 20g, and 100g)
 	1. Performs [linear regression](https://en.wikipedia.org/wiki/Linear_regression) using the [Linear Least Squares](https://en.wikipedia.org/wiki/Linear_least_squares) algorithm on the data collected
 	1. Runs an infinite loop that prints calibrated data (in grams) to the console
 1. ✏️ What you need to collect for your write up:
