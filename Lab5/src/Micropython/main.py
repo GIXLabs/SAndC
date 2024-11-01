@@ -62,11 +62,11 @@ while True:
     
     if weight not in dataDict.keys():
         dataDict[weight] = [hx.get_value()]
-        utime.sleep_ms(50)
+        utime.sleep_ms(20)
         
     for _ in range(numPoints - 1):
         dataDict[weight].append(hx.get_value())
-        utime.sleep_ms(50)
+        utime.sleep_ms(20)
         
         
     ans = input("\nPlease remove weight from scale (Press Enter to continue or -1 to Exit)\n\n")
@@ -74,8 +74,8 @@ while True:
     if ans == '-1':
         break
     
-    print("Sleeping for fifteen seconds to allow strain gauge to stabilize\n\n")
-    utime.sleep(15)
+    print("Sleeping for five seconds to allow strain gauge to stabilize\n\n")
+    utime.sleep(5)
 
 
 
