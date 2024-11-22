@@ -24,7 +24,7 @@ APDS9960
 [Micropython](https://upy-apds9960.readthedocs.io/en/latest/)
 [CircuitPython](https://learn.adafruit.com/adafruit-apds9960-breakout/circuitpython?gad_source=1&gclid=Cj0KCQiA_9u5BhCUARIsABbMSPueoj8fIOxQNcsqS4Mrq1uDb0nutoY-wlmi3jeBcC3LkdWJpE0tS4UaAt3MEALw_wcB)
 
-**I'm lost and don't know where to start**
+## **I'm lost and don't know where to start**
 
 A: While there are many ways to approach this project, we recommend to get started by first selecting the programming language you want to use.
 The three main languages you should consider are CircuitPython, Micropython, and Arduino (C/C++). We recommend CircuitPython or Arduino for your project because Adafruit has in depth tutorials in these languages for each of the peripherals given to you.
@@ -42,7 +42,7 @@ Once you have installed a programming language, your next step should be to pick
 
 With a programming language installed and IDE setup, your next steps should be to connect each peripheral one at a time and run sample code to make sure they are connected and working properly.
 
-**How do I install libraries for my peripherals**
+## **How do I install libraries for my peripherals**
 
 Each programming language has its own way of installing libraries:
 
@@ -52,7 +52,7 @@ Arduino IDE: You can download Arduino libraries directly from the IDE. Click on 
 
 CircuitPython: To install CircuitPython Libraries it is recommended to download the Adafruit CircuitPython Library Bundle that can be found [here](https://circuitpython.org/libraries). Once you have downloaded and unzipped the bundle, search for the library you need and drag and drop the folder/file into the lib folder on your microcontroller with CircuitPython installed (your computer should recognize it as a drive).
 
-![CircuitPython Library Install](assets/CircuitPython_Library)
+![CircuitPython Library Install](assets/CircuitPython_Library.svg)
 
 
 Micropython: To install Micropython libraries in Thonny you can use the package manager in the tools menu at the top (make sure to be in the directory of your Micropython device). The package manager does not always have the Micropython libraries you might be interested in. Therefore, the recommended way to install libraries is to find the one you are looking for online (usually on Github) copy the contents of the file that has the library code, create a new file on your Micropython device, and copy/save the contents of the library in the file that you created.
@@ -61,7 +61,7 @@ Micropython: To install Micropython libraries in Thonny you can use the package 
 
 
 
-**My Microncontroller is not recognizing my sensor**
+## **My Microncontroller is not recognizing my sensor**
 
 A: First check that your wiring is correct
 
@@ -77,13 +77,13 @@ Most Libraries for I2C devices assume a default I2C address which may not be the
 
 ![Wrong i2c address](assets/wrongI2C_Address.svg)
 
-![Correct i2c Address](assets/correctI2C_Address)
+![Correct i2c Address](assets/correctI2C_Address.svg)
 
-**There are only two I2C pins on my microncontroller, how do I connect more than one to my device**
+## **There are only two I2C pins on my microncontroller, how do I connect more than one to my device**
 
 A: I2C devices can share the same SDA and SCL pins since they have unique addresses. Issues will arise when you try and utilize more than one device with same address.
 
-**How do I work with perfboard?**
+## **How do I work with perfboard?**
 
 [Perfboard Prototyping](https://www.youtube.com/watch?v=3N3ApzmyjzE)
 [Soldering Perfboard](https://www.youtube.com/watch?v=l9Kbr8cPqOE)
@@ -94,7 +94,7 @@ It is highly recommended that you use female headers to attach your microcontrol
 ![Female Headers](assets/perf_female_headers.svg)
 
 
-**How do I connect a lipo battery to perfboard?**
+## **How do I connect a lipo battery to perfboard?**
 
 A: For the RP2040, the voltage in pin for batteries is the one labeled 5V. To connect a battery you will need a JST-PH male header and a switch (SPDT is preferred and what will be used as reference). Solder the JST-PH header and switch to your perfboard, make sure to take notice which pin on your JSTPH header is voltage and ground. Solder a jumper wire from your header to the middle pin of your switch. Solder a jumper wire from one of the outside pins of the switch to the 5V pin of your microncontroller.Finally, Solder a jumper wire from ground of the JST-PH header to the ground pin of your microcontroller.
 
