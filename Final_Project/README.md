@@ -3,26 +3,26 @@
 
 ## Useful links
 
-[RP2040 Overview](https://learn.adafruit.com/adafruit-qt-py-2040/overview)
-[QT PY RP2040 - Pinouts](https://learn.adafruit.com/adafruit-qt-py-2040/pinouts)
+-[RP2040 Overview](https://learn.adafruit.com/adafruit-qt-py-2040/overview)
+-[QT PY RP2040 - Pinouts](https://learn.adafruit.com/adafruit-qt-py-2040/pinouts)
 
 SSD1306 OLED:
 
-[Arduino](https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/)
-[Micropython](https://randomnerdtutorials.com/raspberry-pi-pico-ssd1306-oled-micropython/)
-[CircuitPython](https://learn.adafruit.com/adafruit-oled-featherwing/python-circuitpython-wiring)
+-[Arduino](https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/)
+-[Micropython](https://randomnerdtutorials.com/raspberry-pi-pico-ssd1306-oled-micropython/)
+-[CircuitPython](https://learn.adafruit.com/adafruit-oled-featherwing/python-circuitpython-wiring)
 
 MPU6050:
 
-[Arduino](https://randomnerdtutorials.com/arduino-mpu-6050-accelerometer-gyroscope/)
-[Micropython](https://microcontrollerslab.com/micropython-mpu-6050-esp32-esp8266/)
-[CircuitPython](https://learn.adafruit.com/mpu6050-6-dof-accelerometer-and-gyro/python-and-circuitpython?gad_source=1&gclid=Cj0KCQiA_9u5BhCUARIsABbMSPvj5ua6Z8uzGx_uOqEhm6sc8uKHUWFvedA41SZmerjldLei-rUug_QaAvEIEALw_wcB)
+-[Arduino](https://randomnerdtutorials.com/arduino-mpu-6050-accelerometer-gyroscope/)
+-[Micropython](https://microcontrollerslab.com/micropython-mpu-6050-esp32-esp8266/)
+-[CircuitPython](https://learn.adafruit.com/mpu6050-6-dof-accelerometer-and-gyro/python-and-circuitpython?gad_source=1&gclid=Cj0KCQiA_9u5BhCUARIsABbMSPvj5ua6Z8uzGx_uOqEhm6sc8uKHUWFvedA41SZmerjldLei-rUug_QaAvEIEALw_wcB)
 
 APDS9960
 
-[Arduino](https://learn.adafruit.com/adafruit-apds9960-breakout/arduino-wiring-and-test)
-[Micropython](https://upy-apds9960.readthedocs.io/en/latest/)
-[CircuitPython](https://learn.adafruit.com/adafruit-apds9960-breakout/circuitpython?gad_source=1&gclid=Cj0KCQiA_9u5BhCUARIsABbMSPueoj8fIOxQNcsqS4Mrq1uDb0nutoY-wlmi3jeBcC3LkdWJpE0tS4UaAt3MEALw_wcB)
+-[Arduino](https://learn.adafruit.com/adafruit-apds9960-breakout/arduino-wiring-and-test)
+-[Micropython](https://upy-apds9960.readthedocs.io/en/latest/)
+-[CircuitPython](https://learn.adafruit.com/adafruit-apds9960-breakout/circuitpython?gad_source=1&gclid=Cj0KCQiA_9u5BhCUARIsABbMSPueoj8fIOxQNcsqS4Mrq1uDb0nutoY-wlmi3jeBcC3LkdWJpE0tS4UaAt3MEALw_wcB)
 
 ## **I'm lost and don't know where to start**
 
@@ -30,15 +30,15 @@ A: While there are many ways to approach this project, we recommend to get start
 The three main languages you should consider are CircuitPython, Micropython, and Arduino (C/C++). We recommend CircuitPython or Arduino for your project because Adafruit has in depth tutorials in these languages for each of the peripherals given to you.
 Tutorials on how to set up these programming languages are linked below:
 
-[CircuitPython](https://learn.adafruit.com/adafruit-qt-py-2040/circuitpython)
-[Arduino](https://learn.adafruit.com/adafruit-qt-py-2040/arduino-ide-setup)
-[Micropython](https://micropython.org/download/ADAFRUIT_QTPY_RP2040/)
+-[CircuitPython](https://learn.adafruit.com/adafruit-qt-py-2040/circuitpython)
+-[Arduino](https://learn.adafruit.com/adafruit-qt-py-2040/arduino-ide-setup)
+-[Micropython](https://micropython.org/download/ADAFRUIT_QTPY_RP2040/)
 
 Once you have installed a programming language, your next step should be to pick the right IDE to interface with your microcontroller. Depending on the Programming language you chose, we recommend these IDEs:
 
-[Arduino - Arduino IDE](https://www.arduino.cc/en/software)
-[CircuitPython - Mu Editor](https://codewith.mu/)
-[Micropython - Thonny](https://thonny.org/)
+-[Arduino - Arduino IDE](https://www.arduino.cc/en/software)
+-[CircuitPython - Mu Editor](https://codewith.mu/)
+-[Micropython - Thonny](https://thonny.org/)
 
 With a programming language installed and IDE setup, your next steps should be to connect each peripheral one at a time and run sample code to make sure they are connected and working properly.
 
@@ -85,9 +85,9 @@ A: I2C devices can share the same SDA and SCL pins since they have unique addres
 
 ## **How do I work with perfboard?**
 
-[Perfboard Prototyping](https://www.youtube.com/watch?v=3N3ApzmyjzE)
-[Soldering Perfboard](https://www.youtube.com/watch?v=l9Kbr8cPqOE)
-[Perfboard Tips](https://www.digikey.com/en/maker/blogs/2022/start-building-cleaner-perfboard-projects-using-these-simple-tips)
+-[Perfboard Prototyping](https://www.youtube.com/watch?v=3N3ApzmyjzE)
+-[Soldering Perfboard](https://www.youtube.com/watch?v=l9Kbr8cPqOE)
+-[Perfboard Tips](https://www.digikey.com/en/maker/blogs/2022/start-building-cleaner-perfboard-projects-using-these-simple-tips)
 
 It is highly recommended that you use female headers to attach your microcontroller and peripherals/sensors to your perfboard. This will allow you to remove components from the perfboard in case you mess up any of your soldering.
 
