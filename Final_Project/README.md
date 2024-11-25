@@ -1,5 +1,15 @@
 # 512 Final Project FAQ Autumn 2024
 
+## Table of Contents
+1. [Where do I start?](#im-lost-and-dont-know-where-to-start)
+1. [Installing peripheral libaries](#how-do-i-install-libraries-for-my-peripherals)
+1. Frequently Asked Questions
+    1. [Why can't my microcontroller find my sensor?](#my-microncontroller-is-not-recognizing-my-sensor)
+    1. [How do I connect multiple sensors when I have only 1 SDA and 1 SCL?](#there-are-only-two-i2c-pins-on-my-microncontroller-how-do-i-connect-more-than-one-to-my-device)
+    1. [How do I work with perfboard?](#how-do-i-work-with-perfboard)
+    1. [How do I connect the LiPo Battery?](#how-do-i-connect-a-lipo-battery-to-perfboard)
+
+
 ## **I'm lost and don't know where to start**
 
 A: While there are many ways to approach this project, we recommend to get started by first selecting the programming language you want to use.
