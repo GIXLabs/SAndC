@@ -1,29 +1,5 @@
 # 512 Final Project FAQ Autumn 2024
 
-
-## Useful links
-
-- [RP2040 Overview](https://learn.adafruit.com/adafruit-qt-py-2040/overview)
-- [QT PY RP2040 - Pinouts](https://learn.adafruit.com/adafruit-qt-py-2040/pinouts)
-
-SSD1306 OLED:
-
-- [Arduino](https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/)
-- [Micropython](https://randomnerdtutorials.com/raspberry-pi-pico-ssd1306-oled-micropython/)
-- [CircuitPython](https://learn.adafruit.com/adafruit-oled-featherwing/python-circuitpython-wiring)
-
-MPU6050:
-
-- [Arduino](https://randomnerdtutorials.com/arduino-mpu-6050-accelerometer-gyroscope/)
-- [Micropython](https://microcontrollerslab.com/micropython-mpu-6050-esp32-esp8266/)
-- [CircuitPython](https://learn.adafruit.com/mpu6050-6-dof-accelerometer-and-gyro/python-and-circuitpython?gad_source=1&gclid=Cj0KCQiA_9u5BhCUARIsABbMSPvj5ua6Z8uzGx_uOqEhm6sc8uKHUWFvedA41SZmerjldLei-rUug_QaAvEIEALw_wcB)
-
-APDS9960
-
-- [Arduino](https://learn.adafruit.com/adafruit-apds9960-breakout/arduino-wiring-and-test)
-- [Micropython](https://upy-apds9960.readthedocs.io/en/latest/)
-- [CircuitPython](https://learn.adafruit.com/adafruit-apds9960-breakout/circuitpython?gad_source=1&gclid=Cj0KCQiA_9u5BhCUARIsABbMSPueoj8fIOxQNcsqS4Mrq1uDb0nutoY-wlmi3jeBcC3LkdWJpE0tS4UaAt3MEALw_wcB)
-
 ## **I'm lost and don't know where to start**
 
 A: While there are many ways to approach this project, we recommend to get started by first selecting the programming language you want to use.
@@ -31,14 +7,14 @@ The three main languages you should consider are CircuitPython, Micropython, and
 Tutorials on how to set up these programming languages are linked below:
 
 - [CircuitPython](https://learn.adafruit.com/adafruit-qt-py-2040/circuitpython)
-- [Arduino](https://learn.adafruit.com/adafruit-qt-py-2040/arduino-ide-setup)
 - [Micropython](https://micropython.org/download/ADAFRUIT_QTPY_RP2040/)
+- [Arduino](https://learn.adafruit.com/adafruit-qt-py-2040/arduino-ide-setup)
 
 Once you have installed a programming language, your next step should be to pick the right IDE to interface with your microcontroller. Depending on the Programming language you chose, we recommend these IDEs:
 
-- [Arduino - Arduino IDE](https://www.arduino.cc/en/software)
 - [CircuitPython - Mu Editor](https://codewith.mu/)
 - [Micropython - Thonny](https://thonny.org/)
+- [Arduino - Arduino IDE](https://www.arduino.cc/en/software)
 
 With a programming language installed and IDE setup, your next steps should be to connect each peripheral one at a time and run sample code to make sure they are connected and working properly.
 
@@ -46,32 +22,31 @@ With a programming language installed and IDE setup, your next steps should be t
 
 Each programming language has its own way of installing libraries:
 
-Arduino IDE: You can download Arduino libraries directly from the IDE. Click on the library manager button on the left side panel. In the text box enter the name of the library you are looking for. If you can find one written by Adafruit it is recommended to use that one.
-
-![Arduino Library Download](assets/ArduinoIDE_Library.svg)
-
-CircuitPython: To install CircuitPython Libraries it is recommended to download the Adafruit CircuitPython Library Bundle that can be found [here](https://circuitpython.org/libraries). Once you have downloaded and unzipped the bundle, search for the library you need and drag and drop the folder/file into the lib folder on your microcontroller with CircuitPython installed (your computer should recognize it as a drive).
+### CircuitPython 
+To install CircuitPython Libraries it is recommended to download the Adafruit CircuitPython Library Bundle that can be found [here](https://circuitpython.org/libraries). Once you have downloaded and unzipped the bundle, search for the library you need and drag and drop the folder/file into the lib folder on your microcontroller with CircuitPython installed (your computer should recognize it as a drive).
 
 ![CircuitPython Library Install](assets/CircuitPython_Library.svg)
 
-
-Micropython: To install Micropython libraries in Thonny you can use the package manager in the tools menu at the top (make sure to be in the directory of your Micropython device). The package manager does not always have the Micropython libraries you might be interested in. Therefore, the recommended way to install libraries is to find the one you are looking for online (usually on Github) copy the contents of the file that has the library code, create a new file on your Micropython device, and copy/save the contents of the library in the file that you created.
+### Micropython
+To install Micropython libraries in Thonny you can use the package manager in the tools menu at the top (make sure to be in the directory of your Micropython device). The package manager does not always have the Micropython libraries you might be interested in. Therefore, the recommended way to install libraries is to find the one you are looking for online (usually on Github) copy the contents of the file that has the library code, create a new file on your Micropython device, and copy/save the contents of the library in the file that you created.
 
 ![Micropython Library Install](assets/Thonny.svg)
 
+### Arduino IDE 
+You can download Arduino libraries directly from the IDE. Click on the library manager button on the left side panel. In the text box enter the name of the library you are looking for. If you can find one written by Adafruit it is recommended to use that one.
 
+![Arduino Library Download](assets/ArduinoIDE_Library.svg)
 
 ## **My Microncontroller is not recognizing my sensor**
 
 A: First check that your wiring is correct
 
 For an I2C sensor you can run code to scan for I2C addresses that your microcontroller can see. Code for the I2C scanner is linked below:
-
-- [Arduino I2C Scanner](https://learn.adafruit.com/scanning-i2c-addresses/arduino?gad_source=1&gclid=CjwKCAiA3Na5BhAZEiwAzrfagKycm_r6hAFwfoswsncHn7iqdMzZ7a6kKu5bZ0ul8lXuBAkz3w4nMBoC5CcQAvD_BwE)
+- [CircuitPython I2C Scanner](https://learn.adafruit.com/scanning-i2c-addresses/circuitpython)
 
 - [Micropython I2C Scanner](https://randomnerdtutorials.com/raspberry-pi-pico-i2c-scanner-micropython/)
 
-- [CircuitPython I2C Scanner](https://learn.adafruit.com/scanning-i2c-addresses/circuitpython)
+- [Arduino I2C Scanner](https://learn.adafruit.com/scanning-i2c-addresses/arduino?gad_source=1&gclid=CjwKCAiA3Na5BhAZEiwAzrfagKycm_r6hAFwfoswsncHn7iqdMzZ7a6kKu5bZ0ul8lXuBAkz3w4nMBoC5CcQAvD_BwE)
 
 Most Libraries for I2C devices assume a default I2C address which may not be the same of the device you are currently using. For example, the CircuitPython BME280 library assumes a default address of 0x77. Most of the BME280 devices given to the class have an address of 0x76. In most cases you can set the I2C address in the constructor of the driver code.
 
@@ -103,3 +78,24 @@ A: For the RP2040, the voltage in pin for batteries is the one labeled 5V. To co
 ![Perfboard Bottom](assets/perf_bottom.svg)
 
 ![Battery Working](assets/battery_working.gif)
+
+## Useful links
+### QT PY Board Info
+- [RP2040 Overview](https://learn.adafruit.com/adafruit-qt-py-2040/overview)
+- [QT PY RP2040 - Pinouts](https://learn.adafruit.com/adafruit-qt-py-2040/pinouts)
+
+### SSD1306 OLED
+- [CircuitPython](https://learn.adafruit.com/adafruit-oled-featherwing/python-circuitpython-wiring)
+- [Micropython](https://randomnerdtutorials.com/raspberry-pi-pico-ssd1306-oled-micropython/)
+- [Arduino](https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/)
+
+
+### MPU6050
+- [CircuitPython](https://learn.adafruit.com/mpu6050-6-dof-accelerometer-and-gyro/python-and-circuitpython?gad_source=1&gclid=Cj0KCQiA_9u5BhCUARIsABbMSPvj5ua6Z8uzGx_uOqEhm6sc8uKHUWFvedA41SZmerjldLei-rUug_QaAvEIEALw_wcB)
+- [Micropython](https://microcontrollerslab.com/micropython-mpu-6050-esp32-esp8266/)
+- [Arduino](https://randomnerdtutorials.com/arduino-mpu-6050-accelerometer-gyroscope/)
+
+### APDS9960
+- [CircuitPython](https://learn.adafruit.com/adafruit-apds9960-breakout/circuitpython?gad_source=1&gclid=Cj0KCQiA_9u5BhCUARIsABbMSPueoj8fIOxQNcsqS4Mrq1uDb0nutoY-wlmi3jeBcC3LkdWJpE0tS4UaAt3MEALw_wcB)
+- [Micropython](https://upy-apds9960.readthedocs.io/en/latest/)
+- [Arduino](https://learn.adafruit.com/adafruit-apds9960-breakout/arduino-wiring-and-test)
