@@ -170,52 +170,68 @@ Voltage dividers are an important and useful circuit to scale a voltage (signal)
 
 ## 5. ESP32 - Blink a LED
 
-1. Setup ESP32 with MicroPython
+1. Setup ESP32 with CircuitPython
 
 Before proceed with the steps below, make sure you have Thonny IDE and USB to UART bridge driver successfully installed, as well as MicroPython configured to ESP32 downloaded. 
 - Thonny IDE download [link](https://thonny.org/)
 - Check the dev board model, and download the USB to UART bridge driver. The link for CP210X is [here](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers). Install the driver on your laptop. You may have to change the laptop security setting to unblock extensions to successfully install it. The release note included in the installation package is a good resource for FAQ.
-- Download latest and stable release of MicroPython firmware for ESP32. The link is here: https://micropython.org/download/ESP32_GENERIC/ We will use the downloaded file later, please make sure you can locate it later.
+- CircuitPython has already been installed on the ESP32 boards at your lab station. If there are any issues with the install, you can find the resources to reinstall [here](https://circuitpython.org/board/doit_esp32_devkit_v1/)
 
 Let's now put things together.
 
 - Connect ESP32 dev board with your laptop.
-- Open Thonny IDE. Click on “Tools” → “Manage Plug-Ins”. Type in esptool in the search field as shown below. Depending on the operating system on your laptop, the figure may look different. Install esptool by clicking on it (in the red box).
-![IntermediateStep-1](/assets/Lab2-25.png)
-- Click on “Tools” → “Options” → “Interpreter”. Select MicroPython (ESP32) as the interpreter of Thonny. Select the option with USB to UART as the port. 
-![IntermediateStep-2](/assets/Lab2-26.png)
-- Click on “Install or update MicroPython (esptool)”. Click on the icon ≡. Choose the “Select local MicroPython image” option. Browse through your local files and find the MicroPython file downloaded before. 
-- Click on button “Install”. You may have to push the boot button on the board to write to it.
+- Click on “Run” → “Options” → “Configure interpreter”. Select CircuitPython (generic) in the first drop down menu of the window. Select the ESP32 board under the Port drop down menu, it may appear as CP2102 USB to UART controller. On Mac choose the port that has something similar to /dev/cu.usbserial-0001.
+![IntermediateStep-2](/assets/Thonny_Interpreter.svg)
 - Copy and paste the following code line by line to the Shell window in Thonny.
 
 ```
->>> import machine
->>> led = machine.Pin(2, machine.Pin.OUT)
->>> led.on()
->>> led.off()
+>>> import board
+>>> import digitalio
+>>> led = digitalio.DigitalInOut(board.LED)
+>>> led.direction = digitalio.Direction.OUTPUT
+>>> led.value = True
+>>> led.value = False
 ```
 What did you observe after entering the 3rd and 4th line? Add comments to the code based on your observation. Feel free to read the documentation or utilize other resources to understand this code implementation.
 
-For Windows users, feel free to refer to this [tutorial](https://www.youtube.com/watch?si=JNdeSa-IPverrW2t&v=elBtWZ_fOZU&feature=youtu.be)
+
 
 2. Blink a LED on breadboard
 
-- Play with the [interactive simulation tool](https://wokwi.com/projects/359801682833812481) to understand the expected observations. Double click on the resistor to read its value.
-- Take out a LED from your ESP32 kit, and observe the lengths of the pins. You should expect one pin to be longer than another. The longer pin should alwasy connect to the positive voltage so that the LED can light up.
-- ✏️ Build your circuit on the bread board, either following the circuit provided by the tool in the previous step, or as illustrated in lecture slides. Run the code provided by the simulation tool and verify if you obtain the same results as simulation. Add comments to your code and include the code with comments in your lab report. To successfully blink the LED, make sure the output pin specified in code is consistent with your circuit. Take a picture of your circuit and include it in your report.
-![IntermediateStep-1](/assets/lab2-27.png)
+- ✏️ Build a series LED circuit with your breadboard, connect the anode(positive) to a digital pin on the ESP32, connect a 500 Ohm resistor in series to the cathode(negative pin), and connect the resistor to ground. Write code in the script window of Thonny (not the shell) to turn on and off the LED with a 2Hz frequency (On for half a second, off for half a second). If you are having issues coming up with the code, feel free to search the web or use an LLM to assist you. Add comments to your code and include the code with comments in your lab report. To successfully blink the LED, make sure the output pin specified in code is consistent with your circuit. Take a picture of your circuit and include it in your report.
 - ✏️ Connect another LED into the circuit in series, remove the resistor from your circuit, and re-run the code. Draw the diagram, and test your circuit. What could you observe? Note: You may want to use two red LEDs in this step to observe the blink effect.
-- ✏️ Compared to the circuit with single LED in the simulator, are the leds in series brigher or dimmer? For each red LED, it requires ~2V to light up. Can you explain why the LEDs in series become brighter or dimmer using your knowledge of voltage divider?
-- ✏️ Based on your results in previous steps, can you blink two LEDs at different frequencies? Build the circuit and take a picture. Complete the following program with appropriate comments and test your circuit. (Hint: You need two resistors to complete the circuit.)
+- ✏️ Compared to the circuit with single LED in the simulator, are the leds in series brigher or dimmer? For each red LED, it requires ~2V to light up. Can you explain why the LEDs in series become brighter or dimmer using your knowledge of voltage dividers?
+- ✏️ Based on your results in previous steps, can you blink two LEDs at different frequencies? Build the circuit and take a picture. Complete the following code in the scripting window, you only need to add code where #todo comments are. If you are having issues, feel free to web search or use an LLM to complete the code. If you feel you have a better implementation than the one given, you may use that instead of the code given. (Hint: You want to make two series LED circuits connected to your ESP32.)
 ```
-from machine import Pin
-from utime import sleep
+import board
+import digitalio
+import time
 
-print("Hello, ESP32!")
+led1 = digitalio.DigitalInOut(board.D2)
+led1.direction = digitalio.Direction.OUTPUT
 
-led_1 = Pin(15, Pin.OUT)
-led_2 = Pin(2, Pin.OUT)
+led2 = digitalio.DigitalInOut(board.D4)
+led2.direction = digitalio.Direction.OUTPUT
+
+led1_period = .5  # Blinks with 2Hz Frequency
+led2_period = .2  # Blinks with 5Hz Frequency
+
+toggle1 = time.monotonic()
+toggle2 = time.monotonic()
+
 while True:
+
+   now = time.monotonic()
+
+   #todo
+   # Add conditional to check if the difference between now and toggle1 is greater than or equal to led1_period
+   # update the value of led1 to the opposite of its current value
+   # update toggle1 to equal to now
+
+   #todo
+   # Add conditional to check if the difference between now and toggle2 is greater than or equal to led2_period
+   # update the value of led2 to the opposite of its current value
+   # update toggle2 to equal to now
 ```
 
 
