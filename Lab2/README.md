@@ -114,7 +114,7 @@ The writeup for this lab should contain the following outline:
 
    - ✏️ Connection between the two resistors
 
-   ![SerCurrent2](/assets/Lab2-8.jpeg)
+   ![SerCurrent2](/assets/Lab2-8.jpg)
 
    - ✏️ [Power supply positive connection](/Lab1/power_supply.md)
 
