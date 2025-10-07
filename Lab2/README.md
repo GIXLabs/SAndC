@@ -48,7 +48,7 @@ The writeup for this lab should contain the following outline:
 3. Set up the [power supply](/Lab1/power_supply.md) for +10 V, connect 1000 Ohm resistor across power supply.
 4. [Set DMM to Voltage mode](/Lab1/dmm.md#measuring-voltage), and verify +10V DC across 1K Ohm resistor.
 
-   ![Single_Voltage](/assets/Single_Voltage.jpg)
+   ![Single_Voltage](/assets/Single_Voltage.jpeg)
 
 5. Switch your [DMM to current mode](/Lab1/dmm.md#measuring-current) (change Red lead to A)
 6. [Connect your DMM](/Lab1/dmm.md#measuring-current) between resistor and power supply ground as follows:
@@ -57,7 +57,7 @@ The writeup for this lab should contain the following outline:
    - Connect the red lead (A) of DMM to the resistor
    - Connect the black lead (COM) of DMM to power supply GND
 
-   ![Single_Current](/assets/Single_Current.jpg)
+   ![Single_Current](/assets/Single_Current.jpeg)
 
    ![DivLoad3](/assets/Lab2-24.png)
 
@@ -77,24 +77,24 @@ The writeup for this lab should contain the following outline:
 
    ![ParCurrent3](/assets/Lab2-23.png)
 
-   ![Parallel_Supply](/assets/Parallel_Supply.jpg)
+   ![Parallel_Supply](/assets/Parallel_Supply.jpeg)
 
 2. [Set up your DMM for current measurement](/Lab1/dmm.md#measuring-current). Plug red lead into “A” (see instructions/diagram, 1.5/1.6, above)
 3. ✏️ Measure the current between the power supply ground and the pair of resistors (i.e. total current of both resistors).
 
-   ![Parallel_Current](/assets/Parallel_Current.jpg)
+   ![Parallel_Current](/assets/Parallel_Current.jpeg)
 
 4. Reconnect resistors and DMM as necessary to measure voltage across the two resistors, and the current in each resistor separately.
    - ✏️ Record your measurements.
    - ✏️ Compare your measurement with sum of the two resistor currents.
 
-   ![Parallel_Voltage](/assets/Parallel_Voltage.jpg)
+   ![Parallel_Voltage](/assets/Parallel_Voltage.jpeg)
 
 5. ✏️ Use Ohm’s law to find the equivalent resistance of the two resistors in parallel (based on ideal value shown in the figure).
 6. Disconnect the resistors from the power supply and use the DMM in Resistance mode to measure the resistance of the two resistors in parallel.
    - ✏️ Compare measured resistance with result from part 2.5
 
-   ![Parallel_Resistance](/assets/Parallel_Resistance.jpg)
+   ![Parallel_Resistance](/assets/Parallel_Resistance.jpeg)
 
 7. ✏️ Diagram the circuit and label all voltages and currents.
 8. ✏️ Verify that each resistor follows [Ohm’s Law](https://youtu.be/8jB6hDUqN0Y?t=162). i.e. For each resistor, measure the voltage between the two ends and the current goes through it, then plug it into the formula.
@@ -103,26 +103,26 @@ The writeup for this lab should contain the following outline:
 
 1. Connect the 1000 Ohm and 500 Ohm resistors in series (connect only one end)
 
-   ![Series_Resistance](/assets/Series_Resistance.jpg)
+   ![Series_Resistance](/assets/Series_Resistance.jpeg)
 
 2. [Set your DMM to current mode](/Lab1/dmm.md#measuring-current) and plug the red lead to A accordingly. Remember, you should start with the A port on the multimeter and switch to the mA/uA port for higher resolution **IF** the current measured with the A port is less than 400 milliamps.
 3. ✏️ Open the circuit at three points and measure the current at each gap:
 
    - ✏️ Power supply ground connection
 
-   ![Series_Current_Ground](/assets/Series_Current_Ground.jpg)
+   ![Series_Current_Ground](/assets/Series_Current_Ground.jpeg)
 
    - ✏️ Connection between the two resistors
 
-   ![SerCurrent2](/assets/Lab2-8.jpg)
+   ![SerCurrent2](/assets/Lab2-8.jpeg)
 
    - ✏️ [Power supply positive connection](/Lab1/power_supply.md)
 
-   ![Series_Current_Voltage](/assets/Series_Current_Voltage.jpg)
+   ![Series_Current_Voltage](/assets/Series_Current_Voltage.jpeg)
 
 4. ✏️ Use your DMM in Resistance mode to measure the resistance of the two series connected resistors.
 
-   ![Series_Resistance](/assets/Series_Resistance.jpg)
+   ![Series_Resistance](/assets/Series_Resistance.jpeg)
 
    - ✏️ Diagram the circuit and label all (measured) voltages and currents.
    - ✏️ Verify that each resistor follows [Ohm's Law](https://youtu.be/8jB6hDUqN0Y?t=162).
@@ -139,16 +139,16 @@ Voltage dividers are an important and useful circuit to scale a voltage (signal)
 
    - ✏️ Ground (should be 0.0!!)
 
-   ![Series_Voltage_Ground](/assets/Series_Voltage_Ground.jpg)
+   ![Series_Voltage_Ground](/assets/Series_Voltage_Ground.jpeg)
 
    - ✏️ Junction between the two resistors
 
-   ![Series_Voltage_Junction](/assets/Series_Voltage_Junction.jpg)
+   ![Series_Voltage_Junction](/assets/Series_Voltage_Junction.jpeg)
 
    - ✏️ Compare voltage measured in 4.3.2 to prediction of voltage divider equation.
    - Power (should be 5.0V!!)
 
-   ![Series_Voltage_Whole](/assets/Series_Voltage_Whole.jpg)
+   ![Series_Voltage_Whole](/assets/Series_Voltage_Whole.jpeg)
 
 4. Connect a second 1000 Ohm, “load” resistor between your voltage divider output (junction between 1000 + 500 Ohm resistors) and ground. Since the circuit is getting more complex, you should consider using a breadboard for this part. The [introduction to breadboarding article](information/breadboard.md) can get you started and the [series vs parallel article](series_vs_parallel.md) has examples.
 
@@ -159,11 +159,11 @@ Voltage dividers are an important and useful circuit to scale a voltage (signal)
 
    - ✏️ Measure the current
 
-   ![Load_Current](/assets/Load_Current.jpg)
+   ![Load_Current](/assets/Load_Current.jpeg)
 
    - ✏️ Measure the voltage
 
-   ![Load_Voltage](/assets/Load_Voltage.jpg)
+   ![Load_Voltage](/assets/Load_Voltage.jpeg)
 
 6. Explain why this voltage divider does not follow the 4.3.2 voltage prediction now that a load resistor has been added.
 
