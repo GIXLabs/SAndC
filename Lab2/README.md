@@ -191,7 +191,7 @@ Let's now put things together.
 >>> led.value = True
 >>> led.value = False
 ```
-What did you observe after entering the 3rd and 4th line? Add comments to the code based on your observation. Feel free to read the documentation or utilize other resources to understand this code implementation.
+What did you observe after entering the fifth and sixth line? Add comments to the code based on your observation. Feel free to read the documentation or utilize other resources to understand this code implementation.
 
 
 
