@@ -193,7 +193,9 @@ Let's now put things together.
 ```
 What did you observe after entering the fifth and sixth line? Add comments to the code based on your observation. Feel free to read the documentation or utilize other resources to understand this code implementation.
 
+You can find the Pins for ESP32 in the following figure
 
+![ESP32_Pins](/assets/ESP32_Pins.jpg)
 
 2. Blink a LED on breadboard
 
