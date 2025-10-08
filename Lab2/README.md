@@ -195,7 +195,7 @@ What did you observe after entering the fifth and sixth line? Add comments to th
 
 You can find the Pins for ESP32 in the following figure
 
-![ESP32_Pins](/assets/ESP32_ Pins.jpg)
+![ESP32_Pins](/assets/ESP32_Pins.jpg)
 
 2. Blink a LED on breadboard
 
