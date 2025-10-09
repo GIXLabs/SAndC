@@ -84,7 +84,7 @@ First we will demonstrate this ability using the switch to change base current i
 
 <img src=assets/transistor-2N3904.png width="30%" height="15%">
 
-![Setup 2](assets/setup2.svg)
+![Setup 2](assets/lab3_BJT.svg)
 
 2.1 Build the switching BJT circuit. Wire up exactly as shown in Figure 1 except leave out the capacitor C. Operate the switch - LED should go on and off.
 
@@ -99,7 +99,7 @@ First we will demonstrate this ability using the switch to change base current i
 ## Part 3: BJT Timer Circuit
 
 3.1 Now add the capacitor C as shown in Figure 1. **Be careful with how you wire the capacitor. Electrolytic capacitors are polarized and may explode if wired backwards.** The white stripe on the side of the capacitor should be on the ground (negative) side of your circuit. Operate the switch.  
- ![Setup 3](assets/setup3.svg)
+ ![Setup 3](assets/lab3_BJT_Timer.svg)
 
 - ✏️ What happens when you operate the switch?
 
@@ -126,7 +126,7 @@ By “filtering out” the high switching related frequencies, a RC low-pass fil
 
 Our overall system is shown in Figure 3.
 
-![Filtering Schematic](assets/rc_filter.png)
+![Filtering Schematic](assets/PWM_RC_Schematic.svg)
 
 Figure 3. Using an RC circuit to smooth a PWM signal into an analog signal. The **low-pass** RC circuit shown eliminates high frequency changes and only passes through low frequencies.
 
