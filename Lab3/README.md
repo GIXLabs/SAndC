@@ -82,7 +82,7 @@ The Bi-polar Junction Transistor (BJT) is a versatile device which we will use a
 
 First we will demonstrate this ability using the switch to change base current input from zero to a small value. This will light the LED. It takes some care to wire up the BJT correctly. Compare the schematic to this diagram to identify the correct pins.
 
-<img src=assets/transistor-2N3904.png width="30%" height="15%">
+![Transistor Pinout and Schematic](assets/transistor-2N3904.svg)
 
 ![Setup 2](assets/lab3_BJT.svg)
 
@@ -113,8 +113,8 @@ First we will demonstrate this ability using the switch to change base current i
 
 This part will illustrate a practical application of RC circuits: smoothing out pulse-width-modulation to approximate an analog signal. Many low-cost microcontroller (e.g. ESP32 and Arduino) based embedded systems do not have analog outputs, but we can fake one by rapidly flipping a bit on and off.
 
-![PWM](assets/pwm.png)
-![RC Smoothing](assets/smoothed_pwm.png)
+![PWM](assets/PWM.svg)
+![RC Smoothing](assets/PWM_to_Analog.svg)
 
 Figure 2: Pulse Width Modulation. Several levels of PWM (top). Smoothing out a PWM signal can approximate an analog signal with lower frequencies (bottom).
 
