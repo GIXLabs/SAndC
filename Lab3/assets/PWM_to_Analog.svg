@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="145.52083mm"
-   height="87.3125mm"
-   viewBox="0 0 145.52083 87.3125"
+   width="149.81554mm"
+   height="91.001228mm"
+   viewBox="0 0 149.81554 91.001228"
    version="1.1"
    id="svg1"
    xml:space="preserve"
@@ -25,19 +25,29 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="2.1683361"
-     inkscape:cx="286.39471"
-     inkscape:cy="157.49403"
+     inkscape:cx="264.25792"
+     inkscape:cy="195.54164"
      inkscape:window-width="2560"
      inkscape:window-height="1494"
      inkscape:window-x="3829"
      inkscape:window-y="276"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" /><defs
+     inkscape:current-layer="layer2" /><defs
      id="defs1" /><g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     transform="translate(2.1220214,1.8779786)"><rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-opacity:0.00182483"
+       id="rect1"
+       width="145.81554"
+       height="87.001228"
+       x="-0.12202136"
+       y="0.12202136" /></g><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-30.067396,-41.730366)"><image
+     transform="translate(-27.945375,-39.852387)"><image
        width="145.52083"
        height="87.3125"
        preserveAspectRatio="none"
