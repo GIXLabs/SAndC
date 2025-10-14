@@ -86,8 +86,8 @@ First we will demonstrate this ability using the switch to change base current i
 
   2.2 [Measure Currents](/Lab1/dmm.md/#measuring-current). Remember that your multimeter must be placed in series with the component you want to measure current through. This means you will always have to break your circuit to measure current. For both switch positions, measure the current in
 
-- ✏️ R2, the Base circuit
-- ✏️ R4, the LED / Collector circuit.
+- ✏️ R1, the Base circuit
+- ✏️ R2, the LED / Collector circuit.
 - ✏️ Explain your results in terms of the switching idea described above.
 
 ## Part 3: BJT Timer Circuit
