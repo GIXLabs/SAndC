@@ -45,12 +45,6 @@ The writeup for this lab should contain the following outline:
 - Handheld multimeter
 - Eye protection (for capacitors)
 
-# Assignment
-
-![Figure 1](assets/main_sch.png)
-
-Figure 1: Delay Circuit with BJT. As shown above is the LED lit or not? What happens if you press and hold the button?
-
 ## Part 1: Basic LED Circuit
 
 Build the circuit below on a [breadboard](/Lab2/information/breadboard.md) using the values shown in the image. Note: this is a simplification of the circuit in Figure 1. Keep in mind that LEDs are polarized, which means they only work properly when hooked up in the right orientation. The positive side has a longer leg. Sometimes those legs get cut, so you can either try each direction and see what works or look for the flat spot on the plastic lens, which marks the ground (negative) side.
@@ -69,12 +63,12 @@ Build the circuit below on a [breadboard](/Lab2/information/breadboard.md) using
 - ✏️ [Use DMM to measure two voltages](/Lab1/dmm.md/#measuring-voltage):
 
   1. ✏️ across the LED
-  2. ✏️ across R4
+  2. ✏️ across the resistor
 
   1.3 [Measure current](/Lab1/dmm.md/#measuring-current). Set your DMM to current mode and change the red wire to “mA/uA”. Open circuit between +9V and R4 and connect DMM.
 
 - ✏️ What is current with switch open and closed. Does LED still light?
-- ✏️ Compute R4 current according to measured voltage (step 1.2.1) and its value (220 Ohms or as built).
+- ✏️ Compute the current going through the resistor according to the measured voltage (step 1.2.1) and its value (220 Ohms or as built).
 
 ## Part 2: BJT Circuit
 
@@ -86,7 +80,7 @@ First we will demonstrate this ability using the switch to change base current i
 
 ![Setup 2](assets/lab3_BJT.svg)
 
-2.1 Build the switching BJT circuit. Wire up exactly as shown in Figure 1 except leave out the capacitor C. Operate the switch - LED should go on and off.
+2.1 Build the switching BJT circuit. Use the circuit diagram above to assist you. Operate the switch - LED should go on and off.
 
 - ✏️ Take a photo of your circuit build.
 
@@ -133,17 +127,15 @@ Figure 3. Using an RC circuit to smooth a PWM signal into an analog signal. The 
 Procedure:
 
 1. Generate a PWM signal where you can control the duty cycle. For the source of the PWM signal we recommend you use a signal generator with [1.0 kHz frequency](/Lab1/signal_gen.md/#adjusting-frequency), [Vmin of 0.0 V, and Vmax of 3.5 V](/Lab1/signal_gen.md/#adjusting-amplitude).
-   - If you would like a challenge, you can use an ESP32 dev board with the code below or Arduino with code [at this link](http://forcetronic.blogspot.com/2018/02/converting-arduino-pwm-output-to-dac.html) instead of the signal generator.
+   - If you would like to use a microcontroller to generate a PWM signal the Circuitpython code is given below (output pin here is 23). Make sure to attach the Oscilloscope probe ground to the ground of the ESP32.
      ```
-     from machine import Pin, PWM
-     from time import sleep
-
-     frequency = 1000 # set the frequency to 1KHz
-     duty_cycle = 205 # approximately 20% duty cycle, min = 0, max = 1024
-     signal = PWM(Pin(5), frequency) # set PWM output on PIN 5 with specified frequency
-     signal.duty(duty_cycle)
+     import board
+     import pwmio
+     
+     dutyCycle = .2     # 20% Duty Cycle
+     pwm = pwmio.PWMOut(pin = board.D23, frequency = 1000, duty_cycle = int(65535 * dutyCycle))
      ```
-     To stop generating the PWM signal, you can type `signal.deinit()` in the shell window.
+     To stop generating the PWM signal and free up the pin, you can type `pwm.deinit()` in the shell window.
 2. Design an RC low-pass circuit. Determine a cutoff frequency 10x lower than your PWM switching frequency. Determine your RC time constant based on this frequency ([see this pdf](assets/low_pass_filter_design.pdf)). Set R = 1000 Ohms, determine your **C** value. If exact C value is not available, pick the closest available and
    - ✏️ document changes in circuit design and parameters due to this approximate value. **Remember: capacitors may explode if wired wrong.** Make sure the side of the capacitor with the white stripe is connected to ground.
 3. Connect oscilloscope to circuit as shown in Figure 3. Set vertical controls for Channels 1 and 2 to show both waves. Set the time base to show 10 cycles of the PWM input.
@@ -181,4 +173,4 @@ A: The voltage measurement on the oscilloscope should never exceed signal genera
 
 **Q: How were the schematics made?**
 
-A: The schematics were all made using Autodesk Eagle, which is used for designing circuit boards. As students, you have free access to Eagle when you sign up for an Autodesk account.
+A: The schematics were all made using KiCAD, which is used for designing circuit boards. KiCAD is a free and open-source software suite that everyone has access to.
