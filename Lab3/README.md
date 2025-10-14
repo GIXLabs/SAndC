@@ -53,9 +53,9 @@ Build the circuit below on a [breadboard](/Lab2/information/breadboard.md) using
 
 **Note:** your [breadboard](/Lab2/information/breadboard.md) will look different because you will be using jumpers to make the connections rather than small segments of wire used in these images. The small wire segments make it easier to see what things are connected for demonstration purposes. If you would like your board to look similarly neat, [check out this quick tutorial on making your own jumper wires.](https://youtu.be/ver-Av8vr1Q?t=8)
 
-1.1 Check your switch. As shown in the schematic, the switch (SW) will open the circuit when slid to the right position. Does your switch work this way? Use the DMM to find out if it is “press-to-open” or “press-to-close” type switch, or Single Pole Double Throw (SPDT) type switch. If you put your DMM in resistance mode and press the noise button, it will beep whenever two things are electrically connected. Try switching to this mode and touching the probe tips together.
+1.1 Check your switch. As shown in the schematic, the switch (SW) will open the circuit when slid to the right position. Does your switch work this way? Use the DMM to find out if it is “press-to-open” or “press-to-close” type switch, or Single Pole Double Throw (SPDT) type switch. If you put your DMM in continuity mode, it will beep whenever two things are electrically connected. Try switching to this mode and touching the probe tips together.
 
-- ✏️ Take a photo of your switch and report what you measured with DMM, and which type of switch you have.
+- ✏️ Take a photo of your switch with your DMM in Continuity mode, and report which type of switch you have.
 
   1.2 Operate your circuit. Repeatedly operate your switch and verify that the LED lights up.
 
