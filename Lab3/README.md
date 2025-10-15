@@ -148,7 +148,7 @@ Procedure:
 Note: Make sure the red and black clips coming from the signal generator do not touch. Touching them will cause a short, which could damage the machine or cause the cables to get hot.
 
 4. Measure input and output for duty cycle of 20%, 60%, 90%
-   - ✏️ Capture screen shots of the three duty cycles.
+   - ✏️ Capture screen shots of the four duty cycles.
 5. Repeat step two, but set the cutoff frequency 100x lower than the PWM frequency. Measure input and output for duty cycle 50%
    - ✏️ What is the wave shape of the output signal (screenshot)?
 6. Using this new RC circuit:
