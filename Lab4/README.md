@@ -55,7 +55,7 @@ Parts:
 
 Wire your 555 up in Monostable mode ([Wikipedia reference](https://en.wikipedia.org/wiki/555_timer_IC#Monostable)). Use the R and C values from your pre-lab computations. If you need a refresher on breadboards, [review this article here.](/Lab2/information/breadboard.md)
 
-![Monostable](assets/monostable.svg)
+![Monostable](assets/monostableAlone.svg)
 
 **Note:** These images do not show connections to the power supply and signal generator. The power line should be connected to a power supply in a similar style to previous labs, the grounds should all be tied together (power supply, signal generator, and circuit), and the signal generator should be attached at the points described below.
 
@@ -70,7 +70,7 @@ Wire your 555 up in Monostable mode ([Wikipedia reference](https://en.wikipedia.
 
 Wire your 555 up in Astable mode ([Wikipedia reference](https://en.wikipedia.org/wiki/555_timer_IC#Astable)). Use the R and C values from your pre-lab computations.
 
-![Astable](assets/astable.svg)
+![Astable](assets/astableAlone.svg)
 
 **Note:** The power line should be connected to a power supply in a similar style to previous labs, the grounds should all be tied together (power supply, and circuit).
 
@@ -78,50 +78,7 @@ Wire your 555 up in Astable mode ([Wikipedia reference](https://en.wikipedia.org
 1. ✏️ Measure the frequency of the output signal. How does it compare with calculations and measured R values?
 1. ✏️ Measure duration of each pulse. How does it compare with calculations and measured R values?
 
-## Extra Pulse Detector (second week)
 
-![The Emitter](assets/the_emitter.png)
-
-The task is to design a pulse generator checker. “GIX industries LLC” has developed a pulse emission device, “The Emitter” which emits a continuous stream of pulses. Each pulse is ~10 microseconds and they occur at 1000 pulses per second. When the product is defective it produces an additional pulse, in between two normal pulses, but it does this very infrequently, about once every 2-3 seconds.
-
-You can build you own ‘Emitter’ using an Arduino. [See the files here for more details.](emitter)
-
-Problem definition:
-
-Reference: [555 Extra Pulse Catcher](555_extra_pulse_catcher.docx)
-
-Design a circuit combining two 555 chips and a 74HC00 quad NAND gate to perform the following function:
-1. Create the emitter using the [instructions in this document.](emitter/how_to_build_extra_pulse_emitter.docx)
-1. Provide an output LED which is normally OFF.
-1. If in any 1ms period, more than one pulse comes into the input of your circuit, light the LED for 1 second. This functionality is illustrated below:
-
-![Pulse example](assets/pulse_example.png)
-
-1. Build the [555 Extra Pulse Catcher](555_extra_pulse_catcher.docx) using your [breadboard](/Lab2/information/breadboard.md).
-   1. Connections to GND use black wires.
-   2. Connections to Vcc use red wires.
-   3. Connections to 3.3V use orange wires.
-   4. Connections to >5V use yellow wires.
-   5. General inputs use white and grey wires.
-   6. Data signals use green wires.
-   7. Output signals use blue wires.
-1. Tests:
-    1. ✏️ Using “The Emitter” device, validate function of your circuit and ask a TA to check.
-	1. ✏️ With “The Emitter” connected, connect both “IN” and “OUT/LED” of your circuit to the oscilloscope. Trigger on the rising edge of “OUT/LED” and capture both signals in a screen shot. ✏️ Describe how these signals validate the correct operation of your circuit.
-	**Notice that Vcc should be 3.5V ~ 4.2V instead of 5V**
-
-This is how the extra pulse catcher circuit works:
-
-![How extra pulse catcher works](assets/lab4_how_extra_pulse_catcher_works.png)
-
-
-Correct circuit operation:
-
-![Circuit Operating Properly](assets/pulse_catcher_working.gif)
-
-How to set trigger on Oscope:
-
-![Setting Trigger on Oscope](assets/oscope_trigger.gif)
 
 # Frequently Asked Questions
 
