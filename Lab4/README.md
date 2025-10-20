@@ -8,7 +8,7 @@ The purpose of this lab is to learn about the many uses of one of the first IC�
 The [555 Timer (click for datasheet)](https://www.ti.com/lit/ds/symlink/ne555.pdf) consists of a voltage divider (three 5k resistors, hence 555) two comparators (triangles), a bi-stable circuit (flip-flop, green box), and a couple of output driving circuits (“Output Driver” and NPN bipolar transistor). The [555](https://en.wikipedia.org/wiki/555_timer_IC) has been produced for decades by many companies. These parts function as follows:
 - Comparator: Output logic 1 if input “+” is greater than input “-”, otherwise output logic 0.
 - Flip-Flop: A momentary pulse on the “Set” input, S, sets output Q = 1, Q(bar) = 0. A pulse on the “Reset” input R, sets Q=0. If both S and R are 0, the output keeps its state from the most recent input pulse. If  both S and R are 1, the output is undefined. A Flip-flop can be thought of as a 1-bit memory.
-- Output Driver: supports up to about 100Ma output current in most conditions (see datasheet).
+- Output Driver: supports up to about 100mA output current in most conditions (see datasheet).
 
 References: [Teardown of a 555 (with interactive die photo)](http://www.righto.com/2016/02/555-timer-teardown-inside-worlds-most.html)
 
@@ -16,18 +16,18 @@ References: [Teardown of a 555 (with interactive die photo)](http://www.righto.c
 
 The writeup for this lab should contain the following outline:
 1. Title page (see template in the folder ‘Requirement of Lab Reports’)
-2. Introduction
-⅓ of a page describing the purpose and goals of this lab in your own words. Do not reproduce any material from this assignment document in any section of your writeup.
-3. Results
+2. Introduction:
+¼ of a page describing the purpose and goals of this lab in your own words. Do not reproduce any material from this assignment document in any section of your writeup.
+3. Results:
 Each location in the instructions below marked with “✏️” indicates some data which must appear in your report. Separate each result or related set of results with a sub-section header indicating what it is. For any numerical data or graph describe the meaning of the data. Always label and describe the X and Y axis of any graph. When comparing two graphs, always plot them with the same X and Y axis limits.
-4.	Discussion and Conclusions
-- In ½ to 1 page, summarize the key learning points from the Results above.
+4.	Discussion and Conclusions:
+In ⅓ to ½ of a page, summarize the key learning points from the Results above.
 
 # Preparation
 
 ## Pre-lab computations
-- Study the [555 Wikipedia Page](https://en.wikipedia.org/wiki/555_timer_IC). Referring to the section on [“Monostable mode,”](https://en.wikipedia.org/wiki/555_timer_IC#Monostable) compute R (Assume C = 0.1uF) for an output pulse width of 1.0 milliseconds (10-3 sec).
-- Referring to the section on [“Astable mode,”](https://en.wikipedia.org/wiki/555_timer_IC#Astable) compute values of R1 to achieve a frequency, f = 100k Hz, duty 52.8%. Assume C = 100pF, R2 = 68 kΩ.
+- ✏️Study the [555 Wikipedia Page](https://en.wikipedia.org/wiki/555_timer_IC). Referring to the section on [“Monostable mode,”](https://en.wikipedia.org/wiki/555_timer_IC#Monostable) compute R (Assume C = 0.1uF) for an output pulse width of 1.0 milliseconds (10-3 sec).
+- ✏️Referring to the section on [“Astable mode,”](https://en.wikipedia.org/wiki/555_timer_IC#Astable) compute values of R1 to achieve a frequency, f = 100k Hz, duty 52.8%. Assume C = 100pF, R2 = 68 kΩ.
 
 ![Nand Gate](assets/nand.png)
 
