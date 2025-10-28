@@ -35,9 +35,7 @@ We have from Ohm’s Law: V=IR. We also know that power is: P=IV. From this we c
 ### Pre-lab Computations
 - None but see Computer Preparation below
 
-### Computer Preparation
-- Make sure your laptop can do Arduino development (one such laptop per lab bench team).
-- Install the HX711 chip library [using the instructions here](https://www.arduino.cc/reference/en/libraries/hx711-arduino-library/)
+
 
 ### Parts, Tools, and Supplies
 
