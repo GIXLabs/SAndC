@@ -96,6 +96,8 @@ The diving board is a load cell with a single strain gauge. We’ll measure its 
 ### Load Cell Measurements ### 
 Finally, we will study a weight measurement system consisting of a load cell mounted between two platforms. You can do either the Micropython or Arduino setup to complete the next section.  
 
+![Xiao Pin Out](assets/xiao_pinOut.jpg)
+
 
 #### ESP32 Circuitpython Setup
 1. Plug an ESP32 into your laptop
