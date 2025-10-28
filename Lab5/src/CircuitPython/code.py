@@ -66,7 +66,7 @@ while True:
         
     for _ in range(numPoints - 1):
         dataDict[weight].append(channel_a.value)
-        time.sleep(.02)
+        time.sleep(.01)
         
         
     ans = input("\nPlease remove weight from scale (Press Enter to continue or -1 to Exit)\n\n")
