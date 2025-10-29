@@ -120,7 +120,7 @@ Finally, we will study a weight measurement system consisting of a load cell mou
 	1. ✏️ For each weight used to collect data, use indexing to show at least three data points collected and take a screenshot(s)
 	1. ✏️ Linear Regression aims to find the relation 'y = mx + b' where m is sometimes called the scale or weight and b is called the bias. From the script find the values of m and b that were calculated from the data.
 	1. ✏️ From the script determine the data structure and variable names of the input data to perform linear regression
-	1. ✏️ Record calibrated data readings for each weight used to collect raw data readings
+	1. ✏️ Record calibrated data readings for each weight used to collect raw data readings (For example if you used 10g as part of your calibration process, put 10g on the load cell and record the output post calibration. How close is the calibrated reading to the actual weight?)
 	1. ✏️ Apply the 100g weight to each target on the top platform. What is the variation in measured weight due to location?
 
 ### Temperature Sensitivity ###
