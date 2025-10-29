@@ -126,8 +126,8 @@ Finally, we will study a weight measurement system consisting of a load cell mou
 Once you have ran code.py once you do not need to run it again (it will make you go through the calibration process) to get calibrated data readings. You can get calibrated data readings by using the m and b values you recorded or by using the code in the infinite while loop at the bottom of code.py
 1. Place a weight between 100-500 grams on your platform. ✏️ Record the weight reading at room temperature.
 1. Place the type K thermocouple tip inside the two holes in the load cell beam.
-1. Set the heat-gun to high. From a distance of 12” (50cm), heat the strain gauge with the heat gun for 15 seconds (**DO NOT APPLY HEAT CLOSER THAN 12” / 30cm or you WILL damage the strain gauge.**) ✏️ Record hot air temperature from Fluke DMM.
-1. ✏️ Record the weight reading and air temperature.
+1. Set the heat-gun to high. From a distance of 12” (50cm), heat the strain gauge with the heat gun for 15 seconds (**DO NOT APPLY HEAT CLOSER THAN 12” / 30cm or you WILL damage the strain gauge.**) 
+1. ✏️ Record the weight reading and hot air temperature.
 1. ✏️ Remove heat gun. ✏️ How long does it take for the weight reading to return to within 1% of the room temperature weight? 
 	1. Some of the strain gauges’ readings may not return to 1%. In this case, wait until the reading is stable and record the stable value.
 
