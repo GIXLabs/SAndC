@@ -106,7 +106,7 @@ Finally, we will study a weight measurement system consisting of a load cell mou
 	1. HX711 DT (Data) to any digital pin on the ESP32
 	1. HX711 VCC to ESP32 3V pin
 	1. HX711 GND to ESP32 GND
-1. Download the [pre-written script](src/CircuitPython/code.py) and associated packages in the same folder.
+1. The [pre-written script](src/CircuitPython/code.py) and associated packages have been installed on your ESP32.
 	1. The HX711 Adafruit Library has been pre-installed on to your ESP32s. Code.py and LLS.py have also been put on your ESP32s.
 	1. Read through the code.py script to get a basic understanding of how it works. **The script will prompt you for information on how many data points and weights in the shell/terminal.**
 1. Run code.py in Thonny which does the following:
