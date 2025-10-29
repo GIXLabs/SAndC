@@ -114,7 +114,7 @@ Finally, we will study a weight measurement system consisting of a load cell mou
 	1. Prompts users to add weight to scale and collects raw data readings. This repeats for any number of weights you want to collect raw data for (Use at least 0g, 10g, 50g, and 100g)
 	1. Performs [linear regression](https://en.wikipedia.org/wiki/Linear_regression) using the [Linear Least Squares](https://en.wikipedia.org/wiki/Linear_least_squares) algorithm on the data collected
 	1. Runs an infinite loop that prints calibrated data (in grams) to the console
-1. If you find that the readings from Linear Regression using OLS(Ordinary Least Squares) doesn't work well, you can instead use the Least Squares Regression that implements Huber Loss ([LLShuber.py](src/CircuitPython/LLShuber.py)) in the src folder of this lab.
+1. If you find that the readings from Linear Regression using OLS(Ordinary Least Squares) aren't accurate, you can instead use the Least Squares Regression that implements Huber Loss ([LLShuber.py](src/CircuitPython/LLShuber.py)) in the src folder of this lab.
 1. ✏️ What you need to collect for your write up:
 	1. ✏️ From the script determine what data structure and variable name the data points are being stored into
 	1. ✏️ For each weight used to collect data, use indexing to show at least three data points collected and take a screenshot(s)
