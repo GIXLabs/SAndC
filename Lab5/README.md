@@ -32,10 +32,6 @@ We have from Ohm’s Law: V=IR. We also know that power is: P=IV. From this we c
 - [Instructables Tutorial](https://www.instructables.com/Arduino-Scale-With-5kg-Load-Cell-and-HX711-Amplifi/): Similar tutorial.
 
 ## Preparation
-### Pre-lab Computations
-- None but see Computer Preparation below
-
-
 
 ### Parts, Tools, and Supplies
 
