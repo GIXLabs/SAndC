@@ -153,26 +153,31 @@ display.root_group = main_group
 Adafruit has a great overview on what a Rotary Encoder is, and how it works that you can find [here.](https://learn.adafruit.com/rotary-encoder/overview)
 
 
-Follow the wiring guide [here](https://learn.adafruit.com/rotary-encoder/hardware) on how to connect a rotary encoder to a microcontroller. The guide does not use a Xiao ESP32 so be careful which pins you connect the Rotary Encoder to. Once you have connected your Rotary Encoder, copy and run the code below. **Make sure to change the pin numbers on line 4 to be consistent with the pins you connected your Rotary Encoder to.**
+Follow the wiring guide [here](https://learn.adafruit.com/rotary-encoder/hardware) on how to connect a rotary encoder to a microcontroller. The guide does not use a Xiao ESP32 so be careful which pins you connect the Rotary Encoder to. Once you have connected your Rotary Encoder, copy the code in the [rotary_encoder.py](src/rotary_encoder.py) file. Start a new file in Thonny, and paste the contents of rotary_encoder.py. Save this file to your ESP32 as rotary_encoder.py. Copy the code below and run it. **Make sure to change the pin numbers on line 7 to be consistent with the pins you connected your Rotary Encoder to.**
 
 ```
+import time
 import board
-import rotaryio
+from rotary_encoder import RotaryEncoder
 
-encoder = rotaryio.IncrementalEncoder(board.D1, board.D0)
-lastPosition = None
+# change pins to the pins you're using
+# if position does not increment properly swap pins (Ex. Using pins below, put D2 first and D3 second)
+encoder = RotaryEncoder(board.D3, board.D2, debounce_ms=3, pulses_per_detent=3)
+
 while True:
-    position = encoder.position
-    if lastPosition is None or position != lastPosition:
-        print(position)
-    lastPosition = position
+    changed = encoder.update()
+    if changed:
+        #d = encoder.get_delta()
+        print("Position:", encoder.position)
+        
+    time.sleep(0.001)  
 ```
 
-After the code is uploaded to your ESP32, when you turn the rotary encoder it should print out a number (position) to your shell/serial console that is either increasing or decreasing based on which way you turn the encoder.
+After the code is uploaded to your ESP32, when you turn the rotary encoder it should print out a number (position) to your shell/serial console that is increasing when you turn the encoder.
 
 ✏️ Update the code so that the number is printed onto the OLED Screen. Make sure the number is centered in on the OLED screen. Take a picture of your OLED Screen and make sure the updated code is in your report.
 
-✏️ Further update the code even more so that instead of a number being printed it is the letters of the English Alphabet where the letter A is mapped to position zero. For example if you turn the rotary encoder clockwise it should go from A→B→C→D......→Z→A, following the alphabet all the way to Z. Once it reaches Z it should wrap around back to A if you keep turning the encoder. The inverse should be true if you turn the encoder counter-clockwise, it should print out the Alphabet backwards: A→Z→Y→X→W.....→B→A→Z. Take a picture of your screen and make sure the updated code is in your report.
+✏️ Further update the code even more so that instead of a number being printed it is the letters of the English Alphabet where the letter A is mapped to position zero. For example if you turn the rotary encoder it should go from A→B→C→D......→Z→A, following the alphabet all the way to Z. Once it reaches Z it should wrap around back to A if you keep turning the encoder. 
 
 ## Interfacing with ADXL345 Accelerometer
 
