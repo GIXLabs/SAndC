@@ -32,6 +32,10 @@ We have from Ohm’s Law: V=IR. We also know that power is: P=IV. From this we c
 - [Instructables Tutorial](https://www.instructables.com/Arduino-Scale-With-5kg-Load-Cell-and-HX711-Amplifi/): Similar tutorial.
 
 ## Preparation
+### Pre-lab Computations
+- None but see Computer Preparation below
+
+
 
 ### Parts, Tools, and Supplies
 
@@ -95,6 +99,8 @@ The diving board is a load cell with a single strain gauge. We’ll measure its 
 ### Load Cell Measurements ### 
 Finally, we will study a weight measurement system consisting of a load cell mounted between two platforms. You can do either the Micropython or Arduino setup to complete the next section.  
 
+![Xiao Pin Out](assets/xiao_pinOut.jpg)
+
 
 #### ESP32 Circuitpython Setup
 1. Plug an ESP32 into your laptop
@@ -103,28 +109,29 @@ Finally, we will study a weight measurement system consisting of a load cell mou
 	1. HX711 DT (Data) to any digital pin on the ESP32
 	1. HX711 VCC to ESP32 3V pin
 	1. HX711 GND to ESP32 GND
-1. Download the [pre-written script](src/CircuitPython/code.py) and associated packages in the same folder.
+1. The [pre-written script](src/CircuitPython/code.py) and associated packages have been installed on your ESP32.
 	1. The HX711 Adafruit Library has been pre-installed on to your ESP32s. Code.py and LLS.py have also been put on your ESP32s.
 	1. Read through the code.py script to get a basic understanding of how it works. **The script will prompt you for information on how many data points and weights in the shell/terminal.**
 1. Run code.py in Thonny which does the following:
-	1. Prompts users to enter number of data points to collect per weight for linear regression. Take at least 100 readings per weight, the more readings you take the more accurate the calibration will be
-	1. Prompts users to add weight to scale and collects raw data readings. This repeats for any number of weights you want to collect raw data for (Use at least 0g, 1g, 10g, 20g, and 100g)
+	1. Prompts users to enter number of data points to collect per weight for linear regression. Take at least 25 readings per weight, the more readings you take the more accurate the calibration will be
+	1. Prompts users to add weight to scale and collects raw data readings. This repeats for any number of weights you want to collect raw data for (Use at least 0g, 10g, 50g, and 100g)
 	1. Performs [linear regression](https://en.wikipedia.org/wiki/Linear_regression) using the [Linear Least Squares](https://en.wikipedia.org/wiki/Linear_least_squares) algorithm on the data collected
 	1. Runs an infinite loop that prints calibrated data (in grams) to the console
+1. If you find that the readings from Linear Regression using OLS(Ordinary Least Squares) aren't accurate, you can instead use the Least Squares Regression that implements Huber Loss ([LLShuber.py](src/CircuitPython/LLShuber.py)) in the src folder of this lab.
 1. ✏️ What you need to collect for your write up:
 	1. ✏️ From the script determine what data structure and variable name the data points are being stored into
 	1. ✏️ For each weight used to collect data, use indexing to show at least three data points collected and take a screenshot(s)
 	1. ✏️ Linear Regression aims to find the relation 'y = mx + b' where m is sometimes called the scale or weight and b is called the bias. From the script find the values of m and b that were calculated from the data.
 	1. ✏️ From the script determine the data structure and variable names of the input data to perform linear regression
-	1. ✏️ Record calibrated data readings for each weight used to collect raw data readings
+	1. ✏️ Record calibrated data readings for each weight used to collect raw data readings (For example if you used 10g as part of your calibration process, put 10g on the load cell and record the output post calibration. How close is the calibrated reading to the actual weight?)
 	1. ✏️ Apply the 100g weight to each target on the top platform. What is the variation in measured weight due to location?
 
 ### Temperature Sensitivity ###
 Once you have ran code.py once you do not need to run it again (it will make you go through the calibration process) to get calibrated data readings. You can get calibrated data readings by using the m and b values you recorded or by using the code in the infinite while loop at the bottom of code.py
 1. Place a weight between 100-500 grams on your platform. ✏️ Record the weight reading at room temperature.
 1. Place the type K thermocouple tip inside the two holes in the load cell beam.
-1. Set the heat-gun to high. From a distance of 12” (50cm), heat the strain gauge with the heat gun for 15 seconds (**DO NOT APPLY HEAT CLOSER THAN 12” / 30cm or you WILL damage the strain gauge.**) ✏️ Record hot air temperature from Fluke DMM.
-1. ✏️ Record the weight reading and air temperature.
+1. Set the heat-gun to high. From a distance of 12” (50cm), heat the strain gauge with the heat gun for 15 seconds (**DO NOT APPLY HEAT CLOSER THAN 12” / 30cm or you WILL damage the strain gauge.**) 
+1. ✏️ Record the weight reading and hot air temperature.
 1. ✏️ Remove heat gun. ✏️ How long does it take for the weight reading to return to within 1% of the room temperature weight? 
 	1. Some of the strain gauges’ readings may not return to 1%. In this case, wait until the reading is stable and record the stable value.
 
