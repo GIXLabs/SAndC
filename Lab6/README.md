@@ -95,7 +95,7 @@ while True:
    - ✏️ Demonstrate that it works using the water baths.
 8. ✏️ Record reading of the sensor in ice water & boiled water.
 9. Code Implementation:
-   - ✏️ Implement the logarithmic or polynomial equation on the Arduino.
+   - ✏️ Implement the logarithmic or polynomial equation on the ESP32.
    - ✏️ Take a screenshot of the correct temperature readout.
 
 
