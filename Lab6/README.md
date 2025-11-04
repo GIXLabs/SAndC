@@ -83,7 +83,7 @@ while True:
    - ✏️ 0&deg;C
    - ✏️ 100&deg;C
 3. The ESP32 analog input can handle input voltages from 0-3.3V. Design a DC circuit making a voltage divider with:
-   - 3.3V input (from 5V pin on arduino)
+   - 3.3V input (from 3V3 pin on ESP32)
    - Resistor (R) around 10K Ohm
    - Thermistor
    - The voltage across the 10K-thermistor voltage should range from 0-3.3V for any temperature from -10&deg;C to + 110&deg;C.
