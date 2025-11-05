@@ -37,7 +37,6 @@ None.
 ## Parts, tools, supplies required
 
 - Dallas Semi "One-Wire" temperature sensor
-- Type K thermocouple with Max6675 thermocouple amplifier/SPI interface breakout
 - MF52 10KOhm thermistor
 - Ice-water
 - Boiling water
@@ -53,7 +52,7 @@ None.
 
 
 
-1. We have two types of one-wire sensors: stainless steel cylinder, or BJT package. Connect the sensor to your ESP32, GND to GND, Vcc to 3V3, and Data to any digital pin on the ESP32.
+1. We have two types of one-wire sensors: stainless steel cylinder, or BJT package (optional). Connect the sensor to your ESP32, GND to GND, Vcc to 3V3, and Data to any digital pin on the ESP32.
 1. Open Thonny and run the script below make sure that the data pin you connected to your ESP32 is consistent with the one used in the code or vise versa.
 ```
 import time
