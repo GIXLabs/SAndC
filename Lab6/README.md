@@ -69,7 +69,7 @@ while True:
     time.sleep(0.5)
 ```
 
-5. As you get each sensor working, take each one to the ice-water and boiling-water baths.
+5. As you get sensor working, make measurements on the ice-water and boiling-water baths.
 6. ✏️ Record reading of the sensor in ice water & boiled water. Get at least 10 readings of both boiling and ice water
 
 ## Thermistor:
