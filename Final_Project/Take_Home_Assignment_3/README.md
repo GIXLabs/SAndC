@@ -277,12 +277,16 @@ When you push the button it should print to the shell that "BTN is down".
 
 You might have noticed that the push button doesn't work properly sometimes. Sometimes it'll register one button push as multple pushes or sometimes it registers releasing the button as a button press. This is known as [bouncing](https://learn.adafruit.com/debouncer-library-python-circuitpython-buttons-sensors/), fortunately there are ways to compensate for this, you can hard code timers to help with it as seen in this code example:
 ```
+import board
+import digitalio
+import time
+
 btn = digitalio.DigitalInOut(board.D9)
 btn.direction = digitalio.Direction.INPUT
 btn.pull = digitalio.Pull.UP  
 
-
-lastState = button.value
+lastState = btn.value
+stableState = btn.value
 lastTime = 0
 debounceDelay = 0.05 
 
@@ -291,12 +295,13 @@ while True:
     now = time.monotonic()
     
     if currentState != lastState:
-        lastTime = now  
+        lastTime = now
+        lastState = currentState  
     
     if (now - lastTime) > debounceDelay:
-        if currentState != lastState:
-            lastState = currentState
-            if not currentState:  
+        if stableState != currentState:
+            stableState = currentState
+            if not stableState:  
                 print("Button pressed!")
             else:
                 print("Button released!")
@@ -323,10 +328,6 @@ while True:
         print("Just pressed")
     if btn.rose:
         print("Just released")
-    if btn.value:
-        print("not pressed")
-    else:
-        print("pressed")
 ```
 
 ✏️ Utilizing either one of the debouncing strategies mentioned above, repeat the same process of the NeoPixel cycling through five colors when the button is pressed. For this deliverable, submit your code implementation.
