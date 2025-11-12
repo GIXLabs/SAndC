@@ -1,6 +1,6 @@
 # Introduction
 
-The purpose of this lab is to learn about measurement of photoplethysmogram (PPG) using a pulse oximeter. We will learn about driving a pulse oximeter using Arduino, and using Python serial reader to receive the signal at PC. We will also use filters to reduce the noise and study the affect of the filters on the signal.
+The purpose of this lab is to learn about measurement of photoplethysmogram (PPG) using a pulse oximeter. We will learn about driving a pulse oximeter using ESP32, and using Python serial reader to receive the signal at PC. We will also use filters to reduce the noise and study the affect of the filters on the signal.
 
 # Background
 
@@ -36,18 +36,18 @@ Pre-lab computations:
 
 # Computer Preparation
 
-We will use Python for signal process in this Lab. If you are not familiar with Python, please follow the steps to prepare Python workspace [here](/Lab6/anaconda.md). Detailed instruction on Python is beyond the scope of this lab, but it is recommended to explore more on Python, as it can be very useful in your future courses.
+We will use Python for signal processing in this Lab. If you are not familiar with Python, please follow the steps to prepare your Python workspace [here](/Lab6/anaconda.md).
 
 For more information on setting up Anaconda and Spyder click [here](/Lab6/anaconda.md).
 
 # Parts, tools, supplies required:
 
-- Arduino
-- Pulse oximeter sensor
+- ESP32
+- Pulse oximeter (PPG) sensor
 
    ![PPG Sensor](assets/ppg_sensor.png)
 
-- [Source code (src) folder](src/)
+
 
 # Procedure
 
@@ -55,13 +55,11 @@ All the code in this Lab is provided in the ['src'](src/) folder, but you are we
 
 1. **Setup hardware**
 
-   1. Connect the pulse oximeter sensor to Arduino, red pin to 3.3V, black pin to GND and purple pin to Analog input **A0** by default.
+   1. Connect the pulse oximeter sensor to your ESP32: red pin to 3.3V, black pin to GND and purple pin to an Analog input.
  
-      ![Arduino Connections](assets/arduino_conn.svg)
+   1. Connect the ESP32 to your PC.
 
-   1. Connect the Arduino to your PC.
-
-1. **Install and Upload Arduino Script**
+1. ****
 
 
    - [Pulse Sensor Code](https://github.com/GIXLabs/SAndC/tree/main/Lab7/src/PulseSensor)
@@ -70,9 +68,9 @@ All the code in this Lab is provided in the ['src'](src/) folder, but you are we
 
 1. Use two fingers to hold the sensor or use tape to fix the sensor on one of your fingers or on your ear. Make sure the front side of the sensor is touching your skin.
 
-   ![PPG on hand](assets/ppg_hand.svg)
 
-1. In Arduino IDE, go to 'Tools-Serial Plotter', if everything is set correctly, you should see similar plots as the following figure and a yellow LED on your Arduino blinking on your heartbeat. Make sure the baud rate is **57600**. If you see that signal reaches the upper limit 1000 or the peak is not obvious, you may need to adjust the pressure applied on the sensor.
+
+1. In Thonny, click View at the top menu and select plotter, if everything is set correctly, you should see similar plots as the following figure and a yellow LED on your ESP32 blinking on your heartbeat. You may need to adjust the threshold for the led to blink based on your readings, make sure to have a good threshold as this will be important later. If you see that signal reaches the upper limit or the peak is not obvious, you may need to adjust the pressure applied on the sensor.
 
    ![Serial Plotter Example](assets/serial_plotter_ex.png)
 
@@ -84,9 +82,9 @@ All the code in this Lab is provided in the ['src'](src/) folder, but you are we
 
    ![Spyder Enviroment Check](assets/spyder_env_check.png)
 
-1. In Spyder, open the file [serial_reader_PPG.py](src/serial_reader_PPG.py). You may need to change the serial port setting, as shown in the following figure.
+1. In Spyder, open the file [serial_reader_PPG.py](src/serial_reader_PPG.py). Before running serial_reader_PPG.py, save the pulse sensor code from the previous section to your ESP32 as **code.py**. Close Thonny, since it is connected to the serial port of your ESP32. Reset your ESP32 and get readings from the sensor, using the blinking LED to determine if you are getting proper readings.
 
-   ![Spyder Com Port Check](assets/change_com.png)
+   
 
 1. Run the serial_reader_PPG.py Python script, making sure the sensor is correctly placed on your skin. It will record the raw PPG sensor reading for 10s. The data will be saved as a '.txt' file in the same folder as '**serial_reader_PPG.py**'.
 
@@ -109,7 +107,7 @@ All the code in this Lab is provided in the ['src'](src/) folder, but you are we
 
    ![Python error 3](assets/python_error3.png)
 
-1. In medical practice, data such as PPG or ECG are usually considered as the privacy of patients. So you are also welcome to use anonymous recording in this lab, for example, by writing '**member 1**' instead of your name.
+1. In medical practice, data such as PPG or ECG are usually considered private. So you are also welcome to use anonymous recording in this lab, for example, by writing '**member 1**' instead of your name.
 
 ## Filter the noise using moving average
 1. In Spyder, open [moving_average_filter.py](src/moving_average_filter.py), remember to change the file name of your recorded data.
