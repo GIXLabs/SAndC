@@ -145,7 +145,7 @@ All the code in this Lab is provided in the ['src'](src/) folder, but you are we
    `hr = 60 / t`
 
 1. ✏️ Write down the heart rate for each member of your group.
-1. Do some exercises, such as jumping jacks. Then take measurement again and estimate your heart rate, by repeating step 4 and 7. You need to be quick as your heart rate may recover to baseline quickly.
+1. Do some exercises, such as jumping jacks. Then take measurement again and estimate your heart rate. You need to be quick as your heart rate may recover to baseline quickly.
 1. ✏️ Write down the heart rate after exercises and compare with the heart rate before exercises.
 1. ✏️ Verify the result by counting pulses on your wrist ([use this video for reference](https://youtu.be/AHHr8qNU9QY?t=10)). It is always important to validate your sensor readings with a known accurate source.
 
