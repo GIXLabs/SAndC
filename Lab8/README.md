@@ -22,16 +22,16 @@ The purpose of this lab is to study how to use an encoder sensor to achieve PID 
 
 The following figure shows the pins of the motor. Please note that the motor power (12 V) and encoder power (5 V) are different.
 
-![DC motor pins](Lab8/assets/motor_pins.png)
+![DC motor pins](assets/motor_pins.png)
 
 The following figure (from Components101) shows the pins of the L298N motor driver board.
 
-![L298N motor driver board pins](Lab8/assets/l298n_pins.png)
+![L298N motor driver board pins](assets/l298n_pins.png)
 
 The system wiring diagram is shown in the following figure.  
 (Note: all ground pins should be connected together.)
 
-![System wiring diagram](Lab8/assets/system_wiring_diagram.png)
+![System wiring diagram](assets/system_wiring_diagram.png)
 
 ---
 
@@ -61,7 +61,7 @@ Use Thonny to open `open_loop_duty_ctl.py`. It will send a PWM wave with a certa
 
 Change the duty percentage to 80%:
 
-```python
+python
 duty_pct = 80
 Run the code. If the motor wiring is correct, you should see the motor rotating.
 
@@ -86,7 +86,7 @@ Copy the code pid_step_response_speed.py to the ESP32 local code.py. Now the ESP
 
 When the motor is rotating, use Spyder or your preferred PC Python IDE to run pid_step_response_plot.py. You should be able to get a plot similar to the figure shown in the lab handout. Include the plot in your lab report.
 
-![PID plot](Lab8/assets/pid_plot.png)
+![PID plot](assets/pid_plot.png)
 
 4.3 ✏️
 In the ESP32 local code.py, for each P gain (VKP=), I gain (VKI=), and D gain (VKD=), try at least a small value and a large value (keep the other 2 as the default value).
