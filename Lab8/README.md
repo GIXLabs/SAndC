@@ -81,7 +81,7 @@ When the motor is rotating, use Spyder or your preferred PC Python IDE to run `p
 ![PID plot](assets/pid_plot.png)
 
 4.3 ✏️
-In the ESP32 local `code.py`, for each P gain (VKP=), I gain (VKI=), and D gain (VKD=), try at least a small value and a large value (keep the other 2 as the default value).
+In the ESP32 local `code.py`, for each P gain `VKP=`, I gain `VKI=`, and D gain `VKD=`, try at least a small value and a large value (keep the other 2 as the default value).
 
 Each time you change the gains:
 
