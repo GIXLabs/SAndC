@@ -90,7 +90,7 @@ Each time you change the gains:
 
 Run the code on the ESP32.
 
-Use Spyder or your preferred PC Python IDE to run pid_step_response_plot.py.
+Use Spyder or your preferred PC Python IDE to run `pid_step_response_plot.py`.
 
 Include the plot for each change, and then comment on the control performance (fast/slow response, large/small overshoot, large/small oscillation, large/small steady-state error, and so on).
 
