@@ -57,15 +57,12 @@ Use Thonny to open `open_loop_duty_ctl.py`. It will send a PWM wave with a certa
 Change the duty percentage to 80%:
 
 python
-duty_pct = 80
+`duty_pct = 80`
 Run the code. If the motor wiring is correct, you should see the motor rotating.
 
 3.3 ✏️
 Change the duty percentage to 20%:
-
-python
-Copy code
-duty_pct = 20
+`duty_pct = 20`
 Run the code. Does the motor rotate? Why or why not?
 (Hint: friction of gearbox, motor output torque.)
 
