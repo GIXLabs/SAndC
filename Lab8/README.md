@@ -74,7 +74,7 @@ Use [binary search](https://en.wikipedia.org/wiki/Binary_search), try different 
 Use Thonny to open `pid_step_response_speed.py`. This code can apply PID feedback control on the speed of the motor. With a time interval of 4 seconds, the motor will switch its speed between 2 rps and 3 rps (rounds per second). Run the code on the ESP32; you should be able to see the motor rotating at different speeds.
 
 4.2 ✏️
-Copy the code `pid_step_response_speed.py` to the ESP32 local `code.py`. Now the ESP32 will automatically run the code when powered on (you might need to disconnect and reconnect).
+Copy the code `pid_step_response_speed.py` to the ESP32 local `code.py` (you might need to turn off the DC power supply to make changes to the local Python file). Now the ESP32 will automatically run the code when powered on (you might need to disconnect and reconnect).
 
 When the motor is rotating, use Spyder or your preferred PC Python IDE to run `pid_step_response_plot.py`. You should be able to get a plot similar to the figure shown in the lab handout. Include the plot in your lab report.
 
