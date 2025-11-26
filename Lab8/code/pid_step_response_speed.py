@@ -37,7 +37,7 @@ VEL_DEADBAND_RPS    = 0.03
 PWM_PIN  = board.D6
 DIR1_PIN = board.D2
 DIR2_PIN = board.D3
-CS_PIN   = board.D4
+CS_PIN   = board.D1
 # =====================================================
 
 # ---------------- Motor helpers ----------------
